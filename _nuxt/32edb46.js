@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{253:function(e,t,n){"use strict";n.r(t);var l={name:"IndexPage"},r=n(56),component=Object(r.a)(l,(function(){var e=this,t=e.$createElement;return(e._self._c||t)("h1",{staticClass:"text-3xl text-center p-3"},[e._v("NA Brno dobrý 2022")])}),[],!1,null,null,null);t.default=component.exports}}]);
