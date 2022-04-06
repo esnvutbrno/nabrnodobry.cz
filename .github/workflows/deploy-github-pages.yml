@@ -4,6 +4,10 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  repository_dispatch:
+    types:
+      # for dispatch from contentful via webhook
+      - deploy
 
 env:
   NUXT_ROUTER_BASE_URL: '/nabrnodobry.cz/'
