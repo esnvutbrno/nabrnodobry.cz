@@ -9,6 +9,11 @@ on:
       # for dispatch from contentful via webhook
       - deploy
 
+concurrency:
+  # to disable multiple parallel jobs during changes in contentful
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   NUXT_ROUTER_BASE_URL: '/nabrnodobry.cz/'
   CTF_SPACE_ID: ${{ secrets.CTF_SPACE_ID }}
