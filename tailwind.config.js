@@ -13,8 +13,13 @@ module.exports = {
       }
     }
   },
+  variants: {
+    extend: {
+      bgColor: ['group-even', 'group-odd']
+    }
+  },
   plugins: [
     require('@tailwindcss/typography'),
-
+    require('tailwind-group-even-odd'),
   ]
 }

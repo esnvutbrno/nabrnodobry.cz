@@ -1,18 +1,28 @@
 <template>
-  <ul class="divide-indigo-400 space-y-8">
-    <li v-for="event in events" class="prose lg:prose-xl">
-      {{ event.fields.title }}
-      <RichTextRenderer
-        v-if="event.fields.description"
-        :document="event.fields.description"
-      />
-      <img
-        v-if="event.fields.thumbnail"
-        :src="event.fields.thumbnail.fields.file.url" class="max-w-md mx-auto"
-        :alt="event.fields.title"
+  <article class="max-w-2xl mx-auto">
+    <section v-for="(v, i) in new Array(3)">
+      <div
+        class="flex flex-row items-center"
+        :class="{'flex-row-reverse': i % 2}"
       >
-    </li>
-  </ul>
+        <h2 class="
+          uppercase font-bold text-3xl
+          py-4 inline-block
+        ">Thursday</h2>
+        <span class="flex-grow bg-secondary mx-4 h-1 rounded-full"></span>
+      </div>
+      <ul class="list-disc list-outside my-8 mx-auto w-full max-w-md">
+        <li class="flex flex-row group" v-for="e in events">
+          <span class="text-lg">{{ e[0] }}</span>
+          <span class="
+            flex-grow group-odd:bg-gray-100 h-0.5 rounded-full self-center
+            mx-4
+          "></span>
+          <time>{{ e[1] }}</time>
+        </li>
+      </ul>
+    </section>
+  </article>
 </template>
 
 <script>
@@ -29,7 +39,13 @@ export default {
       // order: '-sys.createdAt',
     });
 
-    return {events: events.items}
+    return {
+      events: [
+        ['Registration', '4 PM - 7 PM'],
+        ['Accommodation entrance', 'from 5 PM'],
+        ['First workshop I Dunno the Name yet', '8 PM'],
+      ]
+    }
   },
 };
 </script>

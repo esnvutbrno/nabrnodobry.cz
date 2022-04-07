@@ -10133,6 +10133,11 @@ tailwind-config-viewer@^1.6.3:
     portfinder "^1.0.26"
     replace-in-file "^6.1.0"
 
+tailwind-group-even-odd@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tailwind-group-even-odd/-/tailwind-group-even-odd-1.0.0.tgz#2b104e65de1c83efbe805cbd86578dae24535a9c"
+  integrity sha512-qZXCFBQqDMrq8zFM+O399lnzL0SnrYbCaioBw/4ho9+FBRk+cJqN0Zz927jefQcRmVNan+X4yDlB6fd+jdSB9g==
+
 tailwindcss@^3.0.23:
   version "3.0.23"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.0.23.tgz#c620521d53a289650872a66adfcb4129d2200d10"
