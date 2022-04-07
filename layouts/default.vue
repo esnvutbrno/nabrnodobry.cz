@@ -3,7 +3,10 @@
     <LogoHeader/>
     <Nav />
     <FancyLine />
-    <main class="mx-auto max-w-4xl m-4">
+    <main
+      class="mx-auto max-w-4xl m-4"
+      :class="{'max-w-full m-0': $route.name === 'map'}"
+    >
       <Nuxt />
     </main>
     <FancyLine class="border-t-4 border-b-0"/>
