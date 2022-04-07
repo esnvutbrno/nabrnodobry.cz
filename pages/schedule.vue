@@ -21,11 +21,11 @@
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 import {createClient} from '~/plugins/contentful.js';
 
-const client = createClient();
 
 export default {
   components: {RichTextRenderer},
   async asyncData({env}) {
+    const client = createClient();
     const events = await client.getEntries({
       content_type: 'event',
       // order: '-sys.createdAt',

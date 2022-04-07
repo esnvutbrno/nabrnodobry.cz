@@ -31,10 +31,10 @@
 <script>
 import {createClient} from '~/plugins/contentful.js';
 
-const client = createClient();
-
 export default {
   async asyncData({env}) {
+    const client = createClient();
+
     const heads = await client.getEntries({
       content_type: 'teamMember',
       'fields.isHead': true,
