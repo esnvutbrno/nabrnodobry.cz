@@ -1,9 +1,7 @@
 <template>
-  <div class="max-w-xl mx-auto">
-    <h1 class="text-3xl text-center p-3 bg-blue-600 text-white">NA Brno dobrý 2022</h1>
-    <h3 class="text-xl text-gray-500">Events:</h3>
-    <ul class="divide-indigo-400">
-      <li v-for="event in events">
+  <div class="max-w-3xl mx-auto">
+    <ul class="divide-indigo-400 space-y-8">
+      <li v-for="event in events" class="prose lg:prose-xl">
         {{ event.fields.title }}
         <RichTextRenderer
           v-if="event.fields.description"

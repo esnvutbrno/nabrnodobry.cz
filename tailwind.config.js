@@ -6,18 +6,15 @@ module.exports = {
       fontFamily: {
         'sans': ['Proxima Nova', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        primary: '#2e3192',
+        secondary: '#F90093',
+        // secondary: '#F90093',
+      }
     }
-  }
-}
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
 
-
-module.exports = {
-  content: [
-    'components/**/*.{vue,js,ts}',
-    'layouts/**/*.vue',
-    'pages/**/*.vue',
-    'plugins/**/*.{js,ts}',
-    'nuxt.config.js',
-    'nuxt.config.ts'
   ]
 }
