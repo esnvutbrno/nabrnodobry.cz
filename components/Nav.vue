@@ -11,8 +11,12 @@
       <li class="flex items-center hover:bg-gray-50">
         <nuxt-link class="px-4 py-4 md:py-8" :to="{name: 'schedule'}">Schedule</nuxt-link>
       </li>
-      <li class="flex items-center hover:bg-gray-50"><a class="px-4 py-4 md:py-8 text-center" href="">National
-        <br>Assembly</a></li>
+      <li class="flex items-center hover:bg-gray-50">
+        <nuxt-link class="px-4 py-4 text-center" :to="{name: 'about'}">About NA</nuxt-link>
+      </li>
+      <li class="flex items-center hover:bg-gray-50">
+        <nuxt-link class="px-4 py-4 text-center" :to="{name: 'faq'}">FAQ</nuxt-link>
+      </li>
     </ul>
     <nuxt-link
       class="
@@ -31,9 +35,14 @@
     </nuxt-link>
     <ul class="flex flex-row w-full space-x-2 justify-start order-3">
       <li class="flex items-center hover:bg-gray-50">
+        <nuxt-link class="px-4 py-4 md:py-8" :to="{name: 'map'}">Map</nuxt-link>
+      </li>
+      <li class="flex items-center hover:bg-gray-50">
         <nuxt-link class="px-4 py-4 md:py-8" :to="{name: 'team'}">Team</nuxt-link>
       </li>
-      <li class="flex items-center hover:bg-gray-50"><a class="px-4 py-4 md:py-8" href="">Sponsors</a></li>
+      <li class="flex items-center hover:bg-gray-50">
+        <nuxt-link class="px-4 py-4 md:py-8" :to="{name: 'sponsors'}">Sponsors</nuxt-link>
+      </li>
     </ul>
   </nav>
 </template>

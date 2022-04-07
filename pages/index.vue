@@ -1,7 +1,6 @@
 <template>
-  <main>
-    <article class="mx-auto max-w-4xl p-8 text-lg text-justify" v-for="i in new Array(5)">
-
+  <div>
+    <article class="text-lg text-justify" v-for="i in new Array(5)">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam
       molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.
 
@@ -11,7 +10,7 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam
       molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.
     </article>
-  </main>
+  </div>
 </template>
 
 <script>

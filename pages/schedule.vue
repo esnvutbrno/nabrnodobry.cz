@@ -1,20 +1,18 @@
 <template>
-  <div class="max-w-3xl mx-auto">
-    <ul class="divide-indigo-400 space-y-8">
-      <li v-for="event in events" class="prose lg:prose-xl">
-        {{ event.fields.title }}
-        <RichTextRenderer
-          v-if="event.fields.description"
-          :document="event.fields.description"
-        />
-        <img
-          v-if="event.fields.thumbnail"
-          :src="event.fields.thumbnail.fields.file.url" class="max-w-md mx-auto"
-          :alt="event.fields.title"
-        >
-      </li>
-    </ul>
-  </div>
+  <ul class="divide-indigo-400 space-y-8">
+    <li v-for="event in events" class="prose lg:prose-xl">
+      {{ event.fields.title }}
+      <RichTextRenderer
+        v-if="event.fields.description"
+        :document="event.fields.description"
+      />
+      <img
+        v-if="event.fields.thumbnail"
+        :src="event.fields.thumbnail.fields.file.url" class="max-w-md mx-auto"
+        :alt="event.fields.title"
+      >
+    </li>
+  </ul>
 </template>
 
 <script>
