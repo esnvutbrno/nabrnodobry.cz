@@ -36,6 +36,7 @@
 import {createClient} from '~/plugins/contentful.js';
 
 export default {
+  name: 'TeamPage',
   async asyncData({env}) {
     const client = createClient();
 

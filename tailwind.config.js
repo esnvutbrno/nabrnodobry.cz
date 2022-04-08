@@ -10,7 +10,10 @@ module.exports = {
         primary: '#2e3192',
         secondary: '#F90093',
         // secondary: '#F90093',
-      }
+      },
+      transitionProperty: {
+        'max-w': 'max-width'
+      },
     }
   },
   variants: {

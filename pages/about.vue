@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "na"
+  name: "AboutPage"
 }
 </script>
 
