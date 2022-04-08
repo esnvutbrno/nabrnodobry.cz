@@ -7,13 +7,13 @@ export default {
       lang: 'en'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: ''},
+      {name: 'format-detection', content: 'telephone=no'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
 
@@ -33,7 +33,7 @@ export default {
 
   modules: [
     '@nuxtjs/axios',
-    ['nuxt-leaflet', { /* module options */ }],
+    ['nuxt-leaflet', { /* module options */}],
 
   ],
 
@@ -42,8 +42,7 @@ export default {
     baseURL: '/',
   },
 
-  build: {
-  },
+  build: {},
 
   router: {
     base: process.env.NUXT_ROUTER_BASE_URL || '/'

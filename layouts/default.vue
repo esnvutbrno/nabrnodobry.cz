@@ -10,6 +10,7 @@
       <Nuxt />
     </main>
     <FancyLine class="border-t-4 border-b-0"/>
+    <InstagramFeed />
     <Footer />
   </div>
 </template>

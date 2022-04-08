@@ -47,7 +47,6 @@ export default {
       content_type: 'place',
       // order: '-sys.createdAt',
     });
-    console.log(places.items[0])
     return {places: places.items}
   }
 }
