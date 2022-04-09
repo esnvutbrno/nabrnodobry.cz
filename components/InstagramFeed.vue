@@ -1,7 +1,7 @@
 <template>
   <section class="bg-primary">
-    <div class="max-w-4xl mx-auto flex flex-row flex-wrap py-4">
-      <div v-for="a in assets" class="w-1/3 lg:w-1/4 p-4">
+    <div class="max-w-4xl mx-auto flex flex-row flex-wrap py-4 space-x-2 space-y-2">
+      <div v-for="a in assets" class="w-1/3 lg:w-1/4">
         <img :src="a.fields.file.url" alt="">
       </div>
     </div>
