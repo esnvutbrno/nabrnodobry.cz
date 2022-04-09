@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", {data:[{}],fetch:{"data-v-0b76dde1:0":{assets:[]}},mutations:void 0});

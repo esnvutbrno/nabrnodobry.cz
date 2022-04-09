@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/schedule", {data:[{events:[["Registration","4 PM - 7 PM"],["Accommodation entrance","from 5 PM"],["First workshop I Dunno the Name yet","8 PM"]]}],fetch:{"data-v-0b76dde1:0":{assets:[]}},mutations:void 0});
