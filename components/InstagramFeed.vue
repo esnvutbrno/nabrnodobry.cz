@@ -1,7 +1,8 @@
 <template>
   <section class="bg-primary">
-    <div class="max-w-4xl mx-auto flex flex-row flex-wrap py-4 space-x-2 space-y-2">
-      <div v-for="a in assets" class="w-1/3 lg:w-1/4">
+    <h3 class="text-3xl py-8 text-white font-medium text-center">#nabrnodobry</h3>
+    <div class="max-w-4xl mx-auto flex flex-row flex-wrap">
+      <div v-for="a in assets" class="w-1/3 lg:w-1/4 p-2">
         <img :src="a.fields.file.url" alt="">
       </div>
     </div>
@@ -22,7 +23,7 @@ export default {
   async fetch() {
     const client = createClient();
     const assets = await client.getAssets();
-    this.assets = assets.items.filter(i => i && i.fields.title.startsWith('IG'))
+    this.assets = assets.items.filter(i => i && i.fields.title && i.fields.title.startsWith('IG'))
   }
 }
 </script>

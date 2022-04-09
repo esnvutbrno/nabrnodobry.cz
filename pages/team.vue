@@ -1,15 +1,18 @@
 <template>
   <div>
-    <ul class="flex flex-row flex-wrap">
+    <ul class="flex flex-row flex-wrap justify-center">
       <li v-for="head in heads"
           class="
-            py-4 px-8 flex flex-col items-center w-1/2 md:w-1/4 justify-between
-            font-bold
+            py-4 px-8 flex flex-col items-center justify-between
+            font-bold w-1/2 sm:w-1/3 md:w-1/4
       ">
         <ContentfulImage
           :asset="head.fields.photo"
           :default="require('~/assets/img/woman-icon.png')"
-          class="w-full pb-[100%] rounded-full"
+          class="
+            w-full pb-[100%] rounded-full
+            transition-transform duration-300 ease-in-out hover:scale-110
+          "
         />
         <h2 class="text-lg text-primary text-center my-1">{{ head.fields.name }}</h2>
         <h3 class="text-xs text-gray-600 text-center">{{ head.fields.position }}</h3>
@@ -18,12 +21,18 @@
 
     <div class="border-secondary border-b-4 my-8"></div>
 
-    <ul class="flex flex-row flex-wrap">
-      <li v-for="member in members" class="p-4 font-bold flex flex-col items-center w-1/6">
+    <ul class="flex flex-row flex-wrap justify-center">
+      <li v-for="member in members" class="
+          p-4 font-bold flex flex-col items-center
+          w-1/3 sm:w-1/5 md:w-1/6
+      ">
         <ContentfulImage
           :asset="member.fields.photo"
           :default="require('~/assets/img/woman-icon.png')"
-          class="w-full pb-[100%] rounded-full mx-4"
+          class="
+            w-full pb-[100%] rounded-full mx-4
+            transition-transform duration-300 ease-in-out hover:scale-110
+          "
         />
         <h2 class="text-primary text-center my-1">{{ member.fields.name }}</h2>
         <h3 class="text-xs text-gray-600 text-center">{{ member.fields.position }}</h3>
