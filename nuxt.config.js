@@ -29,6 +29,7 @@ export default {
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    '@nuxtjs/pwa',
   ],
 
   modules: [
@@ -47,4 +48,15 @@ export default {
   router: {
     base: process.env.NUXT_ROUTER_BASE_URL || '/'
   },
+
+  pwa: {
+    meta: {
+      theme_color: '#2e3192',
+      name: 'NA Brno dobrý 2022',
+    },
+    manifest: {
+      name: 'NA Brno dobrý 2022',
+      short_name: 'NA Brno 2022',
+    }
+  }
 }
