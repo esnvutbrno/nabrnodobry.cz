@@ -6,14 +6,10 @@
             py-4 px-8 flex flex-col items-center justify-between
             font-bold w-1/2 sm:w-1/3 md:w-1/4
       ">
-        <ContentfulImage
+<!--                  :default="require('~/assets/img/woman-icon.png')" -->
+        <TeamMemberPhoto
           :asset="head.fields.photo"
-          :default="require('~/assets/img/woman-icon.png')"
-          class="
-            w-full pb-[100%] rounded-full
-            transition-transform duration-300 ease-in-out hover:scale-110
-          "
-        />
+        ></TeamMemberPhoto>
         <h2 class="text-lg text-primary text-center my-1">{{ head.fields.name }}</h2>
         <h3 class="text-xs text-gray-600 text-center">{{ head.fields.position }}</h3>
       </li>
@@ -26,14 +22,9 @@
           p-4 font-bold flex flex-col items-center
           w-1/3 sm:w-1/5 md:w-1/6
       ">
-        <ContentfulImage
+        <TeamMemberPhoto
           :asset="member.fields.photo"
-          :default="require('~/assets/img/woman-icon.png')"
-          class="
-            w-full pb-[100%] rounded-full mx-4
-            transition-transform duration-300 ease-in-out hover:scale-110
-          "
-        />
+        ></TeamMemberPhoto>
         <h2 class="text-primary text-center my-1">{{ member.fields.name }}</h2>
         <h3 class="text-xs text-gray-600 text-center">{{ member.fields.position }}</h3>
       </li>

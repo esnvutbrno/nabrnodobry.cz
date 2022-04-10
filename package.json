@@ -26,6 +26,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.6.2",
     "@nuxtjs/tailwindcss": "^5.0.2",
     "postcss": "^8.4.12"
   }

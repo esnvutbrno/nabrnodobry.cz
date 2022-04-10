@@ -21,18 +21,17 @@ export default {
     '@/assets/css/main.css',
   ],
 
-  plugins: [
-  ],
+  plugins: [],
 
   components: true,
 
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    '@nuxt/image',
   ],
 
   modules: [
-    '@nuxtjs/axios',
     ['nuxt-leaflet', { /* module options */}],
 
   ],
@@ -47,4 +46,9 @@ export default {
   router: {
     base: process.env.NUXT_ROUTER_BASE_URL || '/'
   },
+
+  image: {
+    contentful: {},
+    domains: ['images.ctfassets.net'],
+  }
 }
