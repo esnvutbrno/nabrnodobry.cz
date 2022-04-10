@@ -2,26 +2,26 @@
   <nav class="
       flex flex-row justify-center sticky top-0 bg-white
       border-primary border-b-4 border-opacity-70
-      font-bold text-sm md:text-lg uppercase text-primary
+      font-bold text-sm md:text-lg uppercase text-primary font-esn
     ">
     <ul class="
       flex flex-col md:flex-row w-1/3 md:w-full
       md:space-x-2 justify-end
     ">
-      <li class="flex items-center justify-end hover:bg-gray-50">
-        <nuxt-link class="px-4 py-2 md:py-8" :to="{name: 'schedule'}">Schedule</nuxt-link>
+      <li class="flex items-center justify-end">
+        <nuxt-link class="px-2 py-2 md:py-8 hover:bg-gray-50" :to="{name: 'schedule'}">Schedule</nuxt-link>
       </li>
-      <li class="flex items-center justify-end hover:bg-gray-50">
-        <nuxt-link class="px-4 py-2 md:py-8" :to="{name: 'about'}">About NA</nuxt-link>
+      <li class="flex items-center justify-end">
+        <nuxt-link class="px-2 py-2 md:py-8 hover:bg-gray-50" :to="{name: 'about'}">About NA</nuxt-link>
       </li>
-      <li class="flex items-center justify-end hover:bg-gray-50">
-        <nuxt-link class="px-4 py-2 md:py-8" :to="{name: 'faq'}">FAQ</nuxt-link>
+      <li class="flex items-center justify-end">
+        <nuxt-link class="px-2 py-2 md:py-8 hover:bg-gray-50" :to="{name: 'faq'}">FAQ</nuxt-link>
       </li>
     </ul>
     <nuxt-link
       class="
-        flex flex-col sm:flex-row justify-center items-center sm:mx-2 md:mx-4
-        my-2 md:my-0
+        flex flex-col sm:flex-row justify-center items-center
+        mx-2 md:mx-4 my-2 md:my-0
       "
       :to="{name: 'index'}"
       :class="{'hidden md:block md:invisible': $route.path === '/'}"
@@ -37,14 +37,14 @@
       flex flex-col md:flex-row w-1/3 md:w-full
       md:space-x-2 justify-start order-3
     ">
-      <li class="flex items-center justify-start hover:bg-gray-50">
-        <nuxt-link class="px-4 py-2 md:py-8" :to="{name: 'map'}">Map</nuxt-link>
+      <li class="flex items-center justify-start">
+        <nuxt-link class="px-2 py-2 md:py-8 hover:bg-gray-50" :to="{name: 'map'}">Map</nuxt-link>
       </li>
-      <li class="flex items-center justify-start hover:bg-gray-50">
-        <nuxt-link class="px-4 py-2 md:py-8" :to="{name: 'team'}">Team</nuxt-link>
+      <li class="flex items-center justify-start">
+        <nuxt-link class="px-2 py-2 md:py-8 hover:bg-gray-50" :to="{name: 'team'}">Team</nuxt-link>
       </li>
-      <li class="flex items-center justify-start hover:bg-gray-50">
-        <nuxt-link class="px-4 py-2 md:py-8" :to="{name: 'sponsors'}">Sponsors</nuxt-link>
+      <li class="flex items-center justify-start">
+        <nuxt-link class="px-2 py-2 md:py-8 hover:bg-gray-50" :to="{name: 'sponsors'}">Sponsors</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style scoped>
-nav {
-  font-family: "Kelson Sans", sans-serif;
+.nuxt-link-exact-active {
+  @apply bg-primary text-white;
 }
 </style>

@@ -4,8 +4,8 @@
     <Nav />
     <FancyLine />
     <main
-      class="mx-auto max-w-4xl m-4 transition-max-w"
-      :class="{'max-w-full m-0': $route.name === 'map'}"
+      class="mx-auto max-w-4xl m-4 px-4 lg:px-8 transition-max-w"
+      :class="{'max-w-full m-0 px-0': $route.name === 'map'}"
     >
       <Nuxt />
     </main>

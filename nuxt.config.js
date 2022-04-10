@@ -1,3 +1,5 @@
+import {createClient} from "./plugins/contentful";
+
 export default {
   target: 'static',
 
@@ -21,8 +23,7 @@ export default {
     '@/assets/css/main.css',
   ],
 
-  plugins: [
-  ],
+  plugins: [],
 
   components: true,
 
@@ -57,6 +58,17 @@ export default {
     manifest: {
       name: 'NA Brno dobrý 2022',
       short_name: 'NA Brno 2022',
+    }
+  },
+
+  generate: {
+    async routes() {
+      const client = createClient();
+      const events = await client.getEntries({
+        content_type: 'event',
+        // order: '-sys.createdAt',
+      });
+      return events.items.map(i => `/event/${i.sys.id}`)
     }
   }
 }

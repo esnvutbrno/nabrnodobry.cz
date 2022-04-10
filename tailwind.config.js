@@ -1,15 +1,13 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   theme: {
     extend: {
-      fontFamily: {
-        'sans': ['Proxima Nova', ...defaultTheme.fontFamily.sans],
-      },
+
       colors: {
         primary: '#2e3192',
+        // VUT: #E4002B
+        // MUNI: #0000dc
+        // MENDELU: #79be15
         secondary: '#F90093',
-        // secondary: '#F90093',
       },
       transitionProperty: {
         'max-w': 'max-width'

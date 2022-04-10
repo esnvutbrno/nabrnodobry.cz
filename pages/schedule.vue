@@ -11,15 +11,21 @@
         ">Thursday</h2>
         <span class="flex-grow bg-secondary mx-4 h-1 rounded-full"></span>
       </div>
-      <ul class="list-disc list-outside my-8 mx-auto w-full max-w-md">
-        <li class="flex flex-row group" v-for="e in events">
-          <span class="text-lg">{{ e[0] }}</span>
+      <ul class="list-disc list-outside my-4 md:my-8 mx-auto w-full max-w-md">
+
+        <li
+          class="flex flex-col sm:flex-row group cursor-pointer"
+          v-for="e in events"
+          @click="$router.push({name: 'event-id', params: {id: e.sys.id}})"
+        >
+          <span class="lg:text-lg flex-grow lg:flex-grow">{{ e.fields.title }}</span>
           <span class="
             flex-grow group-odd:bg-gray-100 h-0.5 rounded-full self-center
-            mx-4
+            mx-4 hidden md:block
           "></span>
-          <time>{{ e[1] }}</time>
+          <time class="self-end">{{ null }}</time>
         </li>
+
       </ul>
     </section>
   </article>
@@ -41,11 +47,8 @@ export default {
     });
 
     return {
-      events: [
-        ['Registration', '4 PM - 7 PM'],
-        ['Accommodation entrance', 'from 5 PM'],
-        ['First workshop I Dunno the Name yet', '8 PM'],
-      ]
+      events: events.items,
+      items: events.items,
     }
   },
 };
