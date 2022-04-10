@@ -11,16 +11,18 @@
             flex flex-row justify-center items-center">
 
       <div class="
-        relative my-8
-        py-8 px-16
+        relative
+        my-4 md:my-8 mx-4
+        py-8     px-16
         md:py-32 md:px-56
         xl:py-44 xl:px-80
       ">
+        <!-- all the graphics -->
         <div class="
-          hidden md:flex
+          flex
           absolute top-0 left-0 w-full h-full flex-row justify-between items-center
         ">
-          <!-- left -->
+          <!-- left column -->
           <div class="h-full flex flex-col flex-grow justify-between items-start">
             <svg class="w-[90%]" viewBox="0 0 143.18234 43.945191">
               <use :xlink:href="require('@/assets/svg/lt.svg') + '#main'"/>
@@ -32,13 +34,13 @@
               <use :xlink:href="require('@/assets/svg/lb.svg') + '#main'"/>
             </svg>
           </div>
-
-          <div class="h-full w-12 flex flex-col justify-end self-end mb-12">
+          <!-- center star -->
+          <div class="h-full w-12 flex flex-col justify-end self-end mb-[3%]">
             <svg class="w-full fill-white" viewBox="0 0 99.534409 94.978874">
               <use :xlink:href="require('@/assets/svg/cb.svg') + '#main'"/>
             </svg>
           </div>
-
+          <!-- right column -->
           <div class="h-full flex flex-col flex-grow justify-between items-end">
             <svg class="w-[90%]" viewBox="0 0 148.3029 41.617169">
               <use :xlink:href="require('@/assets/svg/rt.svg') + '#main'"/>
@@ -53,7 +55,7 @@
         </div>
 
         <h1 class="
-          text-2xl md:text-5xl lg:text-6xl xl:text-8xl
+          text-xl sm:text-2xl md:text-5xl lg:text-6xl xl:text-8xl
           uppercase text-white font-bold text-center leading-tight">
           NA Brno <br>dobrý
         </h1>

@@ -3,7 +3,7 @@
     <ul class="flex flex-row flex-wrap justify-center">
       <li v-for="head in heads"
           class="
-            py-4 px-8 flex flex-col items-center justify-between
+            py-4 px-4 sm:px-8 flex flex-col items-center justify-between
             font-bold w-1/2 sm:w-1/3 md:w-1/4
       ">
         <ContentfulImage
@@ -14,8 +14,8 @@
             transition-transform duration-300 ease-in-out hover:scale-110
           "
         />
-        <h2 class="text-lg text-primary text-center my-1">{{ head.fields.name }}</h2>
-        <h3 class="text-xs text-gray-600 text-center">{{ head.fields.position }}</h3>
+        <h2 class="sm:text-lg text-primary dark:text-white text-center my-1">{{ head.fields.name }}</h2>
+        <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ head.fields.position }}</h3>
       </li>
     </ul>
 
@@ -34,8 +34,8 @@
             transition-transform duration-300 ease-in-out hover:scale-110
           "
         />
-        <h2 class="text-primary text-center my-1">{{ member.fields.name }}</h2>
-        <h3 class="text-xs text-gray-600 text-center">{{ member.fields.position }}</h3>
+        <h2 class="text-primary dark:text-white text-center my-1">{{ member.fields.name }}</h2>
+        <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ member.fields.position }}</h3>
       </li>
     </ul>
   </div>

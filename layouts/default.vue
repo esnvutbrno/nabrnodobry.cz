@@ -1,11 +1,13 @@
 <template>
-  <div class="h-auto">
+  <div class="h-auto dark:bg-gray-900 dark:text-gray-100">
     <LogoHeader/>
     <Nav />
     <FancyLine />
     <main
-      class="mx-auto max-w-4xl m-4 px-4 lg:px-8 transition-max-w"
-      :class="{'max-w-full m-0 px-0': $route.name === 'map'}"
+      class="
+        mx-auto max-w-4xl m-4 px-4 lg:px-8 transition-max-w
+      "
+      :class="{'max-w-full m-0 px-0 lg:px-0': $route.name === 'map'}"
     >
       <Nuxt />
     </main>

@@ -36,7 +36,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     ['nuxt-leaflet', { /* module options */}],
-
+    '@nuxtjs/color-mode',
   ],
 
   axios: {
@@ -70,5 +70,9 @@ export default {
       });
       return events.items.map(i => `/event/${i.sys.id}`)
     }
+  },
+  
+  colorMode: {
+    classSuffix: ''
   }
 }

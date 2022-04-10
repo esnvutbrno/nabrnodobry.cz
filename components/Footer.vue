@@ -1,8 +1,8 @@
 <template>
   <footer class="bg-primary text-gray-200 min-h-36 flex items-center p-8">
     <div class="
-        max-w-4xl mx-auto w-full flex flex-col sm:flex-row
-        justify-between items-center gap-2
+        max-w-4xl mx-auto w-full flex flex-col md:flex-row
+        justify-between items-center gap-4
       ">
       <a
         class="flex flex-row gap-2 items-center hover:underline"
@@ -18,10 +18,10 @@
           open-sourced with love
           <span class="text-gray-200 text-sm font-mono">{{ time.toLocaleString() }}</span>
         </div>
-
       </a>
-      <span>
-        © 2022
+      <ThemeSwitcher />
+      <span class="">
+         © 2022
       </span>
       <img
         src="@/assets/svg/esn-bu-logo-white.svg"
