@@ -7,7 +7,7 @@
     ">
     <ul class="
       flex flex-col md:flex-row w-1/3 md:w-full
-      md:space-x-2 justify-end
+      md:space-x-2 justify-center
     ">
       <li class="flex items-center justify-end">
         <nuxt-link class="nuxt-link" :to="{name: 'schedule'}">Schedule</nuxt-link>
@@ -22,12 +22,15 @@
     <nuxt-link
       class="
         flex flex-col sm:flex-row justify-center items-center
-        mx-2 md:mx-4 my-2 md:my-0
+        sm:mx-2 md:mx-4 my-2 md:my-0 px-2
+        hover:bg-gray-50
       "
       :to="{name: 'index'}"
       :class="{'hidden md:block md:invisible': $route.path === '/'}"
     >
-      <svg class="w-10 sm:w-12 fill-primary dark:fill-white" viewBox="0 0 82.225755 72.054314">
+      <svg
+          class="w-10 sm:w-12 fill-primary dark:fill-white dark:hover:fill-secondary"
+          viewBox="0 0 82.225755 72.054314">
         <use :xlink:href="require('@/assets/svg/cb.svg') + '#main'"/>
       </svg>
       <div class="md:hidden mt-2 sm:mt-0 sm:ml-2 sm:text-lg text-center sm:text-left">
@@ -36,7 +39,7 @@
     </nuxt-link>
     <ul class="
       flex flex-col md:flex-row w-1/3 md:w-full
-      md:space-x-2 justify-start order-3
+      md:space-x-2 justify-center
     ">
       <li class="flex items-center justify-start">
         <nuxt-link class="nuxt-link" :to="{name: 'map'}">Map</nuxt-link>

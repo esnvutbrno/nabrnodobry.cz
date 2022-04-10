@@ -8,7 +8,7 @@ module.exports = {
         // VUT: #E4002B
         // MUNI: #0000dc
         // MENDELU: #79be15
-        secondary: '#F90093',
+        secondary: '#f90093',
       },
       transitionProperty: {
         'max-w': 'max-width'
