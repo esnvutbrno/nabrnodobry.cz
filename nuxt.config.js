@@ -58,6 +58,9 @@ export default {
     manifest: {
       name: 'NA Brno dobrý 2022',
       short_name: 'NA Brno 2022',
+    },
+    icon: {
+      purpose: 'any',
     }
   },
 
@@ -71,7 +74,6 @@ export default {
       return events.items.map(i => `/event/${i.sys.id}`)
     }
   },
-  
   colorMode: {
     classSuffix: ''
   }

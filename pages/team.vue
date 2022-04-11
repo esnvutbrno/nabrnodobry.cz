@@ -10,7 +10,7 @@
           :asset="head.fields.photo"
           :default="require('~/assets/img/woman-icon.png')"
           class="
-            w-full pb-[100%] rounded-full
+            w-full rounded-full
             transition-transform duration-300 ease-in-out hover:scale-110
           "
         />
@@ -30,7 +30,7 @@
           :asset="member.fields.photo"
           :default="require('~/assets/img/woman-icon.png')"
           class="
-            w-full pb-[100%] rounded-full mx-4
+            w-full rounded-full mx-4
             transition-transform duration-300 ease-in-out hover:scale-110
           "
         />

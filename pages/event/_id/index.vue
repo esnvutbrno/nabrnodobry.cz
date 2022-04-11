@@ -8,11 +8,11 @@
       < back to schedule
     </button>
 
-    <h1 class="text-4xl py-2 mb-2 border-b-4 border-secondary text-primary">
+    <h1 class="text-4xl py-2 mb-2 border-b-4 border-secondary text-primary dark:text-white font-bold">
       {{ event.fields.title }}
     </h1>
 
-    <p v-if="event.fields.description" class="prose">
+    <p v-if="event.fields.description" class="prose dark:prose-invert">
       <RichTextRenderer
         :document="event.fields.description"
         :nodeRenderers="{'embedded-asset-block': (node, key, c, next) => `${node} ${key}`}"

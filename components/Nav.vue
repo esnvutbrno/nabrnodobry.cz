@@ -4,7 +4,7 @@
       border-primary border-b-4 border-opacity-70
       font-bold text-sm md:text-lg uppercase text-primary font-esn
       dark:bg-primary dark:text-white
-      z-[1111]
+      z-[1111] select-none
     ">
     <ul class="
       flex flex-col md:flex-row w-1/3 md:w-full

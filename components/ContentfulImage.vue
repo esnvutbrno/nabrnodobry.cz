@@ -1,8 +1,9 @@
 <template>
-  <div
-    :style="{backgroundImage: `url(${url})`}"
-    class="bg-contain"
-  ></div>
+<!--  <div-->
+<!--    :style="{backgroundImage: `url(${url})`}"-->
+<!--    class="bg-contain"-->
+<!--  ></div>-->
+  <img :src="url" width="180" height="180">
 </template>
 
 <script>
@@ -15,7 +16,7 @@ export default {
         return this.default || '';
       }
       // &f=face
-      return `${this.asset.fields.file.url}?fm=jpg&fl=progressive&f=faces&fit=thumb&w=360&h=360`
+      return `${this.asset.fields.file.url}?fm=jpg&fl=progressive&f=faces&fit=thumb&w=180&h=180`
     }
   }
 }

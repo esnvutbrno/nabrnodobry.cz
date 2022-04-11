@@ -1,14 +1,16 @@
 <template>
   <!--    :style="{transform: `scaleY(${mapNumber(collapseRatio, 1, 0, .2, 1)})`}"-->
   <Transition name="slide-down">
-    <header ref="header"
-            v-if="$route.path === '/'"
-            class="
-            transition-opacity
-            min-h-[20vh] md:min-h-[40vh] lg:min-h-[60vh]
+    <header
+      ref="header"
+      v-if="$route.path === '/'"
+      class="
+        transition-opacity
+        min-h-[20vh] md:min-h-[40vh] lg:min-h-[60vh]
 
-            bg-primary origin-bottom
-            flex flex-row justify-center items-center">
+        bg-primary origin-bottom select-none
+        flex flex-row justify-center items-center
+      ">
 
       <div class="
         relative
