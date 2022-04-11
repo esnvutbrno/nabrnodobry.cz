@@ -8,10 +8,16 @@
       < back to schedule
     </button>
 
-    <h1 class="text-xl py-2 border-b-4 border-secondary">
+    <h1 class="text-4xl py-2 mb-2 border-b-4 border-secondary text-primary">
       {{ event.fields.title }}
-
     </h1>
+
+    <p v-if="event.fields.description" class="prose">
+      <RichTextRenderer
+        :document="event.fields.description"
+        :nodeRenderers="{'embedded-asset-block': (node, key, c, next) => `${node} ${key}`}"
+      ></RichTextRenderer>
+    </p>
 
   </div>
 </template>
@@ -22,7 +28,7 @@ import RichTextRenderer from "contentful-rich-text-vue-renderer";
 import {createClient} from "@/plugins/contentful";
 
 export default {
-  name: "EventDetail",
+  name: "EventDetailPage",
   components: {RichTextRenderer},
   async asyncData({params}) {
     const client = createClient();

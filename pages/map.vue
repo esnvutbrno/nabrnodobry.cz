@@ -10,10 +10,11 @@
         :zoom=14
         :center="[49.1996122, 16.59]"
       >
-        <!--        <l-tile-layer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>-->
-        <!--        <l-tile-layer url="https://mapserver.mapy.cz/turist-m/{z}-{x}-{y}"></l-tile-layer>-->
+<!--                <l-tile-layer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>-->
+<!--                <l-tile-layer url="https://mapserver.mapy.cz/turist-m/{z}-{x}-{y}"></l-tile-layer>-->
         <!--        http://stamen-tiles-a.a.ssl.fastly.net/toner-lite/12/657/1591@2x.png-->
-        <l-tile-layer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"></l-tile-layer>
+        <l-tile-layer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"></l-tile-layer>
+<!--        <l-tile-layer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"></l-tile-layer>-->
 
         <l-marker
           v-for="p in places"
@@ -63,5 +64,9 @@ article {
 .leaflet-popup-content-wrapper {
   /*background: pink;*/
   /*color: red;*/
+}
+.dark .leaflet-tile-container img {
+  /* inspired by https://github.com/xtk93x/Leaflet.TileLayer.ColorFilter */
+  filter: hue-rotate(180deg) brightness(120%) invert(100%);
 }
 </style>

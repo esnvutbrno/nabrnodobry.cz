@@ -1,12 +1,12 @@
 <template>
   <article>
-    sponsors
+    contact
   </article>
 </template>
 
 <script>
 export default {
-  name: "SponsorsPage"
+  name: "ContactPage"
 }
 </script>
 

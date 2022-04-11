@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-[40vh] flex flex-col justify-center items-center gap-8 px-8">
-    <h1 class="font-esn text-primary font-bold text-5xl text-center">
+    <h1 class="font-esn text-primary font-bold font-4xl md:text-5xl text-center">
       {{ error.message }}
     </h1>
     <span class="font-mono text-xs text-gray-500">
