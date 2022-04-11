@@ -11,11 +11,13 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/gtm": "^2.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "contentful": "^9.1.18",
     "contentful-cli": "^1.12.9",
     "contentful-rich-text-vue-renderer": "^2.0.1",
     "core-js": "^3.19.3",
+    "lodash": "^4.17.21",
     "nuxt": "^2.15.8",
     "nuxt-leaflet": "^0.0.27",
     "tailwind-group-even-odd": "^1.0.0",

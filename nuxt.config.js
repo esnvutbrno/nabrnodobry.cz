@@ -37,6 +37,7 @@ export default {
     '@nuxtjs/axios',
     ['nuxt-leaflet', { /* module options */}],
     '@nuxtjs/color-mode',
+    '@nuxtjs/gtm',
   ],
 
   axios: {
@@ -76,5 +77,9 @@ export default {
   },
   colorMode: {
     classSuffix: ''
+  },
+  gtm: {
+    id: 'GTM-595F8QZ',
+    pageTracking: true,
   }
 }
