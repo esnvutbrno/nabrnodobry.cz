@@ -62,6 +62,11 @@ export default {
 
     return {heads: heads.items, members: members.items}
   },
+  head() {
+    return {
+      title: 'Team'
+    };
+  },
 };
 </script>
 

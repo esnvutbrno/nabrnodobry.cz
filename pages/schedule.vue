@@ -51,5 +51,10 @@ export default {
       items: events.items,
     }
   },
+  head() {
+    return {
+      title: 'Schedule'
+    };
+  },
 };
 </script>

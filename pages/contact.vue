@@ -6,7 +6,12 @@
 
 <script>
 export default {
-  name: "ContactPage"
+  name: "ContactPage",
+  head() {
+    return {
+      title: 'Contact'
+    };
+  },
 }
 </script>
 

@@ -7,7 +7,13 @@
 
 <script>
 export default {
-  name: "AboutPage"
+  name: "AboutPage",
+
+  head() {
+    return {
+      title: 'About'
+    };
+  },
 }
 </script>
 

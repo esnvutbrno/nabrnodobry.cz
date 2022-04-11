@@ -49,7 +49,12 @@ export default {
       // order: '-sys.createdAt',
     });
     return {places: places.items}
-  }
+  },
+  head() {
+    return {
+      title: 'Map'
+    };
+  },
 }
 </script>
 

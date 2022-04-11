@@ -9,6 +9,11 @@
 
 export default {
   name: "FAQPage",
+  head() {
+    return {
+      title: 'FAQ'
+    };
+  },
 }
 </script>
 

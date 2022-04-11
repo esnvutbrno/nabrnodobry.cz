@@ -37,6 +37,11 @@ export default {
 
     return {event};
   },
+  head() {
+    return {
+      title: this.event.fields.title
+    };
+  },
   methods: {
     goBack() {
       window.history.length > 1 ?

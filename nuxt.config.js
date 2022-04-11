@@ -5,6 +5,7 @@ export default {
 
   head: {
     title: 'NA Brno dobrý 2022',
+    titleTemplate: '%s · NA Brno dobrý 2022',
     htmlAttrs: {
       lang: 'en'
     },
