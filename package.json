@@ -18,6 +18,7 @@
     "contentful-rich-text-vue-renderer": "^2.0.1",
     "core-js": "^3.19.3",
     "lodash": "^4.17.21",
+    "luxon": "^2.3.1",
     "nuxt": "^2.15.8",
     "nuxt-leaflet": "^0.0.27",
     "tailwind-group-even-odd": "^1.0.0",
