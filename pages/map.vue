@@ -1,12 +1,17 @@
 <template>
-  <article class="flex flex-row justify-between">
+  <article class="
+      flex-grow flex flex-row items-stretch justify-between
+      bg-gray-200 dark:bg-gray-800
+    ">
     <FancyLine
-      class="w-8 border-b-0 bg-repeat-y h-full"
+      class="w-8 border-b-0 bg-repeat-y h-auto"
+      :class="{'h-8': false}"
       style="background-size: 70% auto;"
       :style="{backgroundImage: `url(${require('~/assets/svg/line1-vertical.svg')})`}"
     />
     <client-only>
       <l-map
+        class="h-auto-important"
         :zoom=14
         :center="[49.1996122, 16.59]"
       >
@@ -26,7 +31,8 @@
       </l-map>
     </client-only>
     <FancyLine
-      class="w-8 border-b-0 bg-repeat-y h-full transition-opacity"
+      class="w-8 border-b-0 bg-repeat-y h-auto"
+      :class="{'h-8': false}"
       style="background-size: 70% auto;"
       :style="{backgroundImage: `url(${require('~/assets/svg/line1-vertical.svg')})`}"
     />
@@ -58,12 +64,12 @@ export default {
 }
 </script>
 
-<style scoped>
-article {
-  height: 80vh;
+<style>
+.h-auto-important {
+  height: auto !important;
 }
-</style>
 
+</style>
 <style>
 .leaflet-popup-tip,
 .leaflet-popup-content-wrapper {

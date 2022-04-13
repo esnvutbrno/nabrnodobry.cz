@@ -1,19 +1,22 @@
 <template>
-  <div class="h-auto dark:bg-gray-900 dark:text-gray-100">
+  <div class="min-h-screen dark:bg-gray-900 dark:text-gray-100 flex flex-col">
     <LogoHeader/>
     <Nav />
     <FancyLine />
     <main
       class="
-        mx-auto max-w-4xl m-4 px-4 lg:px-8 transition-max-w
+        mx-auto max-w-4xl w-full m-4 px-4 lg:px-8
+        transition-max-w flex-grow flex flex-col
       "
       :class="{'max-w-full m-0 px-0 lg:px-0': $route.name === 'map'}"
     >
       <Nuxt />
     </main>
     <FancyLine class="border-t-4 border-b-0"/>
-    <InstagramFeed v-if="$route.path !== '/map'"/>
-    <Footer />
+    <template v-if="$route.name !== 'map'">
+      <InstagramFeed v-if=""/>
+      <Footer />
+    </template>
   </div>
 </template>
 
