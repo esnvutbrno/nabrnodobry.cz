@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{371:function(t,n,e){"use strict";e.r(n);var c={name:"ContactPage",head:function(){return{title:"Contact"}}},o=e(12),component=Object(o.a)(c,(function(){var t=this,n=t.$createElement;return(t._self._c||n)("article",[t._v("\n  contact\n")])}),[],!1,null,"5689b412",null);n.default=component.exports}}]);
