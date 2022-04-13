@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{372:function(e,n,t){"use strict";t.r(n);var c={name:"FAQPage",head:function(){return{title:"FAQ"}}},r=t(12),component=Object(r.a)(c,(function(){var e=this,n=e.$createElement;return(e._self._c||n)("article",[e._v("\n  FAQ\n")])}),[],!1,null,"ae0a1ac4",null);n.default=component.exports}}]);
