@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="space-y-4 lg:space-y-8">
     <ul class="flex flex-row flex-wrap justify-center">
       <li v-for="head in heads"
           class="
@@ -19,29 +19,29 @@
       </li>
     </ul>
 
-    <div class="border-secondary border-b-4 my-8"></div>
+    <div class="border-secondary border-b-4 my-4"></div>
 
-    <div v-for="(members, team) in teams">
-      <h2>{{ team }}</h2>
-      <ul class="flex flex-row flex-wrap justify-center">
-        <li v-for="member in members" class="
+      <div v-for="(members, team) in teams">
+        <h2 class="text-2xl text-center font-bold">{{ team }}</h2>
+        <ul class="flex flex-row flex-wrap justify-center">
+          <li v-for="member in members" class="
           p-4 font-bold flex flex-col items-center justify-between
           w-1/3 sm:w-1/5 md:w-1/6
       ">
-          <ContentfulImage
-            :asset="member.fields.photo"
-            :default="require('~/assets/img/woman-icon.png')"
-            class="
+            <ContentfulImage
+              :asset="member.fields.photo"
+              :default="require('~/assets/img/woman-icon.png')"
+              class="
               w-full rounded-full mx-4
               transition-transform duration-300 ease-in-out hover:scale-110
             "
-          />
-          <h2 class="text-primary dark:text-white text-center my-1">{{ member.fields.name }}</h2>
-          <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ member.fields.position }}</h3>
-        </li>
-      </ul>
+            />
+            <h2 class="text-primary dark:text-white text-center my-1">{{ member.fields.name }}</h2>
+            <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ member.fields.position }}</h3>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -60,13 +60,13 @@ export default {
     });
     const members = await client.getEntries({
       content_type: 'teamMember',
-      'fields.isHead': false,
-      order: 'fields.order'
+      // 'fields.isHead': false,
+      order: 'fields.order,fields.isHead'
     });
 
     return {
       heads: heads.items,
-      teams: _.groupBy(members.items, 'fields.team'),
+      teams: _.groupBy(_.filter(members.items, 'fields.team'), 'fields.team'),
     }
   },
   head() {
