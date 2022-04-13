@@ -2,7 +2,7 @@
   <section class="bg-primary">
     <a class="text-3xl py-8 text-white font-medium text-center block hover:underline" href="">
       <h3>
-        #nabrnodobry
+        #nabrnodobry2022
       </h3>
     </a>
     <div class="max-w-4xl mx-auto flex flex-row flex-wrap px-4 sm:px-8">

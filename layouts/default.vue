@@ -12,7 +12,7 @@
       <Nuxt />
     </main>
     <FancyLine class="border-t-4 border-b-0"/>
-    <InstagramFeed />
+    <InstagramFeed v-if="$route.path !== '/map'"/>
     <Footer />
   </div>
 </template>

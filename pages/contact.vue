@@ -1,6 +1,6 @@
 <template>
   <article>
-    contact
+    <h1 class="text-2xl">Jirikovo</h1>
   </article>
 </template>
 
