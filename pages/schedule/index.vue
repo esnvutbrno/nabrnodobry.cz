@@ -1,10 +1,16 @@
 <template>
-  <article class="max-w-2xl mx-auto">
+  <article>
     <section v-for="(data, i) in days">
       <div
         class="flex flex-row items-center"
         :class="{'flex-row-reverse': i % 2}"
       >
+<!--        <nuxt-link-->
+<!--          class="uppercase font-bold text-3xl py-4 inline-block"-->
+<!--          :to="{name: 'schedule-day', params: {day: data[1][0].fields.dayName}}"-->
+<!--        >-->
+<!--          {{ data[1][0].fields.dayName }}-->
+<!--        </nuxt-link>-->
         <h2 class="
           uppercase font-bold text-3xl
           py-4 inline-block
@@ -14,14 +20,16 @@
       <ul class="
         list-disc list-outside my-4 md:my-8 mx-auto w-full max-w-lg
         divide-y sm:divide-y-0
-        flex flex-col gap-y-1 sm:gap-y-0
+        flex flex-col gap-y-1
       ">
         <li
           class="flex flex-col sm:flex-row group cursor-pointer"
           v-for="e in data[1]"
           @click="$router.push({name: 'event-id', params: {id: e.sys.id}})"
         >
-          <span class="lg:text-lg flex-grow sm:flex-grow-0">{{ e.fields.title }}</span>
+          <span class="lg:text-lg flex-grow sm:flex-grow-0 text-primary font-bold">
+            {{ e.fields.title }}
+          </span>
           <span class="
             flex-grow group-odd:bg-gray-100 h-0.5 rounded-full self-center
             mx-4 hidden sm:block

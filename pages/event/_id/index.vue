@@ -8,17 +8,41 @@
       < back to schedule
     </button>
 
-    <h1 class="text-4xl py-2 mb-2 border-b-4 border-secondary text-primary dark:text-white font-bold">
-      {{ event.fields.title }}
+    <h1 class="py-4 mb-4 border-b-4 border-secondary text-primary dark:text-white
+        font-bold flex flex-row justify-between items-center">
+      <span class="text-4xl">{{ event.fields.title }}</span>
+      <span class="text-3xl">
+        {{ dayName }}, {{ fromTime }} <template v-if="toTime">– {{ toTime }}</template></span>
     </h1>
 
-    <p v-if="event.fields.description" class="prose dark:prose-invert">
-      <RichTextRenderer
-        :document="event.fields.description"
-        :nodeRenderers="{'embedded-asset-block': (node, key, c, next) => `${node} ${key}`}"
-      ></RichTextRenderer>
-    </p>
+    <div class="flex flex-row justify-between gap-x-4">
+      <p class="w-2/3 prose prose-p:text-justify dark:prose-invert">
+        <RichTextRenderer
+          v-if="event.fields.description"
+          :document="event.fields.description"
+          :nodeRenderers="{'embedded-asset-block': (node, key, c, next) => `${node} ${key}`}"
+        ></RichTextRenderer>
+      </p>
 
+      <div class="w-1/3">
+        <img
+          v-if="event.fields.photo"
+          :src="event.fields.photo.fields.file.url"
+          :width="event.fields.photo.fields.file.details.image.width"
+          :height="event.fields.photo.fields.file.details.image.height"
+          alt=""
+        >
+        <div
+          v-if="event.fields.place && event.fields.place.fields.title"
+          class="my-4 gap-2 flex flex-row items-center justify-center"
+        >
+          <img src="../../../assets/svg/place.svg" alt="" class="h-8 w-8">
+          <span class="text-lg font-bold">
+            {{ event.fields.place.fields.title }}
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -26,6 +50,12 @@
 
 import RichTextRenderer from "contentful-rich-text-vue-renderer";
 import {createClient} from "@/plugins/contentful";
+
+const {DateTime, Duration, Settings} = require("luxon");
+
+Settings.defaultLocale = "en-US";
+
+DateTime.defaultZone = 'en-US';
 
 export default {
   name: "EventDetailPage",
@@ -35,7 +65,21 @@ export default {
 
     const event = await client.getEntry(params.id)
 
-    return {event};
+    const when = DateTime.fromISO(event.fields.when);
+    const dayName = when.startOf('day').toFormat('ccc')
+    const fromTime = when.toFormat('t').replace(':00', '')
+    const toTime = event.fields.length ?
+      when.plus(Duration.fromObject({minutes: event.fields.length})).toFormat('t')
+        .replace(':00', '') :
+      ''
+    ;
+
+    return {
+      event,
+      dayName,
+      fromTime,
+      toTime,
+    };
   },
   head() {
     return {
