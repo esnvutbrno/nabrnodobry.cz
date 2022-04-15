@@ -14,7 +14,7 @@
         <nuxt-link class="nuxt-link" :to="{name: 'schedule'}">Schedule</nuxt-link>
       </li>
       <li class="flex items-center justify-end">
-        <nuxt-link class="nuxt-link" :to="{name: 'about'}">About NA</nuxt-link>
+        <nuxt-link class="nuxt-link whitespace-nowrap" :to="{name: 'about'}">About NA</nuxt-link>
       </li>
       <li class="flex items-center justify-end">
         <nuxt-link class="nuxt-link" :to="{name: 'faq'}">FAQ</nuxt-link>
@@ -31,7 +31,8 @@
     >
       <svg
           class="w-10 sm:w-12 fill-primary dark:fill-white dark:hover:fill-secondary"
-          viewBox="0 0 82.225755 72.054314">
+          viewBox="0 0 82.225755 72.054314"
+      >
         <use :xlink:href="require('@/assets/svg/cb.svg') + '#main'"/>
       </svg>
       <div class="md:hidden mt-2 sm:mt-0 sm:ml-2 sm:text-lg text-center sm:text-left">

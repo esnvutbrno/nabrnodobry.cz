@@ -1,41 +1,38 @@
 <template>
   <div>
-    <article class="text-lg text-justify" v-for="i in new Array(5)">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam
-      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.
+    <div class="text-center text-2xl sm:text-4xl text-primary dark:text-white font-bold my-10 sm:my-20 block">
+      Brno gonna be dobrý in <br>
+      <Countdown
+        :end-time="startTime"
+        class=""
+      />
+    </div>
 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam
-      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.
+<!--    -->
+<!--    <article class="text-lg text-justify" v-for="i in new Array(5)">-->
+<!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam-->
+<!--      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.-->
 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam
-      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.
-    </article>
+<!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam-->
+<!--      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.-->
+
+<!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam-->
+<!--      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.-->
+<!--    </article>-->
   </div>
 </template>
 
 <script>
-import windowScrollPosition from "~/plugins/scroll";
-import {map} from '~/utils/numbers'
+const {DateTime, Duration, Settings} = require("luxon");
 
+Settings.defaultLocale = "en-US";
+
+DateTime.defaultZone = 'en-US';
 export default {
   name: "IndexPage",
-  data: () => ({headerHeight: 0}),
-  mixins: [windowScrollPosition('scrollPosition')],
-  methods: {
-    mapNumber: (v, in1, in2, out1, out2) => map(v, in1, in2, out1, out2)
-  },
-  computed: {
-    collapseRatio() {
-      return map(
-        (this.scrollPosition[1] / this.headerHeight),
-        0, 0.8,
-        0, 1,
-      );
-    }
-  },
-  mounted() {
-    // this.headerHeight = this.$refs.header.offsetHeight;
-  }
+  data:() => ({
+    startTime: DateTime.fromObject({year: 2022, month: 5, day: 12, hour: 18})
+  })
 }
 </script>
 
