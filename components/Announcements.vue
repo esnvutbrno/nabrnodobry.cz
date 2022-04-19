@@ -25,6 +25,15 @@
             after:bg-gradient-to-t after:to-transparent after:from-gray-100 dark:after:from-gray-800
           "
         />
+        <div class="flex flex-row flex-wrap">
+          <div v-for="p in a.fields.photos" class="w-1/2">
+            <img
+              :src="p.fields.file.url + '?w=200'"
+              :width="p.fields.file.details.image.width"
+              :height="p.fields.file.details.image.height"
+            >
+          </div>
+        </div>
         <div class="flex flex-row justify-between items-center text-gray-600 py-1">
           <a class="hover:underline text-primary dark:text-white text-sm"
              :class="{'invisible': !a.fields.link}" :href="a.fields.link">
