@@ -12,7 +12,6 @@ h1 {
 <template>
   <article class="max-w-2xl mx-auto">
     <h1 class="text-center text-6xl text-primary my-4 font-bold dark:text-white">NA Brno dobrý 2022 FAQ</h1>
-
     <h2 class="
           uppercase font-bold text-2xl
           py-3 inline-block
@@ -40,8 +39,7 @@ h1 {
       <h1><nuxt-link :to="{ name: 'faq',hash:'#jmeno_zalozky6'}">neifnofiewg</nuxt-link></h1>
     </ul>
 
-
-
+  <hr />
 
     <h1><p><a id="jmeno_zalozky1">neifnofiewg</a></p></h1>
     <p>Ye on properly handsome returned throwing am no whatever. In without wishing he of picture no exposed talking minutes. Curiosity continual belonging offending so explained it exquisite. Do remember to followed yourself material mr recurred carriage. High drew west we no or at john. About or given on witty event. Or sociable up material bachelor bringing landlord confined. Busy so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood denoting securing be on perceive my laughing so.</p>
