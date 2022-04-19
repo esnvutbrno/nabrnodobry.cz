@@ -11,10 +11,7 @@ h1 {
 </style>
 <template>
   <article class="max-w-2xl mx-auto">
-    <h2 style="text-align: center"
-      class="
-          uppercase font-bold text-2xl
-       ">NABrnoDobry FAQ</h2><br>
+    <h1 class="text-center text-6xl text-primary my-4 font-bold dark:text-white">NA Brno dobrý 2022 FAQ</h1>
 
     <h2 class="
           uppercase font-bold text-2xl
