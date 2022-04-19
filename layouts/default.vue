@@ -5,10 +5,10 @@
     <FancyLine />
     <main
       class="
-        mx-auto max-w-4xl w-full m-4 pt-4 pb-8 lg:px-8
+        mx-auto max-w-4xl w-full p-2 mt-4 pb-8 lg:px-8
         transition-max-w flex-grow flex flex-col
       "
-      :class="{'max-w-full m-0 px-0 lg:px-0': $route.name === 'map'}"
+      :class="{'max-w-full m-0 p-0 mt-0 pb-0 lg:px-0': $route.name === 'map'}"
     >
       <Nuxt />
     </main>

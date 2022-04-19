@@ -19,21 +19,26 @@
       </div>
       <ul class="
         list-disc list-outside my-4 md:my-8 mx-auto w-full max-w-lg
-        divide-y sm:divide-y-0
-        flex flex-col gap-y-1
+        flex flex-col gap-y-2
       ">
         <li
-          class="flex flex-col sm:flex-row group cursor-pointer"
+          class="
+            p-2 flex flex-col sm:flex-row group cursor-pointer
+            odd:bg-gray-100
+            odd:hover:bg-gray-200 hover:bg-gray-100
+          "
           v-for="e in data[1]"
           @click="$router.push({name: 'event-id', params: {id: e.sys.id}})"
         >
           <span class="lg:text-lg flex-grow sm:flex-grow-0 text-primary font-bold dark:text-white">
             {{ e.fields.title }}
           </span>
-          <span class="
-            flex-grow group-odd:bg-gray-100 h-0.5 rounded-full self-center
-            mx-4 hidden sm:block
-          "></span>
+
+          <span class="flex-grow"></span>
+<!--          <span class="-->
+<!--            flex-grow group-odd:bg-gray-100 h-0.5 rounded-full self-center-->
+<!--            mx-4 hidden sm:block-->
+<!--          "></span>-->
 
           <span class="self-end flex flex-row gap-1 items-center mr-0 sm:mr-2"
                 v-if="e.fields.place && e.fields.place.fields.title">
