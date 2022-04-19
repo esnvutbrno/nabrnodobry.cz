@@ -6,7 +6,7 @@
       <div class="flex-grow h-1 bg-secondary rounded-full"></div>
     </div>
     <div class="
-      columns-[12rem] gap-2
+      columns-[12rem] md:columns-[16rem] gap-2
     ">
       <div
         v-for="a in announcements"
@@ -20,17 +20,17 @@
           v-if="a.fields.content"
           v-html="$md.render(a.fields.content)"
           class="
-            prose prose-sm dark:prose-invert max-h-40 overflow-hidden relative pb-4
+            prose prose-sm md:prose-base dark:prose-invert max-h-40 overflow-hidden relative pb-4
             after:absolute after:bottom-0 after:h-10 after:w-full
             after:bg-gradient-to-t after:to-transparent after:from-gray-100 dark:after:from-gray-800
           "
         />
-        <div class="flex flex-row justify-between text-xs text-gray-600">
-          <a class="hover:underline text-primary dark:text-white"
+        <div class="flex flex-row justify-between items-center text-gray-600 py-1">
+          <a class="hover:underline text-primary dark:text-white text-sm"
              :class="{'invisible': !a.fields.link}" :href="a.fields.link">
             Go to Message
           </a>
-          <time :title="a.fields.dateLocal">{{ a.fields.dateRel }}</time>
+          <time class="text-xs" :title="a.fields.dateLocal">{{ a.fields.dateRel }}</time>
         </div>
       </div>
     </div>
@@ -51,6 +51,7 @@ export default {
     const announcements = await client.getEntries({
       content_type: 'announcement',
       order: '-sys.createdAt',
+      'fields.content[exists]': true,
       limit: 10,
     })
 
@@ -64,11 +65,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.limited {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-</style>
