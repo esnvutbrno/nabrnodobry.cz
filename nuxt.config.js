@@ -46,7 +46,17 @@ export default {
     baseURL: '/',
   },
 
-  build: {},
+  build: {
+    extend(config, {isDev, isClient}) {
+      // config.module.rules.push(
+      //   {
+      //     enforce: 'pre',
+      //     test: /\.gpx/i,
+      //     use: 'raw-loader',
+      //   }
+      // )
+    }
+  },
 
   router: {
     base: process.env.NUXT_ROUTER_BASE_URL || '/'
