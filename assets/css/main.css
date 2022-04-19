@@ -1,7 +1,6 @@
-/*@tailwind base;*/
-/*@tailwind components;*/
-/*@tailwind utilities;*/
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .page-enter-active,
 .page-leave-active {
@@ -14,4 +13,10 @@
 
 .font-esn {
   font-family: "Kelson Sans", sans-serif;
+}
+
+@layer utilities {
+  .black-to-white {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(4223%) hue-rotate(111deg) brightness(116%) contrast(100%);
+  }
 }
