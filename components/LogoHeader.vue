@@ -37,7 +37,7 @@
             </svg>
           </div>
           <!-- center star -->
-          <div class="h-full w-1/5 flex flex-col justify-end self-end mb-[3%]">
+          <div class="h-full w-1/5 flex flex-col justify-end self-end mb-[3%] max-w-[7%]">
             <svg class="w-full fill-white" viewBox="0 0 99.534409 94.978874">
               <use :xlink:href="require('@/assets/svg/cb.svg') + '#main'"/>
             </svg>

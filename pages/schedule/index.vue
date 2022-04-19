@@ -27,7 +27,7 @@
           v-for="e in data[1]"
           @click="$router.push({name: 'event-id', params: {id: e.sys.id}})"
         >
-          <span class="lg:text-lg flex-grow sm:flex-grow-0 text-primary font-bold">
+          <span class="lg:text-lg flex-grow sm:flex-grow-0 text-primary font-bold dark:text-white">
             {{ e.fields.title }}
           </span>
           <span class="
@@ -37,14 +37,14 @@
 
           <span class="self-end flex flex-row gap-1 items-center mr-0 sm:mr-2"
                 v-if="e.fields.place && e.fields.place.fields.title">
-            <img src="~/assets/svg/place.svg" alt="Place" class="w-4 w-4 stroke-primary">
+            <img src="~/assets/svg/place.svg" alt="Place" class="w-4 w-4 dark:black-to-white">
             {{ e.fields.place.fields.title }}
           </span>
 
-          <time class="self-end flex flex-row gap-1 items-center min-w-auto sm:min-w-[8rem]">
-            <img src="~/assets/svg/time.svg" alt="Time" class="w-3 w-3 stroke-primary">
+          <time class="self-end flex flex-row gap-1 items-center min-w-auto sm:min-w-[10rem]">
+            <img src="~/assets/svg/time.svg" alt="Time" class="w-3 w-3 dark:black-to-white">
             {{ e.fields.fromTime }}
-            <template v-if="e.fields.toTime">– {{ e.fields.toTime }}</template>
+            <span v-if="e.fields.toTime" class="text-sm text-gray-500">– {{ e.fields.toTime }}</span>
           </time>
         </li>
       </ul>

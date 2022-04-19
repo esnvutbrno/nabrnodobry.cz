@@ -82,5 +82,8 @@ export default {
   gtm: {
     id: 'GTM-595F8QZ',
     pageTracking: true,
+  },
+  tailwind: {
+    cssPath: '~/assets/css/main.css'
   }
 }
