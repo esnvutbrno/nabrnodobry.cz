@@ -5,12 +5,12 @@
         class="flex flex-row items-center"
         :class="{'flex-row-reverse': i % 2}"
       >
-<!--        <nuxt-link-->
-<!--          class="uppercase font-bold text-3xl py-4 inline-block"-->
-<!--          :to="{name: 'schedule-day', params: {day: data[1][0].fields.dayName}}"-->
-<!--        >-->
-<!--          {{ data[1][0].fields.dayName }}-->
-<!--        </nuxt-link>-->
+        <!--        <nuxt-link-->
+        <!--          class="uppercase font-bold text-3xl py-4 inline-block"-->
+        <!--          :to="{name: 'schedule-day', params: {day: data[1][0].fields.dayName}}"-->
+        <!--        >-->
+        <!--          {{ data[1][0].fields.dayName }}-->
+        <!--        </nuxt-link>-->
         <h2 class="
           uppercase font-bold text-3xl
           py-4 inline-block
@@ -24,8 +24,9 @@
         <li
           class="
             p-2 flex flex-col sm:flex-row group cursor-pointer
-            odd:bg-gray-100
-            odd:hover:bg-gray-200 hover:bg-gray-100
+            odd:bg-gray-100 odd:hover:bg-gray-200
+            hover:bg-gray-100
+            dark:odd:bg-gray-800 dark:hover:bg-gray-800 dark:odd:hover:bg-gray-700
           "
           v-for="e in data[1]"
           @click="$router.push({name: 'event-id', params: {id: e.sys.id}})"
@@ -35,10 +36,10 @@
           </span>
 
           <span class="flex-grow"></span>
-<!--          <span class="-->
-<!--            flex-grow group-odd:bg-gray-100 h-0.5 rounded-full self-center-->
-<!--            mx-4 hidden sm:block-->
-<!--          "></span>-->
+          <!--          <span class="-->
+          <!--            flex-grow group-odd:bg-gray-100 h-0.5 rounded-full self-center-->
+          <!--            mx-4 hidden sm:block-->
+          <!--          "></span>-->
 
           <span class="self-end flex flex-row gap-1 items-center mr-0 sm:mr-2"
                 v-if="e.fields.place && e.fields.place.fields.title">
@@ -61,12 +62,8 @@
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 import {createClient} from '~/plugins/contentful.js';
 import _ from 'lodash'
+import {DateTime, Duration} from "@/utils/date";
 
-const {DateTime, Duration, Settings} = require("luxon");
-
-Settings.defaultLocale = "en-US";
-
-DateTime.defaultZone = 'en-US';
 
 export default {
   name: "SchedulePage",

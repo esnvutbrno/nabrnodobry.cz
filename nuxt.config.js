@@ -39,6 +39,7 @@ export default {
     ['nuxt-leaflet', { /* module options */}],
     '@nuxtjs/color-mode',
     '@nuxtjs/gtm',
+    '@nuxtjs/markdownit'
   ],
 
   axios: {
@@ -95,5 +96,11 @@ export default {
   },
   tailwind: {
     cssPath: '~/assets/css/main.css'
+  },
+  markdownit: {
+    runtime: true,
+    preset: 'default',
+    linkify: true,
+    breaks: true,
   }
 }

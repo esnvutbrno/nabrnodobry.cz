@@ -8,6 +8,8 @@
       />
     </div>
 
+    <Announcements />
+
 <!--    -->
 <!--    <article class="text-lg text-justify" v-for="i in new Array(5)">-->
 <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam-->
