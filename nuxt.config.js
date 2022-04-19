@@ -24,7 +24,9 @@ export default {
     '@/assets/css/main.css',
   ],
 
-  plugins: [],
+  plugins: [
+    {src: '~/plugins/pwa-update.js', mode: 'client'},
+  ],
 
   components: true,
 
