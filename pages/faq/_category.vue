@@ -1,14 +1,14 @@
 <template>
   <article>
     <ul class="
-        font-medium text-gray-800
+        font-medium text-gray-800 dark:text-gray-100 text-lg
         flex flex-wrap flex-row justify-around md:justify-center items-center
     ">
       <li class="inline-block w-1/2 md:w-auto text-center" v-for="g in categories">
         <nuxt-link
           :to="{name: 'faq-category', params: {category: g.slug}}"
           class="
-            inline-block p-1 md:p-4 hover:text-primary
+            inline-block p-1 md:p-4 hover:text-primary dark:hover:text-secondary
            "
         >{{ g.title }}
         </nuxt-link>
@@ -20,7 +20,7 @@
         <nuxt-link
           class="
             text-lg p-4 block
-            hover:bg-gray-100
+            hover:bg-gray-100 dark:hover:bg-gray-800
             flex flex-row items-center justify-between
           "
           :to="{hash: q.sys.id}"
@@ -33,13 +33,13 @@
           </div>
           <img
             src="../../assets/svg/question-mark.svg"
-            class="h-6 w-6 black-to-primary hidden sm:block"
+            class="h-6 w-6 black-to-primary dark:black-to-white hidden sm:block"
             aria-hidden="true" alt="Question"
           >
         </nuxt-link>
         <div
           v-show="active === q.sys.id"
-          class="p-4 bg-gray-50 prose mx-auto prose-img:my-2"
+          class="p-4 bg-gray-50 dark:bg-gray-800 prose dark:prose-invert mx-auto prose-img:my-2"
         >
           <RichTextRenderer
             v-if="q.fields.answer"
@@ -130,7 +130,11 @@ export default {
 
 <style scoped>
 .nuxt-link-active {
-  @apply text-primary border-primary;
+  @apply text-primary dark:text-secondary;
+}
+
+.nuxt-link-active img {
+  @apply dark:black-to-secondary;
 }
 
 p:empty {

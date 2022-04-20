@@ -11,7 +11,7 @@
       <div
         v-for="a in announcements"
         class="
-          p-1.5 mb-2 flex flex-col justify-between bg-gray-100 rounded
+          mb-2 flex flex-col justify-between bg-gray-100 rounded
           break-inside-avoid-column
           dark:bg-gray-800
         "
@@ -20,21 +20,22 @@
           v-if="a.fields.content"
           v-html="$md.render(a.fields.content)"
           class="
-            prose prose-sm md:prose-base dark:prose-invert max-h-40 overflow-hidden relative pb-4
-            after:absolute after:bottom-0 after:h-10 after:w-full
+            prose prose-sm md:prose-base dark:prose-invert max-h-40 overflow-hidden relative
+            p-2
+            after:absolute after:bottom-0 after:h-8 after:w-full
             after:bg-gradient-to-t after:to-transparent after:from-gray-100 dark:after:from-gray-800
           "
         />
-        <div class="flex flex-row flex-wrap">
-          <div v-for="p in a.fields.photos" class="w-1/2">
+        <div class="flex flex-row items-center">
+          <div v-for="p in a.fields.photos">
             <img
-              :src="p.fields.file.url + '?w=200'"
+              :src="p.fields.file.url + '?w=320'"
               :width="p.fields.file.details.image.width"
               :height="p.fields.file.details.image.height"
             >
           </div>
         </div>
-        <div class="flex flex-row justify-between items-center text-gray-600 py-1">
+        <div class="flex flex-row justify-between items-center text-gray-600 py-1 px-2">
           <a class="hover:underline text-primary dark:text-white text-sm"
              :class="{'invisible': !a.fields.link}" :href="a.fields.link">
             Go to Message
