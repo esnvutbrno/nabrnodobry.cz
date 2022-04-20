@@ -1,17 +1,24 @@
 <template>
   <section class="bg-primary">
-    <a class="text-3xl py-8 text-white font-medium text-center block hover:underline" href="">
+    <a
+      class="text-3xl md:text-4xl lg:text-5xl py-8 lg:py-10 text-white font-medium text-center block hover:underline"
+      href="https://www.instagram.com/explore/tags/egm2022/"
+      rel="noopener,noreferer,nofollow"
+      target="_blank"
+    >
       <h3>
         #nabrnodobry2022
       </h3>
     </a>
-    <div class="max-w-4xl mx-auto flex flex-row flex-wrap px-4 sm:px-8">
-      <div v-for="a in assets" class="w-1/3 lg:w-1/4 p-2">
-        <img :src="a.fields.file.url" alt=""
+    <div class="columns-[6rem] sm:columns-[10rem] md:columns-2xs gap-4 px-4 sm:px-8">
+      <template v-for="a in assets">
+        <img
+          class="mb-4"
+          :src="a.fields.file.url" alt=""
              :width="a.fields.file.details.image.width"
              :height="a.fields.file.details.image.height"
         >
-      </div>
+      </template>
     </div>
 
   </section>
@@ -29,8 +36,10 @@ export default {
   },
   async fetch() {
     const client = createClient();
-    const assets = await client.getAssets();
-    this.assets = assets.items.filter(i => i && i.fields.title && i.fields.title.startsWith('IG'))
+    const assets = await client.getAssets({
+      order: '-sys.createdAt'
+    });
+    this.assets = assets.items.filter(i => i && i.fields.title && i.fields.title.startsWith('IG')).slice(0, 20)
   }
 }
 </script>

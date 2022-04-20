@@ -134,7 +134,8 @@ export default {
 }
 
 .nuxt-link-active img {
-  @apply dark:black-to-secondary;
+  /* TODO: weird, cannot recognize it */
+  /* @apply dark:black-to-secondary;*/
 }
 
 p:empty {
