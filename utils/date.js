@@ -2,6 +2,6 @@ const {DateTime, Duration, Settings} = require("luxon");
 
 // Settings.defaultLocale = "cs";
 
-DateTime.defaultZone = 'system';
+DateTime.defaultZone = 'Europe/Prague';
 
 export {DateTime, Duration, Settings};
