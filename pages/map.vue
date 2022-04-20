@@ -1,7 +1,7 @@
 <template>
   <article class="
       flex-grow flex flex-row items-stretch justify-between
-      bg-gray-200 dark:bg-gray-800
+      bg-gray-200 dark:bg-gray-800 relative
     ">
     <FancyLine
       class="w-8 border-b-0 bg-repeat-y h-auto"
@@ -26,14 +26,22 @@
         <!--        http://stamen-tiles-a.a.ssl.fastly.net/toner-lite/12/657/1591@2x.png-->
 
         <l-tile-layer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"></l-tile-layer>
-<!--        <l-control-layers position="topright"></l-control-layers>-->
+        <!--        <l-control-layers position="topright"></l-control-layers>-->
 
         <l-marker
           v-for="p in places"
           :key="p.sys.id"
           :lat-lng="[p.fields.position.lat, p.fields.position.lon]"
+          @click="placeDetail = p"
+          :options="{title: p.fields.title}"
         >
-          <l-popup>{{ p.fields.title }}</l-popup>
+          <!--                    <l-popup @click.native="_placeDetail = p">{{ p.fields.title }}</l-popup>-->
+
+          <l-icon
+            :iconSize="[48/1.5, 64/1.5]"
+            :iconAnchor="[24/1.5, 64/1.5]"
+            :icon-url="require('../assets/svg/marker.svg')"
+          />
         </l-marker>
         <LGPX
           :gpx-file="track"
@@ -47,15 +55,25 @@
       style="background-size: 70% auto;"
       :style="{backgroundImage: `url(${require('~/assets/svg/line1-vertical.svg')})`}"
     />
+    <transition name="fade">
+      <MapPlaceDetail
+        v-if="placeDetail"
+        :place="placeDetail"
+        @close="placeDetail = null"
+      />
+    </transition>
   </article>
 </template>
 
 <script>
 import {createClient} from "~/plugins/contentful";
+import MapPlaceDetail from "@/components/MapPlaceDetail";
+import _ from "lodash";
 
 export default {
   name: "MapPage",
   components: {
+    MapPlaceDetail,
     LGPX: process.client ? require('vue2-leaflet-gpx') : null,
   },
   transition: {
@@ -75,6 +93,7 @@ export default {
   },
   data() {
     return {
+      placeDetail_: null,
       gpxOptions: {
         polyline_options: {
           color: '#f90093',
@@ -98,6 +117,18 @@ export default {
       title: 'Map'
     };
   },
+  computed: {
+    placeDetail: {
+      get() {
+        return this.placeDetail_
+      },
+      set(p) {
+        this.placeDetail_ = p
+        this.$router.push({hash: p ? p.sys.id : ''})
+        p && this.tryToFocusPlace(p)
+      }
+    }
+  },
   methods: {
     mapInitialization() {
       const map = this.$refs.map
@@ -106,6 +137,33 @@ export default {
         p.fields.position.lat,
         p.fields.position.lon,
       ]))
+      this.placeDetail && this.tryToFocusPlace(this.placeDetail)
+    },
+    setPlaceById(id) {
+      this.placeDetail = _.find(
+        this.places,
+        p => p.sys.id === id
+      )
+    },
+    tryToFocusPlace(p) {
+      this.$refs.map && this.$refs.map.mapObject.setView({
+          lat: p.fields.position.lat - 0.0015,
+          lng: p.fields.position.lon,
+        },
+        17,
+        {animation: true}
+      );
+    }
+  },
+  mounted() {
+    if (this.$route.hash) {
+      this.setPlaceById(this.$route.hash.slice(1))
+    }
+  },
+  watch: {
+    $route(to, from) {
+      if (to.hash === from.hash) return;
+      this.setPlaceById(to.hash.slice(1))
     }
   }
 }
@@ -116,8 +174,6 @@ export default {
   height: auto !important;
 }
 
-</style>
-<style>
 .leaflet-popup-tip,
 .leaflet-popup-content-wrapper {
   /*background: pink;*/
@@ -127,5 +183,15 @@ export default {
 .dark .leaflet-tile-container img {
   /* inspired by https://github.com/xtk93x/Leaflet.TileLayer.ColorFilter */
   filter: hue-rotate(180deg) brightness(120%) invert(100%);
+}
+</style>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 300ms;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
