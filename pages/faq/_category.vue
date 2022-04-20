@@ -2,20 +2,20 @@
   <article>
     <ul class="
         font-medium text-gray-800
-        flex flex-row justify-center
+        flex flex-wrap flex-row justify-around md:justify-center items-center
     ">
-      <li class="mr-2" v-for="g in categories">
+      <li class="inline-block w-1/2 md:w-auto text-center" v-for="g in categories">
         <nuxt-link
           :to="{name: 'faq-category', params: {category: g.slug}}"
           class="
-            inline-block p-4 hover:text-primary
+            inline-block p-1 md:p-4 hover:text-primary
            "
         >{{ g.title }}
         </nuxt-link>
       </li>
     </ul>
 
-    <div class="max-w-2xl mx-auto py-8">
+    <div class="max-w-2xl mx-auto py-4 md:py-4">
       <div v-for="q in questions" class="group">
         <nuxt-link
           class="
@@ -25,7 +25,7 @@
           "
           :to="{hash: q.sys.id}"
         >
-          <div class="w-5/6">
+          <div class="sm:w-5/6">
             <RichTextRenderer
               v-if="q.fields.question"
               :document="q.fields.question"
@@ -33,7 +33,7 @@
           </div>
           <img
             src="../../assets/svg/question-mark.svg"
-            class="h-6 w-6 black-to-primary"
+            class="h-6 w-6 black-to-primary hidden sm:block"
             aria-hidden="true" alt="Question"
           >
         </nuxt-link>

@@ -38,7 +38,7 @@
       >
         <use :xlink:href="require('@/assets/svg/cb.svg') + '#main'"/>
       </svg>
-      <div class="md:hidden mt-2 sm:mt-0 sm:ml-2 sm:text-lg text-center sm:text-left">
+      <div class="md:hidden mt-2 sm:mt-0 sm:ml-2 sm:text-lg text-center sm:text-left text-primary dark:text-white">
         NA Brno <br>dobrý
       </div>
     </nuxt-link>
