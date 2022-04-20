@@ -1,4 +1,6 @@
 import {createClient} from "./plugins/contentful";
+import slug from 'slug'
+import _ from 'lodash'
 
 export default {
   target: 'static',
@@ -81,12 +83,18 @@ export default {
 
   generate: {
     async routes() {
+
       const client = createClient();
       const events = await client.getEntries({
         content_type: 'event',
-        // order: '-sys.createdAt',
       });
-      return events.items.map(i => `/event/${i.sys.id}`)
+      const questions = await client.getEntries({
+        content_type: 'faq',
+      });
+      return [
+        ...events.items.map(i => `/event/${i.sys.id}`),
+        ..._.uniq(questions.items.map(i => `/faq/${slug(i.fields.category)}`)),
+      ]
     }
   },
   colorMode: {

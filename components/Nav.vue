@@ -17,7 +17,10 @@
         <nuxt-link class="nuxt-link whitespace-nowrap" :to="{name: 'about'}">About NA</nuxt-link>
       </li>
       <li class="flex items-center justify-end">
-        <nuxt-link class="nuxt-link" :to="{name: 'faq'}">FAQ</nuxt-link>
+        <nuxt-link class="nuxt-link"
+                   :to="{name: 'faq-category', params: {category: 'general'}}"
+                   :class="{'nuxt-link-active': $route.name.startsWith('faq-')}"
+        >FAQ</nuxt-link>
       </li>
     </ul>
     <nuxt-link
@@ -68,7 +71,7 @@ export default {
     px-2 py-2 md:py-8 hover:bg-gray-50
     dark:hover:bg-primary dark:hover:text-secondary
 }
-.nuxt-link-exact-active {
+.nuxt-link-active {
   @apply text-secondary;
 }
 </style>

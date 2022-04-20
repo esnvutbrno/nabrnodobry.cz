@@ -19,4 +19,7 @@
   .black-to-white {
     filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(4223%) hue-rotate(111deg) brightness(116%) contrast(100%);
   }
+  .black-to-primary {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(93%) saturate(2454%) hue-rotate(234deg) brightness(105%) contrast(91%);
+  }
 }
