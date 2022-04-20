@@ -17,15 +17,16 @@
 
     <div class="max-w-2xl mx-auto py-4 md:py-4">
       <div v-for="q in questions" class="group">
-        <nuxt-link
+        <a
           class="
             text-lg p-4 block
             hover:bg-gray-100 dark:hover:bg-gray-800
             flex flex-row items-center justify-between
-          "
-          :to="{hash: q.sys.id}"
+          " href="#"
+          :class="{'text-primary dark:text-secondary': active === q.sys.id}"
+          @click="$event.preventDefault(), active = q.sys.id"
         >
-          <div class="sm:w-5/6">
+          <div class="w-5/6 text-sm sm:text-base">
             <RichTextRenderer
               v-if="q.fields.question"
               :document="q.fields.question"
@@ -33,10 +34,10 @@
           </div>
           <img
             src="../../assets/svg/question-mark.svg"
-            class="h-6 w-6 black-to-primary dark:black-to-white hidden sm:block"
+            class="h-6 w-6 black-to-primary dark:black-to-white"
             aria-hidden="true" alt="Question"
           >
-        </nuxt-link>
+        </a>
         <div
           v-show="active === q.sys.id"
           class="p-4 bg-gray-50 dark:bg-gray-800 prose dark:prose-invert mx-auto prose-img:my-2"
@@ -75,22 +76,29 @@ export default {
         'embedded-asset-block': (node, key, c, next) =>
           node.data && node.data.target &&
           node.data.target.fields && (file = node.data.target.fields.file) ? c(
-          'img',
-          {
-            attrs: {
-              src: file.url,
-              width: file.details.image.width,
-              height: file.details.image.height,
-              class: ''
+            'img',
+            {
+              attrs: {
+                src: file.url,
+                width: file.details.image.width,
+                height: file.details.image.height,
+                class: ''
+              }
             }
-          }
-        ) : '',
+          ) : '',
       }
     }
   },
   computed: {
-    active() {
-      return this.$route.hash.slice(1)
+    active: {
+      get() {
+        return this.$route.hash.slice(1)
+      },
+      set(v) {
+        this.$router.push({
+          hash: v === this.active ? '' : v
+        })
+      }
     }
   },
   async asyncData({redirect, route, error}) {

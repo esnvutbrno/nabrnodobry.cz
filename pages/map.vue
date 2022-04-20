@@ -26,7 +26,7 @@
         <!--        http://stamen-tiles-a.a.ssl.fastly.net/toner-lite/12/657/1591@2x.png-->
 
         <l-tile-layer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"></l-tile-layer>
-        <l-control-layers position="topright"></l-control-layers>
+<!--        <l-control-layers position="topright"></l-control-layers>-->
 
         <l-marker
           v-for="p in places"

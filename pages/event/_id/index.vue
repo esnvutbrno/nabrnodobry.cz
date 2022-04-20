@@ -15,8 +15,8 @@
         {{ dayName }}, {{ fromTime }} <template v-if="toTime">– {{ toTime }}</template></span>
     </h1>
 
-    <div class="flex flex-row justify-between gap-x-4">
-      <div class="w-2/3 prose prose-p:text-justify dark:prose-invert">
+    <div class="flex flex-col-reverse md:flex-row justify-between gap-x-4">
+      <div class="w-auto md:w-2/3 prose prose-p:text-justify dark:prose-invert">
         <RichTextRenderer
           v-if="event.fields.description"
           :document="event.fields.description"
@@ -24,13 +24,14 @@
         ></RichTextRenderer>
       </div>
 
-      <div class="w-1/3">
+      <div class="w-auto md:w-1/3 flex-row-reverse md:flex-col items-center">
         <img
           v-if="event.fields.photo"
           :src="event.fields.photo.fields.file.url"
           :width="event.fields.photo.fields.file.details.image.width"
           :height="event.fields.photo.fields.file.details.image.height"
-          alt=""
+          :alt="event.fields.title"
+          class="w-1/2 md:w-full mx-auto"
         >
         <div
           v-if="event.fields.place && event.fields.place.fields.title"
