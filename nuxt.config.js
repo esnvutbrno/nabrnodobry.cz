@@ -71,6 +71,7 @@ export default {
     meta: {
       theme_color: '#2e3192',
       name: 'NA Brno dobrý 2022',
+      author: 'ESN Brno United',
       ogHost: process.env.FULL_BASE_URL || 'http://localhost:3000/',
       ogImage: {
         path: 'og.jpg',
