@@ -24,7 +24,7 @@ export default {
       {name: 'google-site-verification', content: '5J3DG_xFC40IwbDml8YEsQtdSZpKc-FMtJ4CXGmv_nA'},
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/icon.png'}
+      {rel: 'icon', type: 'image/x-icon', href: process.env.NUXT_ROUTER_BASE_URL + 'icon.png'}
     ]
   },
 
