@@ -41,6 +41,7 @@
             :iconSize="[48/1.5, 64/1.5]"
             :iconAnchor="[24/1.5, 64/1.5]"
             :icon-url="require('../assets/svg/marker.svg')"
+            class-name="black-to-primary dark:black-to-secondary"
           />
         </l-marker>
         <LGPX
