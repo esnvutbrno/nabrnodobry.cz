@@ -71,10 +71,17 @@ export default {
     meta: {
       theme_color: '#2e3192',
       name: 'NA Brno dobrý 2022',
+      ogHost: process.env.FULL_BASE_URL || 'http://localhost:3000/',
+      ogImage: {
+        path: 'og.jpg',
+        width: 2048,
+        height: 1074,
+      }
     },
     manifest: {
       name: 'NA Brno dobrý 2022',
       short_name: 'NA Brno 2022',
+      display: 'standalone',
     },
     icon: {
       purpose: 'any',

@@ -19,7 +19,7 @@
       <li class="flex items-center justify-end">
         <nuxt-link class="nuxt-link"
                    :to="{name: 'faq-category', params: {category: 'general'}}"
-                   :class="{'nuxt-link-active': $route.name.startsWith('faq-')}"
+                   :class="{'nuxt-link-active': $route.name && $route.name.startsWith('faq-')}"
         >FAQ</nuxt-link>
       </li>
     </ul>

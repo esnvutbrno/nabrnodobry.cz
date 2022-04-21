@@ -1,7 +1,12 @@
 {
   "name": "nabrnodobry.cz",
+  "description": "Folklore themed National Assembly of ESN CZ happening in Brno in May 2022",
   "version": "1.0.0",
-  "private": true,
+  "author": {
+    "email": "thejoeejoee@gmail.com",
+    "name": "Joe Kolář",
+    "url": "josefkolar.cz"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

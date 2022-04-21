@@ -7,8 +7,33 @@
    viewBox="0 0 135.46665 135.46665"
    version="1.1"
    id="svg5"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="/home/thejoeejoee/projs/esn/nabrnodobry.cz/static/icon.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1233"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.3320313"
+     inkscape:cx="137.00879"
+     inkscape:cy="344.58649"
+     inkscape:window-width="2560"
+     inkscape:window-height="1573"
+     inkscape:window-x="0"
+     inkscape:window-y="-10"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
   <defs
      id="defs2">
     <rect
@@ -39,11 +64,11 @@
   <rect
      style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.54294;stop-color:#000000"
      id="rect21648"
-     width="135.46666"
+     width="135.467"
      height="135.46666"
      x="0"
      y="0"
-     ry="47.177998" />
+     ry="36.773064" />
   <rect
      style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.70406;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
      id="rect1868"
@@ -1637,9 +1662,9 @@
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2585);fill:#2e3192;fill-opacity:1;stroke:none"><tspan
        x="238.37109"
        y="207.60938"
-       id="tspan22554"><tspan
+       id="tspan2231"><tspan
          style="font-weight:bold;font-family:'Kelson Sans';-inkscape-font-specification:'Kelson Sans Bold'"
-         id="tspan22552">NA</tspan></tspan></text>
+         id="tspan2229">NA</tspan></tspan></text>
   <text
      xml:space="preserve"
      transform="matrix(0.42406905,0,0,0.42406905,-53.287405,-58.05103)"
@@ -1647,9 +1672,9 @@
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2585-3);fill:#2e3192;fill-opacity:1;stroke:none"><tspan
        x="238.37109"
        y="207.60938"
-       id="tspan22558"><tspan
+       id="tspan2235"><tspan
          style="font-weight:bold;font-family:'Kelson Sans';-inkscape-font-specification:'Kelson Sans Bold'"
-         id="tspan22556">BRNO</tspan></tspan></text>
+         id="tspan2233">BRNO</tspan></tspan></text>
   <text
      xml:space="preserve"
      transform="matrix(0.38889615,0,0,0.38889615,-47.014125,36.557668)"
@@ -1657,7 +1682,7 @@
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2585-3-7);fill:#2e3192;fill-opacity:1;stroke:none"><tspan
        x="238.37109"
        y="207.60938"
-       id="tspan22562"><tspan
+       id="tspan2239"><tspan
          style="font-weight:bold;font-family:'Kelson Sans';-inkscape-font-specification:'Kelson Sans Bold'"
-         id="tspan22560">DOBRÝ</tspan></tspan></text>
+         id="tspan2237">DOBRÝ</tspan></tspan></text>
 </svg>
