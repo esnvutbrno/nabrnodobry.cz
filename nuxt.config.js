@@ -41,6 +41,7 @@ export default {
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    '~/modules/pwa-extension.js',
     '@nuxtjs/pwa',
   ],
 
@@ -128,6 +129,7 @@ export default {
     breaks: true,
   },
   workbox: {
+    enabled: false,
     offlineStrategy: "StaleWhileRevalidate",
   }
 }
