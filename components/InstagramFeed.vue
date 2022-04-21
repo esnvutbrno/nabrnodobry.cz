@@ -14,9 +14,9 @@
       <template v-for="a in assets">
         <img
           class="mb-4"
-          :src="a.fields.file.url" alt=""
-             :width="a.fields.file.details.image.width"
-             :height="a.fields.file.details.image.height"
+          :src="a.fields.file.url + '?w=480'" alt=""
+          :width="a.fields.file.details.image.width"
+          :height="a.fields.file.details.image.height"
         >
       </template>
     </div>

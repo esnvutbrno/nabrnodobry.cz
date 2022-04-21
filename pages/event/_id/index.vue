@@ -9,7 +9,7 @@
     </button>
 
     <h1 class="py-4 mb-4 border-b-4 border-secondary text-primary dark:text-white
-        font-bold flex flex-row justify-between items-center">
+        font-bold flex flex-col sm:flex-row justify-between items-center">
       <span class="text-4xl">{{ event.fields.title }}</span>
       <span class="text-3xl">
         {{ dayName }}, {{ fromTime }} <template v-if="toTime">– {{ toTime }}</template></span>
@@ -33,15 +33,18 @@
           :alt="event.fields.title"
           class="w-1/2 md:w-full mx-auto"
         >
-        <div
+        <nuxt-link
           v-if="event.fields.place && event.fields.place.fields.title"
-          class="my-4 gap-2 flex flex-row items-center justify-center"
+          :to="{name: 'map', hash: '#' + event.fields.place.sys.id}"
+          class="my-4 gap-2 flex flex-row items-center justify-center p-2 rounded border border-primary dark:border-white"
         >
           <img src="../../../assets/svg/place.svg" alt="" class="h-8 w-8 dark:black-to-white">
-          <span class="text-lg font-bold">
+          <span
+            class="text-lg font-bold"
+          >
             {{ event.fields.place.fields.title }}
           </span>
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </div>

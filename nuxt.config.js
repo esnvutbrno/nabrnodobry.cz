@@ -126,5 +126,8 @@ export default {
     preset: 'default',
     linkify: true,
     breaks: true,
+  },
+  workbox: {
+    offlineStrategy: "StaleWhileRevalidate",
   }
 }
