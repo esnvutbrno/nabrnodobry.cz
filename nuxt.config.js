@@ -41,7 +41,6 @@ export default {
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
-    '~/modules/pwa-extension.js',
     '@nuxtjs/pwa',
   ],
 
