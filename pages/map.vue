@@ -108,6 +108,9 @@ export default {
               icon: this.$L.divIcon({className: 'h-10 w-10 bg-secondary rounded-full opacity-50'}),
             }
           ] : [],
+          startIconUrl: require('assets/img/1x1-transparent.png'),
+          endIconUrl: require('assets/img/1x1-transparent.png'),
+          shadowUrl: require('assets/img/1x1-transparent.png'),
         },
       },
     }
