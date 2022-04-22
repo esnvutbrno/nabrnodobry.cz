@@ -15,7 +15,7 @@ export default {
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {name: 'description', content: 'Folklore themed National Assembly of ESN CZ happening in Brno in May 2022'},
-      {name: 'author', content: 'ESN Brno United, Joe Kolář, Jiří Soukup, Zuzana Gregušková'},
+      {name: 'author', content: 'ESN Brno United'},
       {
         name: 'keywords',
         content: 'folklore, national assembly, erasmus, erasmus student network, czech republic, esn vut brno, esn mendelu, esn muni, na may 2022'
