@@ -10,13 +10,15 @@
       "
       :class="{'max-w-full m-0 p-0 mt-0 pb-0 lg:px-0': $route.name === 'map'}"
     >
-      <Nuxt />
+      <Nuxt/>
     </main>
     <FancyLine class="border-t-4 border-b-0"/>
     <template v-if="$route.name !== 'map'">
       <InstagramFeed v-if=""/>
-      <Footer />
+      <Footer/>
     </template>
+
+    <Updater/>
   </div>
 </template>
 

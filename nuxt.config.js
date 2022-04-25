@@ -49,12 +49,14 @@ export default {
     ['nuxt-leaflet', { /* module options */}],
     '@nuxtjs/color-mode',
     '@nuxtjs/gtm',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '~/modules/write-version.js',
   ],
 
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
+    prefix: process.env.NUXT_ROUTER_BASE_URL || '/',
   },
 
   build: {
