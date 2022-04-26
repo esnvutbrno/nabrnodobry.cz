@@ -94,6 +94,10 @@ export default {
     },
     icon: {
       purpose: 'any',
+    },
+    workbox: {
+      enabled: true,
+      offlineStrategy: "StaleWhileRevalidate",
     }
   },
 
@@ -129,8 +133,4 @@ export default {
     linkify: true,
     breaks: true,
   },
-  workbox: {
-    enabled: false,
-    offlineStrategy: "StaleWhileRevalidate",
-  }
 }
