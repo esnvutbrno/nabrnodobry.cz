@@ -13,13 +13,21 @@
 }
 
 @font-face {
-  font-family: KelsonSansBold;
+  font-family: KelsonSans;
   src: url('assets/fonts/kelson-sans-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: KelsonSans;
+  src: url('assets/fonts/kelson-sans-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
 }
 
 .font-esn {
-  font-family: KelsonSansBold, "Kelson Sans", sans-serif;
-  @apply font-bold;
+  font-family: KelsonSans, "Kelson Sans", sans-serif;
 }
 
 @layer utilities {
