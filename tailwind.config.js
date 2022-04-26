@@ -4,10 +4,7 @@ module.exports = {
     extend: {
 
       colors: {
-        primary: '#2e3192',
-        // VUT: #E4002B
-        // MUNI: #0000dc
-        // MENDELU: #79be15
+        primary: 'rgb(var(--color-primary))',
         secondary: '#f90093',
       },
       transitionProperty: {

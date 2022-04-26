@@ -1,8 +1,11 @@
 <template>
-  <div class="min-h-screen dark:bg-gray-900 dark:text-gray-100 flex flex-col">
+  <div
+    :class="themeClass"
+    class="min-h-screen dark:bg-gray-900 dark:text-gray-100 flex flex-col"
+  >
     <LogoHeader/>
-    <Nav />
-    <FancyLine />
+    <Nav/>
+    <FancyLine/>
     <main
       class="
         mx-auto max-w-4xl w-full p-2 mt-4 pb-8 lg:px-8
@@ -24,7 +27,18 @@
 
 <script>
 export default {
-  name: "DefaultLayout"
+  name: "DefaultLayout",
+  computed: {
+    themeClass() {
+      return {
+        default: 'theme-default',
+        vut: 'theme-vut',
+        muni: 'theme-muni',
+        mendelu: 'theme-mendelu',
+        rainbow: 'theme-rainbow',
+      }[this.$store.state.theme.current]
+    }
+  }
 }
 </script>
 

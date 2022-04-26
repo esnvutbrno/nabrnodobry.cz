@@ -19,7 +19,10 @@
           <span class="text-gray-200 text-sm font-mono">{{ time.toLocaleString() }}</span>
         </div>
       </a>
-      <ThemeSwitcher />
+      <div class="flex flex-row space-x-2">
+        <ColorModeSwitcher/>
+        <ThemeSwitcher/>
+      </div>
       <span class="">
          © 2022
       </span>
