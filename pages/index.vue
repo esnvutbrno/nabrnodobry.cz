@@ -25,11 +25,8 @@
 </template>
 
 <script>
-const {DateTime, Duration, Settings} = require("luxon");
+import {DateTime} from '@/utils/date';
 
-Settings.defaultLocale = "en-US";
-
-DateTime.defaultZone = 'en-US';
 export default {
   name: "IndexPage",
   data:() => ({

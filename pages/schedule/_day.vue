@@ -46,11 +46,8 @@ import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 import {createClient} from '~/plugins/contentful.js';
 import _ from 'lodash'
 
-const {DateTime, Duration, Settings} = require("luxon");
+import {DateTime, Duration} from '@/utils/date';
 
-Settings.defaultLocale = "en-US";
-
-DateTime.defaultZone = 'en-US';
 
 export default {
   name: "ScheduleDayPage",

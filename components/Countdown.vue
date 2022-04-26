@@ -5,11 +5,7 @@
 </template>
 
 <script>
-const {DateTime, Duration, Settings} = require("luxon");
-
-Settings.defaultLocale = "en-US";
-
-DateTime.defaultZone = 'en-US';
+import {DateTime} from '@/utils/date';
 
 export default {
   name: "Countdown",
