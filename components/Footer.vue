@@ -25,7 +25,7 @@
       </span>
       <img
         src="@/assets/svg/esn-bu-logo-white.svg"
-        width="144" height="80"
+        height="80" loading="lazy" width="144"
         alt="ESN Brno United"
         class="w-1/3 md:w-1/4 lg:w-1/5"
       >

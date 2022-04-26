@@ -32,6 +32,7 @@
               :src="p.fields.file.url + '?w=320'"
               :width="p.fields.file.details.image.width"
               :height="p.fields.file.details.image.height"
+              loading="lazy"
             >
           </div>
         </div>
@@ -50,7 +51,7 @@
 <script>
 import {createClient} from "@/plugins/contentful";
 
-import {DateTime, Duration} from "@/utils/date";
+import {DateTime} from "@/utils/date";
 
 export default {
   name: "Announcements",

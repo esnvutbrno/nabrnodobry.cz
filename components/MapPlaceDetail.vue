@@ -19,7 +19,7 @@
       :src="place.fields.photo.fields.file.url"
       :width="place.fields.photo.fields.file.details.image.width"
       :height="place.fields.photo.fields.file.details.image.height"
-      alt=""
+      :alt="place.fields.title" loading="lazy"
       class="md:max-w-[35vw]"
     >
     <div class="p-5 rounded-b bg-primary text-center">

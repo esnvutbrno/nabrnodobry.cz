@@ -13,7 +13,7 @@
     <div class="columns-[6rem] sm:columns-[10rem] md:columns-2xs gap-4 px-4 sm:px-8">
       <template v-for="a in assets">
         <img
-          class="mb-4"
+          class="mb-4" loading="lazy"
           :src="a.fields.file.url + '?w=480'" alt=""
           :width="a.fields.file.details.image.width"
           :height="a.fields.file.details.image.height"
