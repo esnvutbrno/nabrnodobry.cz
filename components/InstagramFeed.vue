@@ -1,8 +1,8 @@
 <template>
-  <section class="bg-primary">
+  <section v-if="assets.length > 10" class="bg-primary">
     <a
       class="text-3xl md:text-4xl lg:text-5xl py-8 lg:py-10 text-white font-medium text-center block hover:underline"
-      href="https://www.instagram.com/explore/tags/egm2022/"
+      href="https://www.instagram.com/explore/tags/nabrnodobry2022/"
       rel="noopener,noreferer,nofollow"
       target="_blank"
     >

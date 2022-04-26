@@ -15,8 +15,7 @@
         fill="currentColor"
       ></path>
     </svg>
-
-    {{ nextTheme }}
+<!--    {{ nextTheme }}-->
   </button>
 </template>
 
