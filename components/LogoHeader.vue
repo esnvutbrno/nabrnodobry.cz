@@ -57,7 +57,7 @@
         </div>
 
         <h1 class="
-          text-xl sm:text-2xl md:text-5xl lg:text-6xl xl:text-8xl
+          text-xl sm:text-2xl md:text-5xl lg:text-6xl xl:text-8xl font-esn
           uppercase text-white font-bold text-center leading-tight">
           NA Brno <br>dobrý
         </h1>
@@ -73,11 +73,6 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-family: "Kelson Sans", sans-serif;
-}
-
-
 .slide-down-enter-active {
   animation: slide-down 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }

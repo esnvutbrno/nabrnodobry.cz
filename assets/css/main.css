@@ -6,22 +6,31 @@
 .page-leave-active {
   transition: opacity 300ms;
 }
+
 .page-enter,
 .page-leave-to {
   opacity: 0;
 }
 
+@font-face {
+  font-family: KelsonSansBold;
+  src: url('assets/fonts/kelson-sans-bold.woff2') format('woff2');
+}
+
 .font-esn {
-  font-family: "Kelson Sans", sans-serif;
+  font-family: KelsonSansBold, "Kelson Sans", sans-serif;
+  @apply font-bold;
 }
 
 @layer utilities {
   .black-to-white {
     filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(4223%) hue-rotate(111deg) brightness(116%) contrast(100%);
   }
+
   .black-to-primary {
     filter: brightness(0) saturate(100%) invert(12%) sepia(93%) saturate(2454%) hue-rotate(234deg) brightness(105%) contrast(91%);
   }
+
   .black-to-secondary {
     filter: brightness(0) saturate(100%) invert(21%) sepia(86%) saturate(7457%) hue-rotate(315deg) brightness(96%) contrast(107%);
   }
