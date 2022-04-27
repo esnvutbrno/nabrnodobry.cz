@@ -135,7 +135,7 @@ export default {
     breaks: true,
   },
   sitemap: {
-    hostname: process.env.NUXT_ROUTER_BASE_URL,
+    hostname: process.env.FULL_BASE_URL,
     gzip: true,
   }
 }
