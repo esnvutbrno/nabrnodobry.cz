@@ -83,7 +83,7 @@ export default {
       author: 'ESN Brno United',
       ogHost: process.env.FULL_BASE_URL || 'http://localhost:3000/',
       ogImage: {
-        path: 'og.jpg',
+        path: 'og-image.jpg',
         width: 2048,
         height: 1074,
       }

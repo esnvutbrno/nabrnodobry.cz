@@ -43,6 +43,12 @@
       </li>
     </ul>
 
+    <a
+      class="text-3xl py-4 font-bold text-primary flex justify-center hover:underline"
+      href="mailto:oc_na@esncz.org">
+      oc_na@esncz.org
+    </a>
+
     <div class="border-secondary border-b-4 my-4"></div>
 
     <img
