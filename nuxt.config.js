@@ -51,6 +51,7 @@ export default {
     '@nuxtjs/gtm',
     '@nuxtjs/markdownit',
     '~/modules/write-version.js',
+    '@nuxtjs/sitemap',
   ],
 
   axios: {
@@ -133,4 +134,8 @@ export default {
     linkify: true,
     breaks: true,
   },
+  sitemap: {
+    hostname: process.env.NUXT_ROUTER_BASE_URL,
+    gzip: true,
+  }
 }
