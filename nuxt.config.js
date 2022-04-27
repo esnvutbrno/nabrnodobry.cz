@@ -134,8 +134,8 @@ export default {
     linkify: true,
     breaks: true,
   },
-  sitemap: {
+  sitemap: process.env.FULL_BASE_URL ? {
     hostname: process.env.FULL_BASE_URL,
     gzip: true,
-  }
+  } : false
 }

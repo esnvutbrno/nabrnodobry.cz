@@ -18,9 +18,11 @@
 <script>
 export default {
   props: ['error'],
+  created() {
+    if ((this.error.message || '').includes('Expected parameter') && !this.$nuxt.isOffline && process.client) {
+      window.location.reload()
+    }
+  }
 }
 </script>
 
-<style scoped>
-
-</style>
