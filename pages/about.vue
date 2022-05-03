@@ -61,10 +61,10 @@
 
     <h1 class="text-center text-3xl md:text-5xl text-primary my-8 font-bold dark:text-white">Our Partners</h1>
 
-    <ul class="flex flex-row items-center justify-center flex-wrap lg:-mx-6">
+    <ul class="flex flex-row items-center justify-center flex-wrap lg:-mx-6 bg-white dark:pt-6">
       <li
         v-for="p in partners"
-        class="w-full sm:w-1/2 md:w-1/3 px-6 pb-12 bg-white"
+        class="w-full sm:w-1/2 md:w-1/3 px-6 pb-12 bg-white flex justify-center items-center"
       >
         <img
           :class="{'w-full': p.includes('.svg')}"
