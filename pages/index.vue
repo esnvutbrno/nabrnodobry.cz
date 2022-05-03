@@ -54,16 +54,10 @@
 
 <script>
 import {DateTime} from '@/utils/date';
-import {mapActions, mapGetters, mapState} from 'vuex'
+import {mapGetters, mapState} from 'vuex'
 
 export default {
   name: "IndexPage",
-  async fetch({store}) {
-    await store.dispatch('events/loadEvents');
-  },
-  methods: {
-    ...mapActions('events', ['loadEvents']),
-  },
   computed: {
     ...mapGetters('events', [
       "currentEvent",

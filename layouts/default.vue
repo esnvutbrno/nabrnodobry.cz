@@ -40,7 +40,8 @@ export default {
     }
   },
   async created() {
-    await this.$store.dispatch('nuxtServerInit')
+    if (!process.client)
+      await this.$store.dispatch('nuxtServerInit')
   }
 }
 </script>
