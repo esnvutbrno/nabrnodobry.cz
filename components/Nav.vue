@@ -68,8 +68,8 @@ export default {
 <style scoped>
 .nuxt-link {
   @apply
-    px-2 py-2 md:py-8 hover:bg-gray-50
-    dark:hover:bg-primary dark:hover:text-secondary
+  px-2 py-2 md:py-8 hover:bg-gray-50
+  dark:hover:bg-transparent dark:hover:text-secondary
 }
 .nuxt-link-active {
   @apply text-secondary;

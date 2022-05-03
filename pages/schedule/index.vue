@@ -37,8 +37,8 @@
         >
           <span
             :class="{
-              'text-white dark:text-primary': e.fields.state === 'current',
-              'text-gray-500 dark:text-primary': e.fields.state === 'finished',
+              'text-white dark:text-white': e.fields.state === 'current',
+              'text-gray-500 dark:text-gray-500': e.fields.state === 'finished',
             }"
             class="
               lg:text-lg flex-grow sm:flex-grow-0
