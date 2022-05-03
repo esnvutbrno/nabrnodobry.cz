@@ -31,8 +31,8 @@ export const getters = {
     return state.categoriesSlugsToTitles[state.activeCategorySlug]
   },
   activeQuestionTitle(state) {
-
-    return findText(_.find(state.questions, (q) => q.sys.id === state.activeQuestionId).fields.question)
+    const q = _.find(state.questions, (q) => q.sys.id === state.activeQuestionId)
+    return q ? findText(q.fields.question) : null
   },
 }
 

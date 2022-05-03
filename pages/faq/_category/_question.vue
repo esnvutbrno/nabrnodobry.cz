@@ -14,7 +14,7 @@ export default {
   name: "FAQQuestionPage",
   transition: 'none',
   computed: {
-    ...mapGetters('questions', ['activeQuestionTitle']),
+    ...mapGetters('questions', ['activeQuestionTitle', 'activeCategoryTitle']),
   },
   beforeCreate() {
     this.$store.commit('questions/setActiveCategorySlug', this.$route.params.category)
@@ -22,7 +22,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.activeQuestionTitle}`
+      title: this.activeQuestionTitle || `${this.activeCategoryTitle} FAQ`
     };
   },
 }
