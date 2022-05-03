@@ -38,6 +38,9 @@ export default {
         rainbow: 'theme-rainbow',
       }[this.$store.state.theme.current]
     }
+  },
+  async created() {
+    await this.$store.dispatch('nuxtServerInit')
   }
 }
 </script>
