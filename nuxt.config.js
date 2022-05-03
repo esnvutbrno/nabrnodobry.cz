@@ -115,6 +115,7 @@ export default {
       return [
         ...events.items.map(i => `/event/${i.sys.id}`),
         ..._.uniq(questions.items.map(i => `/faq/${slug(i.fields.category)}`)),
+        ...questions.items.map(i => `/faq/${slug(i.fields.category)}/${i.sys.id}`)
       ]
     }
   },
