@@ -24,9 +24,6 @@ export default {
   },
   methods: {
     tick() {
-      if (typeof this.endTime === typeof '')
-        this.endTime = DateTime.fromISO(this.endTime)
-
       this.rest = this.endTime.diffNow(["days", "hours", "minutes", "seconds"])
       setTimeout(this.tick, 1000)
     }

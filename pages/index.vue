@@ -9,7 +9,7 @@
     >
       Brno gonna be dobrý in <br>
       <Countdown
-        :end-time="startTime"
+        :end-time="countdownTo"
         class=""
       />
     </div>
@@ -53,62 +53,34 @@
 </template>
 
 <script>
-import {DateTime, Duration} from '@/utils/date';
-import {createClient} from "@/plugins/contentful";
-import _ from 'lodash'
+import {DateTime} from '@/utils/date';
+import {mapActions, mapGetters, mapState} from 'vuex'
 
 export default {
   name: "IndexPage",
-  async asyncData() {
-    const client = createClient();
-
-    const events = (await client.getEntries({
-      content_type: 'event',
-      order: 'fields.when',
-      select: 'sys.id,fields.when,fields.title,fields.length'
-    })).items;
-
-    return {
-      startTime: events[0].fields.when,
-      events: events,
-    }
+  async fetch({store}) {
+    await store.dispatch('events/loadEvents');
+  },
+  methods: {
+    ...mapActions('events', ['loadEvents']),
   },
   computed: {
+    ...mapGetters('events', [
+      "currentEvent",
+      "nextEvent",
+    ]),
+    ...mapState('events', [
+      'startTime',
+      'now',
+      'events',
+    ]),
+    countdownTo() {
+      return new DateTime(this.startTime)
+    },
     showCountdown() {
-      return DateTime.now() < this.startTime
+      return this.now < this.startTime
     },
-    currentEventIndex() {
-      return _.findLastIndex(
-        this.events,
-        (e, i) => e.fields.when <= this.now
-      )
-    },
-    currentEvent() {
-      const event = this.currentEventIndex >= 0 ? this.events[this.currentEventIndex] : undefined;
-      if (!event) return;
-      if (!event.fields.end) return event;
-      if (event.fields.end > this.now) return event;
-    },
-    nextEvent() {
-      const next = this.currentEventIndex >= 0 ? this.events[this.currentEventIndex + 1] : null;
-      if (next) return next;
-      if (this.now < this.startTime) return this.events[0];
-    },
-    now() {
-      // return DateTime.fromObject({year: 2022, month: 5, day: 12, hour: 15, minute: 15})
-      return DateTime.now()
-    }
   },
-  created() {
-    this.startTime = DateTime.fromISO(this.startTime);
-    this.events = this.events.map(e => {
-      e.fields.when = DateTime.fromISO(e.fields.when);
-      e.fields.end = e.fields.length ? e.fields.when.plus(Duration.fromObject({minutes: e.fields.length})) : undefined;
-      e.fields.from = e.fields.when.toFormat('t').replace(':00', '')
-      e.fields.till = e.fields.end ? e.fields.end.toFormat('t').replace(':00', '') : '';
-      return e;
-    })
-  }
 }
 </script>
 

@@ -44,7 +44,7 @@
     </ul>
 
     <a
-      class="text-3xl py-4 font-bold text-primary flex justify-center hover:underline"
+      class="text-3xl py-4 font-bold text-primary dark:text-white flex justify-center hover:underline"
       href="mailto:oc_na@esncz.org">
       oc_na@esncz.org
     </a>

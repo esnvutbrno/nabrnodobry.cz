@@ -1,6 +1,6 @@
 <template>
   <article>
-    <section v-for="(data, i) in days">
+    <section v-for="(data, i) in byDays">
       <div
         class="flex flex-row items-center"
         :class="{'flex-row-reverse': i % 2}"
@@ -29,9 +29,22 @@
             dark:odd:bg-gray-800 dark:hover:bg-gray-800 dark:odd:hover:bg-gray-700
           "
           v-for="e in data[1]"
+          :class="{
+            'bg-primary text-white': e.fields.state === 'current',
+            [`state-${e.fields.state}`]: true,
+          }"
           @click="$router.push({name: 'event-id', params: {id: e.sys.id}})"
         >
-          <span class="lg:text-lg flex-grow sm:flex-grow-0 text-primary font-bold dark:text-white">
+          <span
+            :class="{
+              'text-white dark:text-primary': e.fields.state === 'current',
+              'text-gray-500 dark:text-primary': e.fields.state === 'finished',
+            }"
+            class="
+              lg:text-lg flex-grow sm:flex-grow-0
+              text-primary font-bold dark:text-white
+            "
+          >
             {{ e.fields.title }}
           </span>
 
@@ -41,16 +54,36 @@
           <!--            mx-4 hidden sm:block-->
           <!--          "></span>-->
 
-          <span class="self-end flex flex-row gap-1 items-center mr-0 sm:mr-2"
-                v-if="e.fields.place && e.fields.place.fields.title">
-            <img src="~/assets/svg/place.svg" alt="Place" class="w-4 w-4 dark:black-to-white">
+          <span
+            v-if="e.fields.place && e.fields.place.fields.title"
+            :class="{'text-gray-500': e.fields.state === 'finished'}"
+            class="self-end flex flex-row gap-1 items-center mr-0 sm:mr-2"
+          >
+            <img
+              :class="{
+                'black-to-white': e.fields.state === 'current',
+              }"
+              alt="Place"
+              class="w-4 w-4 dark:black-to-white"
+              src="~/assets/svg/place.svg"
+            >
             {{ e.fields.place.fields.title }}
           </span>
 
-          <time class="self-end flex flex-row gap-1 items-center min-w-auto sm:min-w-[10rem]">
-            <img src="~/assets/svg/time.svg" alt="Time" class="w-3 w-3 dark:black-to-white">
-            {{ e.fields.fromTime }}
-            <span v-if="e.fields.toTime" class="text-sm text-gray-500">– {{ e.fields.toTime }}</span>
+          <time
+            :class="{'text-gray-500': e.fields.state === 'finished'}"
+            class="self-end flex flex-row gap-1 items-center min-w-auto sm:min-w-[10rem]"
+          >
+            <img
+              :class="{
+                'black-to-white': e.fields.state === 'current',
+              }"
+              alt="Time"
+              class="w-3 w-3 dark:black-to-white"
+              src="~/assets/svg/time.svg"
+            >
+            {{ e.fields.from }}
+            <span v-if="e.fields.till" class="text-sm text-gray-500">– {{ e.fields.till }}</span>
           </time>
         </li>
       </ul>
@@ -60,49 +93,15 @@
 
 <script>
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
-import {createClient} from '~/plugins/contentful.js';
-import _ from 'lodash'
-import {DateTime, Duration} from "@/utils/date";
+import {mapGetters, mapState} from "vuex";
 
 
 export default {
   name: "SchedulePage",
   components: {RichTextRenderer},
-  async asyncData({env}) {
-    const client = createClient();
-    const events = await client.getEntries({
-      content_type: 'event',
-      order: 'fields.when',
-    });
-
-    const days = _.sortBy(
-      _.toPairs(
-        _.groupBy(
-          _.filter(events.items, 'fields.when').map(
-            v => {
-              const when = DateTime.fromISO(v.fields.when);
-              v.fields.day = when.startOf('day').toFormat('D')
-              v.fields.dayName = when.startOf('day').toFormat('cccc')
-              v.fields.fromTime = when.toFormat('t').replace(':00', '')
-              v.fields.toTime = v.fields.length ?
-                when.plus(Duration.fromObject({minutes: v.fields.length})).toFormat('t').replace(':00', '') :
-                ''
-              ;
-              return v;
-            }
-          ),
-          'fields.day',
-        )
-      ),
-      '0'
-    )
-
-
-    return {
-      events: events.items,
-      items: events.items,
-      days,
-    }
+  computed: {
+    ...mapGetters('events', ['byDays', 'currentEvent']),
+    ...mapState('events', ['events']),
   },
   head() {
     return {
@@ -111,3 +110,23 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.state-finished {
+  position: relative;
+}
+
+.state-finished:before {
+  /* for now */
+  display: none;
+  position: absolute;
+  right: calc(100% + .5rem);
+  top: 0;
+  bottom: 0;
+  content: ' ';
+  background: url('assets/svg/event-finished.svg') no-repeat center center;
+  background-size: 100% 100%;
+  padding-right: 1rem;
+  width: 2rem;
+}
+</style>
