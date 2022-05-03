@@ -1,8 +1,8 @@
 <template>
   <article>
-    <h1 class="text-center text-6xl text-primary my-4 font-bold dark:text-white">NA Brno dobrý 2022</h1>
+    <h1 class="text-center text-3xl md:text-6xl text-primary my-4 font-bold dark:text-white">NA Brno dobrý 2022</h1>
     <p class="text-lg text-justify">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
+      LOREM ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
       neque nesciunt odit officia optio, quod repellendus! Dolor eligendi harum laboriosam natus nesciunt officiis
       totam.
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
@@ -47,22 +47,59 @@
         height="450"
       >
     </div>
-    <h1 class="text-center text-4xl text-primary my-4 font-bold dark:text-white">ESN Brno United</h1>
+    <h1 class="text-center text-2xl md:text-4xl text-primary my-8 font-bold dark:text-white">ESN Brno United</h1>
 
     <p class="text-lg text-justify">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
-      neque nesciunt odit officia optio, quod repellendus! Dolor eligendi harum laboriosam natus nesciunt officiis totam.
+      neque nesciunt odit officia optio, quod repellendus! Dolor eligendi harum laboriosam natus nesciunt officiis
+      totam.
     </p>
     <img
       src="../assets/img/esn-bu-anniversary.jpg"
       alt="" class="my-4" width="1784" height="832"
     >
+
+    <h1 class="text-center text-3xl md:text-5xl text-primary my-8 font-bold dark:text-white">Our Partners</h1>
+
+    <ul class="flex flex-row items-center justify-center flex-wrap lg:-mx-6">
+      <li
+        v-for="p in partners"
+        class="w-full sm:w-1/2 md:w-1/3 px-6 pb-12 bg-white"
+      >
+        <img
+          :class="{'w-full': p.includes('.svg')}"
+          :src="p"
+          alt=""
+          class="max-w-full max-h-24 h-auto mx-auto"
+        >
+      </li>
+    </ul>
+
   </article>
 </template>
 
 <script>
 export default {
   name: "AboutPage",
+  asyncData() {
+    return {
+      partners: [
+        require('../assets/partners/vut.svg'),
+        require('../assets/partners/mendelu.svg'),
+        require('../assets/partners/muni.svg'),
+
+
+        require('../assets/partners/esf.svg'),
+        require('../assets/partners/dzs.svg'),
+
+        require('../assets/partners/svet-plodu.svg'),
+        require('../assets/partners/ponozkovice.svg'),
+        require('../assets/partners/mandlarna.jpg'),
+        require('../assets/partners/pijumate.png'),
+        require('../assets/partners/ciderka.svg'),
+      ]
+    }
+  },
 
   head() {
     return {
