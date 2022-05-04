@@ -19,7 +19,13 @@
       <div v-for="q in currentQuestions" class="group">
         <nuxt-link
           :class="{'text-primary dark:text-secondary': question === q.sys.id}"
-          :to="{name: 'faq-category-question', params: {category: slug(q.fields.category), question: q.sys.id}}"
+          :to="{
+            name: question === q.sys.id ? 'faq-category' : 'faq-category-question',
+            params: {
+              category: slug(q.fields.category),
+              question: q.sys.id
+            }
+          }"
           class="
             text-lg p-4 block
             hover:bg-gray-100 dark:hover:bg-gray-800
@@ -37,6 +43,7 @@
             alt="Question"
             aria-hidden="true"
             class="h-6 w-6 black-to-primary dark:black-to-white" src="../assets/svg/question-mark.svg"
+            :class="{'dark:black-to-secondary black-to-secondary': question === q.sys.id}"
           >
         </nuxt-link>
         <div

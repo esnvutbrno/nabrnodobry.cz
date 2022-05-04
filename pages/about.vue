@@ -59,7 +59,11 @@
       alt="" class="my-4" width="1784" height="832"
     >
 
-    <h1 class="text-center text-3xl md:text-5xl text-primary my-8 font-bold dark:text-white">Our Partners</h1>
+    <div class="flex flex-row items-center my-16">
+      <div class="flex-grow h-1 bg-secondary rounded-full"></div>
+      <h2 class="text-3xl md:text-5xl font-bold text-primary dark:text-white mx-4">Our Partners</h2>
+      <div class="flex-grow h-1 bg-secondary rounded-full"></div>
+    </div>
 
     <ul class="flex flex-row items-center justify-center flex-wrap lg:-mx-6 bg-white dark:pt-6">
       <li

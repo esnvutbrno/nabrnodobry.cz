@@ -41,10 +41,13 @@
       </li>
     </ul>
 
-    <div class="border-secondary border-b-4 my-4"></div>
-
     <div v-for="(members, team) in teams">
-      <h2 class="text-2xl text-center font-bold">{{ team }}</h2>
+      <div class="flex flex-row items-center my-16">
+        <div class="flex-grow h-1 bg-secondary rounded-full"></div>
+        <h2 class="text-2xl text-center font-bold mx-4">{{ team }}</h2>
+        <div class="flex-grow h-1 bg-secondary rounded-full"></div>
+      </div>
+
       <ul class="flex flex-row flex-wrap justify-center">
         <li v-for="member in members" class="
           p-4 font-bold flex flex-col items-center justify-between

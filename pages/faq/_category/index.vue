@@ -11,7 +11,14 @@ import {mapGetters} from "vuex";
 
 export default {
   name: "FAQPage",
-  transition: 'none',
+  transition(to, from) {
+    if (!from) {
+      return 'page'
+    }
+    return (
+      from.params.category === to.params.category ||
+      to.params.category === 'faq-category-question') ? 'none' : 'page';
+  },
   computed: {
     ...mapGetters('questions', ['activeCategoryTitle']),
   },
@@ -30,11 +37,6 @@ export default {
 <style scoped>
 .nuxt-link-active {
   @apply text-primary dark:text-secondary;
-}
-
-.nuxt-link-active img {
-  /* TODO: weird, cannot recognize it */
-  /* @apply dark:black-to-secondary;*/
 }
 
 p:empty {
