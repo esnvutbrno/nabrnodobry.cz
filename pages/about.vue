@@ -93,7 +93,7 @@ export default {
         require('../assets/partners/muni.svg'),
 
 
-        require('../assets/partners/vodafone.png'),
+        require('../assets/partners/vodafone.jpg'),
         require('../assets/partners/hoppygo.png'),
         
         require('../assets/partners/dzs.svg'),
