@@ -9,31 +9,31 @@
     <li
       v-for="e in events"
       :class="{
-            'bg-primary text-white': e.fields.state === 'current',
-            [`state-${e.fields.state}`]: true,
-            'has-children': e.fields.events,
-          }"
-      class="
-            p-2 flex flex-col group cursor-pointer
-          "
-      @click="$router.push({name: 'event-id', params: {id: e.sys.id}})"
+        'bg-primary text-white': e.fields.state === 'current',
+        [`state-${e.fields.state}`]: true,
+        'has-children': e.fields.events,
+        'cursor-pointer': !e.fields.events,
+      }"
+      class="p-2 flex flex-col group"
+      @click="!e.fields.events && $router.push({name: 'event-id', params: {id: e.sys.id}})"
     >
       <!-- main upper line -->
-      <div class="flex flex-col sm:flex-row items-center">
-
-      <span
-        :class="{
-          'text-white dark:text-white': e.fields.state === 'current',
-          'text-gray-500 dark:text-gray-500': e.fields.state === 'finished',
-          'lg:text-lg': !nested
-        }"
-        class="
-          flex-grow sm:flex-grow-0
-          text-primary font-bold dark:text-white
-        "
+      <div
+        class="flex flex-col sm:flex-row items-center"
       >
-        {{ e.fields.title }}
-      </span>
+        <span
+          :class="{
+            'text-white dark:text-white': e.fields.state === 'current',
+            'text-gray-500 dark:text-gray-500': e.fields.state === 'finished',
+            'lg:text-lg': !nested
+          }"
+          class="
+            flex-grow sm:flex-grow-0
+            text-primary font-bold dark:text-white
+          "
+        >
+          {{ e.fields.title }}
+        </span>
 
 
         <!--        <span v-if="e.fields.events" class="flex-grow bg-secondary mx-4 h-px rounded-full"></span>-->

@@ -83,7 +83,7 @@ export const mutations = {
       } else {
         activeBlock = [e]
         return {
-          sys: {id: 'fake'},
+          sys: {id: '_'},
           fields: {
             ...e.fields,
 
@@ -94,9 +94,15 @@ export const mutations = {
       }
     }).filter(v => v)
     state.events.forEach(e => {
-      if (e.fields.events) {
-        e.fields.till = e.fields.events[e.fields.events.length - 1].fields.till
-      }
+      if (!e.fields.events) return;
+      const events = e.fields.events;
+
+      e.fields.till = events[events.length - 1].fields.till;
+      e.fields.state =
+        _.some(
+          events,
+          e => [EventState.CURRENT, EventState.UPCOMING].includes(e.fields.state)
+        ) ? EventState.UPCOMING : EventState.FINISHED
     })
   },
   setEvents(state, events) {
