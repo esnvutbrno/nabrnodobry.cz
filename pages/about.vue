@@ -1,62 +1,62 @@
 <template>
   <article>
     <h1 class="text-center text-3xl md:text-6xl text-primary my-4 font-bold dark:text-white">NA Brno dobrý 2022</h1>
-    <p class="text-lg text-justify">
-      LOREM ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
-      neque nesciunt odit officia optio, quod repellendus! Dolor eligendi harum laboriosam natus nesciunt officiis
-      totam.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
-      neque nesciunt odit officia optio, quod repellendus! Dolor eligendi harum laboriosam natus nesciunt officiis
-      totam.
+    <p class="prose prose-xl dark:prose-invert mx-auto my-12 text-center">
+      Welcome to the web of NA Brno dobrý 2022! This spring we are coming back to Brno and we cannot wait to show you
+      what this Moravian jewel has to offer.
+
     </p>
-    <div class="my-4 gap-x-2 flex flex-row">
+    <div class="my-4 gap-2 flex flex-col sm:flex-row items-center justify-center">
       <img
         src="https://brnenska.drbna.cz/files/drbna/images/page/2020/07/02/size4-15937127407149-60-hodari-se-raduji-ve-vetsine-mestskych-casti-letos-hody-budou.jpg"
-        alt=""
-        class="w-1/2"
+        alt="The real Moravian Hody"
+        class="w-full sm:w-1/2"
         width="1000"
         height="668"
       >
       <img
-        class="w-1/2"
+        alt="Hody could be also modern"
         src="https://www.brno-cernovice.cz/wp-content/uploads/2020/09/118912822_3044061082387692_8123382978934372600_o.jpg"
-        alt=""
+        class="w-full sm:w-1/2"
         width="986"
         height="653"
       >
     </div>
-    <p class="text-lg text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
-    neque nesciunt odit officia optio, quod repellendus! Dolor eligendi harum laboriosam natus nesciunt officiis totam.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
-    neque nesciunt odit officia optio, quod repellendus! Dolor eligendi harum laboriosam natus nesciunt officiis totam.
+    <p class="prose prose-lg dark:prose-invert mx-auto text-justify">
+      The theme is Hody. It is a traditional event where boys and girls wear traditional garments and they dance,
+      prepare traditional dishes, build Májkas, and much more. Hody is a large cultural event in each city in Morava and
+      each city and even village has slightly different traditions. And we would like to introduce this tradition to you
+      as well!
     </p>
-    <div class="my-4 gap-x-2 flex flex-row">
+    <div class="my-8 gap-x-2 flex flex-col sm:flex-row items-center justify-center">
       <img
         src="https://brnenska.drbna.cz/files/drbna/images/page/2021/09/11/size4-16313745103149-60-the-times-zaradily-brno-mezi-top-deset-nejlepsich-nehlavnich-mest.jpg"
-        alt=""
-        class="w-1/2"
+        alt="Our lovely Brníčko"
+        class="w-full sm:w-1/2"
         width="1000"
         height="621"
       >
       <img
-        class="w-1/2"
-        src="https://cdn.muni.cz/media/3325889/dsc00447e.jpg?mode=crop&center=0.51,0.61&rnd=132684945840000000&heightratio=0.75&width=600"
-        alt=""
+        alt="ESF MUNI, our plenaries place"
+        class="w-full sm:w-1/2"
+        src="https://cdn.muni.cz/media/3325889/dsc00447e.jpg?mode=crop&center=0.51,0.61&rnd=132684945840000000&heightratio=0.621&width=600"
         width="600"
         height="450"
       >
     </div>
     <h1 class="text-center text-2xl md:text-4xl text-primary my-8 font-bold dark:text-white">ESN Brno United</h1>
 
-    <p class="text-lg text-justify">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eaque explicabo, fugit harum maiores molestiae
-      neque nesciunt odit officia optio, quod repellendus! Dolor eligendi harum laboriosam natus nesciunt officiis
-      totam.
+    <p class="prose prose-lg dark:prose-invert mx-auto text-justify">
+      This event is co-organised by ESN MUNI Brno, ESN VUT, and ESN MENDELU Brno. Together we form ESN Brno United and
+      we
+      have a long tradition of organising events. Every semester we organise Tram Party, Boat Party, Quiz Nights, and
+      many other events. And this May, we would like to invite you to Brno to experience Morava from a different
+      perspective.
+
     </p>
     <img
       src="../assets/img/esn-bu-anniversary.jpg"
-      alt="" class="my-4" width="1784" height="832"
+      alt="That's us, ESN Brno United" class="my-8" height="832" width="1784"
     >
 
     <div class="flex flex-row items-center my-16">
@@ -95,7 +95,7 @@ export default {
 
         require('../assets/partners/vodafone.jpg'),
         require('../assets/partners/hoppygo.png'),
-        
+
         require('../assets/partners/dzs.svg'),
         require('../assets/partners/kpmg.png'),
 
