@@ -17,73 +17,7 @@
         ">{{ data[1][0].fields.dayName }}</h2>
         <span class="flex-grow bg-secondary mx-4 h-1 rounded-full"></span>
       </div>
-      <ul class="
-        list-disc list-outside my-4 md:my-8 mx-auto w-full max-w-lg
-        flex flex-col gap-y-2
-      ">
-        <li
-          class="
-            p-2 flex flex-col sm:flex-row group cursor-pointer
-          "
-          v-for="e in data[1]"
-          :class="{
-            'bg-primary text-white': e.fields.state === 'current',
-            [`state-${e.fields.state}`]: true,
-          }"
-          @click="$router.push({name: 'event-id', params: {id: e.sys.id}})"
-        >
-          <span
-            :class="{
-              'text-white dark:text-white': e.fields.state === 'current',
-              'text-gray-500 dark:text-gray-500': e.fields.state === 'finished',
-            }"
-            class="
-              lg:text-lg flex-grow sm:flex-grow-0
-              text-primary font-bold dark:text-white
-            "
-          >
-            {{ e.fields.title }}
-          </span>
-
-          <span class="flex-grow"></span>
-          <!--          <span class="-->
-          <!--            flex-grow group-odd:bg-gray-100 h-0.5 rounded-full self-center-->
-          <!--            mx-4 hidden sm:block-->
-          <!--          "></span>-->
-
-          <span
-            v-if="e.fields.place && e.fields.place.fields.title"
-            :class="{'text-gray-500': e.fields.state === 'finished'}"
-            class="self-end flex flex-row gap-1 items-center mr-0 sm:mr-2"
-          >
-            <img
-              :class="{
-                'black-to-white': e.fields.state === 'current',
-              }"
-              alt="Place"
-              class="w-4 w-4 dark:black-to-white"
-              src="~/assets/svg/place.svg"
-            >
-            {{ e.fields.place.fields.title }}
-          </span>
-
-          <time
-            :class="{'text-gray-500': e.fields.state === 'finished'}"
-            class="self-end flex flex-row gap-1 items-center min-w-auto sm:min-w-[10rem]"
-          >
-            <img
-              :class="{
-                'black-to-white': e.fields.state === 'current',
-              }"
-              alt="Time"
-              class="w-3 w-3 dark:black-to-white"
-              src="~/assets/svg/time.svg"
-            >
-            {{ e.fields.from }}
-            <span v-if="e.fields.till" class="text-sm text-gray-500">– {{ e.fields.till }}</span>
-          </time>
-        </li>
-      </ul>
+      <EventList :events="data[1]" class="my-4 md:my-8"/>
     </section>
   </article>
 </template>
@@ -107,12 +41,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.state-upcoming,
-.state-finished {
-  @apply odd:bg-gray-100 odd:hover:bg-gray-200 hover:bg-gray-100
-  dark:odd:bg-gray-800 dark:hover:bg-gray-800 dark:odd:hover:bg-gray-700
-}
-
-</style>

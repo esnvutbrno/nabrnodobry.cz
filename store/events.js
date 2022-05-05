@@ -68,6 +68,36 @@ export const mutations = {
         Vue.set(e.fields, 'state', EventState.UPCOMING)
       }
     })
+
+    let activeBlock = null;
+    state.events = state.events.map(e => {
+      const currentEventBlock = e.fields.block;
+      if (!currentEventBlock) {
+        activeBlock = null;
+        return e;
+      }
+      // current is in block
+      if (activeBlock) {
+        activeBlock.push(e)
+        return;
+      } else {
+        activeBlock = [e]
+        return {
+          sys: {id: 'fake'},
+          fields: {
+            ...e.fields,
+
+            title: currentEventBlock,
+            events: activeBlock,
+          }
+        };
+      }
+    }).filter(v => v)
+    state.events.forEach(e => {
+      if (e.fields.events) {
+        e.fields.till = e.fields.events[e.fields.events.length - 1].fields.till
+      }
+    })
   },
   setEvents(state, events) {
     state.events = events.map((e, i) => {
