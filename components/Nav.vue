@@ -17,10 +17,11 @@
         <nuxt-link class="nuxt-link whitespace-nowrap" :to="{name: 'about'}">About NA</nuxt-link>
       </li>
       <li class="flex items-center justify-end">
-        <nuxt-link class="nuxt-link"
+        <nuxt-link class="nuxt-link tracking-tighter"
                    :to="{name: 'faq-category', params: {category: 'general'}}"
                    :class="{'nuxt-link-active': $route.name && $route.name.startsWith('faq-')}"
-        >FAQ</nuxt-link>
+        >Q & A
+        </nuxt-link>
       </li>
     </ul>
     <nuxt-link
