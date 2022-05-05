@@ -17,7 +17,7 @@ export default {
     }
     return (
       from.params.category === to.params.category ||
-      to.params.category === 'faq-category-question') ? 'none' : 'page';
+      to.name === 'faq-category-question') ? 'none' : 'page';
   },
   computed: {
     ...mapGetters('questions', ['activeCategoryTitle']),
