@@ -17,12 +17,15 @@
         <nuxt-link class="nuxt-link whitespace-nowrap" :to="{name: 'about'}">About NA</nuxt-link>
       </li>
       <li class="flex items-center justify-end">
-        <nuxt-link class="nuxt-link tracking-tighter"
+        <nuxt-link class="nuxt-link tracking-tighter whitespace-nowrap"
                    :to="{name: 'faq-category', params: {category: 'general'}}"
                    :class="{'nuxt-link-active': $route.name && $route.name.startsWith('faq-')}"
         >Q & A
         </nuxt-link>
       </li>
+      <!--      <li class="flex items-center justify-end">-->
+      <!--        <nuxt-link class="nuxt-link whitespace-nowrap" :to="{name: 'about'}">Links</nuxt-link>-->
+      <!--      </li>-->
     </ul>
     <nuxt-link
       class="
@@ -52,6 +55,9 @@
       </li>
       <li class="flex items-center justify-start">
         <nuxt-link class="nuxt-link" :to="{name: 'team'}">Team</nuxt-link>
+      </li>
+      <li class="flex items-center justify-start">
+        <nuxt-link :to="{name: 'game'}" class="nuxt-link">Game</nuxt-link>
       </li>
       <li class="flex items-center justify-start">
         <nuxt-link class="nuxt-link" :to="{name: 'contact'}">Contact</nuxt-link>
