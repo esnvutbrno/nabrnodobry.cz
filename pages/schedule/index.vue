@@ -24,9 +24,6 @@
         <li
           class="
             p-2 flex flex-col sm:flex-row group cursor-pointer
-            odd:bg-gray-100 odd:hover:bg-gray-200
-            hover:bg-gray-100
-            dark:odd:bg-gray-800 dark:hover:bg-gray-800 dark:odd:hover:bg-gray-700
           "
           v-for="e in data[1]"
           :class="{
@@ -112,21 +109,10 @@ export default {
 </script>
 
 <style scoped>
+.state-upcoming,
 .state-finished {
-  position: relative;
+  @apply odd:bg-gray-100 odd:hover:bg-gray-200 hover:bg-gray-100
+  dark:odd:bg-gray-800 dark:hover:bg-gray-800 dark:odd:hover:bg-gray-700
 }
 
-.state-finished:before {
-  /* for now */
-  display: none;
-  position: absolute;
-  right: calc(100% + .5rem);
-  top: 0;
-  bottom: 0;
-  content: ' ';
-  background: url('assets/svg/event-finished.svg') no-repeat center center;
-  background-size: 100% 100%;
-  padding-right: 1rem;
-  width: 2rem;
-}
 </style>
