@@ -43,7 +43,13 @@
             :icon-url="require('../assets/svg/marker.svg')"
             class-name="black-to-primary dark:black-to-secondary"
           />
-          <l-tooltip :options="{permanent: true, interactive: true}">{{ p.fields.title }}</l-tooltip>
+          <l-tooltip :options="{
+            permanent: true,
+            interactive: true,
+            opacity: .9,
+            direction: p.fields.tooltipDirection || 'auto'
+          }">{{ p.fields.title }}
+          </l-tooltip>
         </l-marker>
         <LGPX
           :gpx-file="track"
@@ -188,6 +194,13 @@ export default {
 .dark .leaflet-tile-container img {
   /* inspired by https://github.com/xtk93x/Leaflet.TileLayer.ColorFilter */
   filter: hue-rotate(180deg) brightness(120%) invert(100%);
+}
+
+.leaflet-tooltip {
+  @apply text-base p-2 border-4 border-primary bg-white
+  hover:border-secondary
+
+  dark:bg-gray-800 dark:text-white dark:font-medium;
 }
 </style>
 
