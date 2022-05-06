@@ -97,7 +97,7 @@ export default {
       purpose: 'any',
     },
     workbox: {
-      // enabled: true,
+      enabled: false,
       offlineStrategy: "StaleWhileRevalidate",
     }
   },
