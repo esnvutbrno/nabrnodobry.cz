@@ -6,6 +6,7 @@
       hover:text-white
       uppercase text-sm
     "
+    title="Do the magic please"
     @click="$store.commit('theme/change', nextTheme)"
   >
     <svg
