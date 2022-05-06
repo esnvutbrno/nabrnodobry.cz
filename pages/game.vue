@@ -52,6 +52,12 @@
         The game will <strong>end on Saturday at 23:59</strong>, and the winners will be announced the next day!
       </p>
 
+      <p>
+        Be aware, that this event is still our <strong>official national assembly</strong>, so <em>do not disrupt
+        plenaries</em> or any official
+        program by <em>playing the game</em>.
+      </p>
+
       <h3 class="text-center">So are you <span class="text-secondary">ready for it?</span></h3>
       <h4 class="text-center">Who do you think is going to win this?</h4>
 
