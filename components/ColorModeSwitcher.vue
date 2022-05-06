@@ -1,8 +1,8 @@
 <template>
   <button class="
       py-1 px-2 m-1 flex flex-row items-center gap-2
-      rounded border-2 border-gray-600 text-gray-300
-      hover:text-gray-600
+      rounded border-2 border-current text-gray-300
+      hover:text-white
       uppercase text-sm
     "
           @click="$colorMode.preference = ($colorMode.value === 'dark' ? 'light' : 'dark')"
