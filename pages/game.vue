@@ -10,6 +10,8 @@
         new
         people.</p>
 
+      <img alt="Let's dig into it!" class="mx-auto w-full sm:w-1/2 md:w-1/2" src="../assets/game.webp">
+
       <h4>So what is the game about?</h4>
 
       <p>Firstly you will be divided into teams. You can find the names of your team members inside the Welcome
@@ -34,6 +36,8 @@
         will tell you more
         details about where to look later.</p>
 
+      <img alt="Hidden tasks? Where?!" class="mx-auto w-full sm:w-1/2 md:w-1/2" src="../assets/game2.webp">
+
       <h4>How will you get the points?</h4>
 
       <p>We created a special Instagram account where you have to send us all the tasks you will finish. All you have to
@@ -50,6 +54,8 @@
 
       <h3 class="text-center">So are you <span class="text-secondary">ready for it?</span></h3>
       <h4 class="text-center">Who do you think is going to win this?</h4>
+
+      <img alt="Who's gonna be the winner?" class="mx-auto w-full sm:w-1/2 md:w-1/2" src="../assets/game1.webp">
     </div>
   </article>
 </template>
