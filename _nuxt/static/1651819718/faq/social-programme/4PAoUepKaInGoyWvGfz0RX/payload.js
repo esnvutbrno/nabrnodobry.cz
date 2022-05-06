@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/faq/social-programme/4PAoUepKaInGoyWvGfz0RX", {data:[{}],fetch:{"data-v-6c6bcef4:0":{},"data-v-40edf253:0":{assets:[]},"data-v-bb1a04f2:0":{time:new Date(1651819723313)}},mutations:[["questions\u002FsetActiveCategorySlug","social-programme"],["questions\u002FsetActiveQuestionId","4PAoUepKaInGoyWvGfz0RX"]]});
