@@ -23,10 +23,10 @@
       >
     </div>
     <p class="prose prose-lg dark:prose-invert mx-auto text-justify">
-      The theme is Hody. It is a traditional event where boys and girls wear traditional garments and they dance,
-      prepare traditional dishes, build Májkas, and much more. Hody is a large cultural event in each city in Morava and
-      each city and even village has slightly different traditions. And we would like to introduce this tradition to you
-      as well!
+      The Theme is Hody - a traditional celebration of certain patrons of the village. The whole village celebrates by
+      preparing traditional ceremonies, dancing and singing in national costumes, and finishing with a service in the
+      local church. Hody is a large cultural event in each village and smaller region in Moravia and each one of them
+      has slightly different traditions. And we would like to introduce this tradition to you as well!
     </p>
     <div class="my-8 gap-x-2 flex flex-col sm:flex-row items-center justify-center">
       <img
