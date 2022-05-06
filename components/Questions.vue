@@ -126,6 +126,6 @@ export default {
 
 <style scoped>
 .nuxt-link-active {
-  @apply text-secondary after:bg-secondary;
+  @apply text-secondary;
 }
 </style>
