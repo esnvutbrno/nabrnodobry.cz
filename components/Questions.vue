@@ -4,18 +4,28 @@
         font-medium text-gray-800 dark:text-gray-100 text-lg
         flex flex-wrap flex-row justify-around md:justify-center items-center
     ">
-      <li v-for="g in categories" class="inline-block w-1/2 md:w-auto text-center">
+      <li v-for="g in categories"
+          class="
+            inline-block w-1/2 md:w-auto text-center group
+          "
+      >
         <nuxt-link
           :to="{name: 'faq-category', params: {category: g.slug}}"
           class="
             inline-block p-1 md:p-4 hover:text-primary dark:hover:text-secondary
+
+            relative
+            after:absolute
+            after:bottom-0 after:w-full after:h-1 after:bg-primary
+            after:left-0 after:right-0
+            group-last:after:rounded-r-full group-first:after:rounded-l-full
            "
         >{{ g.title }}
         </nuxt-link>
       </li>
     </ul>
 
-    <div class="max-w-2xl mx-auto py-4 md:py-4">
+    <div class="max-w-2xl mx-auto py-4 md:py-8">
       <div v-for="q in currentQuestions" class="group">
         <nuxt-link
           :class="{'text-primary dark:text-secondary': question === q.sys.id}"
@@ -28,8 +38,10 @@
           }"
           class="
             text-lg p-4 block
-            hover:bg-gray-100 dark:hover:bg-gray-800
             flex flex-row items-center justify-between
+
+            group-odd:bg-gray-100 group-odd:hover:bg-gray-200 group-hover:bg-gray-100
+            dark:group-odd:bg-gray-800 dark:group-hover:bg-gray-800 dark:group-odd:hover:bg-gray-700
           "
           href="#"
         >
@@ -114,6 +126,6 @@ export default {
 
 <style scoped>
 .nuxt-link-active {
-  @apply text-secondary;
+  @apply text-secondary after:bg-secondary;
 }
 </style>
