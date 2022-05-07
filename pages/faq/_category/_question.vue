@@ -16,14 +16,17 @@ export default {
   computed: {
     ...mapGetters('questions', ['activeQuestionTitle', 'activeCategoryTitle']),
   },
-  beforeCreate() {
-    this.$store.commit('questions/setActiveCategorySlug', this.$route.params.category)
-    this.$store.commit('questions/setActiveQuestionId', this.$route.params.question)
-  },
   head() {
     return {
-      title: this.activeQuestionTitle || `${this.activeCategoryTitle} FAQ`
+      title: this.activeQuestionTitle
     };
+  },
+  async fetch({route, error, store}) {
+    store.commit('questions/setActiveCategorySlug', route.params.category)
+    store.commit('questions/setActiveQuestionId', route.params.question)
+
+    if (!store.getters['questions/activeQuestionTitle'])
+      error({statusCode: 404, message: "Specified question not found."})
   },
 }
 </script>

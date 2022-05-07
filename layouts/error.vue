@@ -32,6 +32,9 @@
 <script>
 export default {
   props: ['error'],
+  head() {
+    return {title: 'Something wrong'}
+  },
   created() {
     if ((this.error.message || '').includes('Expected parameter') && !this.$nuxt.isOffline && process.client) {
       window.location.reload()

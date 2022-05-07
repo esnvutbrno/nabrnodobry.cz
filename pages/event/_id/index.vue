@@ -115,6 +115,10 @@ export default {
       return this.event.fields.photo || (this.event.fields.place && this.event.fields.place.fields.photo)
     }
   },
+  async fetch({error}) {
+    if (!this.event)
+      error({statusCode: 404, message: "Specified event not found."})
+  }
 }
 </script>
 

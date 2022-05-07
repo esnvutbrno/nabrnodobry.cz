@@ -24,14 +24,19 @@ export default {
   computed: {
     ...mapGetters('questions', ['activeCategoryTitle']),
   },
-  beforeCreate() {
-    this.$store.commit('questions/setActiveCategorySlug', this.$route.params.category)
-    this.$store.commit('questions/setActiveQuestionId', this.$route.params.question)
-  },
   head() {
     return {
       title: `${this.activeCategoryTitle} FAQ`
     };
+  },
+  async fetch({route, error, store}) {
+    store.commit('questions/setActiveCategorySlug', route.params.category)
+    store.commit('questions/setActiveQuestionId', route.params.question)
+
+    const selectedCategory = route.params.category
+
+    if (!store.state.questions.categoriesSlugs.includes(selectedCategory))
+      error({statusCode: 404, message: "Specified FAQ category not found."})
   },
 }
 </script>

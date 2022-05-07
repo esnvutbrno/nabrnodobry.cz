@@ -115,11 +115,6 @@ export default {
       return slug(v)
     }
   },
-  async fetch() {
-    const selectedCategory = this.category
-    if (!selectedCategory)
-      return this.$router.replace({name: 'faq-category', params: {category: 'general'}})
-  },
 }
 </script>
 
