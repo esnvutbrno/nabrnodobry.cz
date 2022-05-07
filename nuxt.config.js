@@ -128,9 +128,6 @@ export default {
     id: 'GTM-595F8QZ',
     pageTracking: true,
   },
-  tailwind: {
-    cssPath: '~/assets/css/main.css'
-  },
   markdownit: {
     runtime: true,
     preset: 'default',
