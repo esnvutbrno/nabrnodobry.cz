@@ -26,10 +26,10 @@
 
       <div class="w-auto md:w-1/3 flex-row-reverse md:flex-col items-center">
         <img
-          v-if="event.fields.photo"
-          :src="event.fields.photo.fields.file.url"
-          :width="event.fields.photo.fields.file.details.image.width"
-          :height="event.fields.photo.fields.file.details.image.height"
+          v-if="photo"
+          :height="photo.fields.file.details.image.height"
+          :src="photo.fields.file.url"
+          :width="photo.fields.file.details.image.width"
           :alt="event.fields.title"
           class="w-1/2 md:w-full mx-auto"
         >
@@ -38,7 +38,7 @@
           :to="{name: 'map', hash: '#' + event.fields.place.sys.id}"
           class="my-4 gap-2 flex flex-row items-center justify-center p-2 rounded border border-primary dark:border-white"
         >
-          <img src="../../../assets/svg/place.svg" alt="" class="h-8 w-8 dark:black-to-white">
+          <img alt="This place" class="h-8 w-8 dark:black-to-white" src="../../../assets/svg/place.svg">
           <span
             class="text-lg font-bold"
           >
@@ -125,6 +125,11 @@ export default {
       window.history.length > 1 ?
         this.$router.go(-1) :
         this.$router.push({name: 'schedule'})
+    }
+  },
+  computed: {
+    photo() {
+      return this.event.fields.photo || (this.event.fields.place && this.event.fields.place.fields.photo)
     }
   }
 }

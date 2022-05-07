@@ -102,7 +102,16 @@ export const mutations = {
         _.some(
           events,
           e => [EventState.CURRENT, EventState.UPCOMING].includes(e.fields.state)
-        ) ? EventState.UPCOMING : EventState.FINISHED
+        ) ? EventState.UPCOMING : EventState.FINISHED;
+
+      // reset places
+      const allPlaces = _.uniq(_.map(events, _.property('fields.place')).filter(Boolean))
+      if (allPlaces.length === 1) {
+        e.fields.place = allPlaces[0];
+        events.forEach(e => (e.fields.place = null))
+      } else {
+        e.fields.place = null;
+      }
     })
   },
   setEvents(state, events) {
