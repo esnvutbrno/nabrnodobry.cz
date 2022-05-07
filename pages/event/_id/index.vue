@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <article>
     <button
       class="bg-primary text-white uppercase
       p-2 my-2 text-center rounded block w-full font-bold"
@@ -12,7 +12,9 @@
         font-bold flex flex-col sm:flex-row justify-between items-center">
       <span class="text-4xl">{{ event.fields.title }}</span>
       <span class="text-3xl">
-        {{ dayName }}, {{ fromTime }} <template v-if="toTime">– {{ toTime }}</template></span>
+        {{ event.fields.dayName }}, {{ event.fields.from }} <template v-if="event.fields.till">– {{
+          event.fields.till
+        }}</template></span>
     </h1>
 
     <div class="flex flex-col-reverse md:flex-row justify-between gap-x-4">
@@ -47,41 +49,18 @@
         </nuxt-link>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
 
 import RichTextRenderer from "contentful-rich-text-vue-renderer";
-import {createClient} from "@/plugins/contentful";
-
-import {DateTime, Duration} from '@/utils/date';
+import {mapGetters} from "vuex";
 
 
 export default {
   name: "EventDetailPage",
   components: {RichTextRenderer},
-  async asyncData({params}) {
-    const client = createClient();
-
-    const event = await client.getEntry(params.id)
-
-    const when = DateTime.fromISO(event.fields.when);
-    const dayName = when.startOf('day').toFormat('ccc')
-    const fromTime = when.toFormat('t').replace(':00', '')
-    const toTime = event.fields.length ?
-      when.plus(Duration.fromObject({minutes: event.fields.length})).toFormat('t')
-        .replace(':00', '') :
-      ''
-    ;
-
-    return {
-      event,
-      dayName,
-      fromTime,
-      toTime,
-    };
-  },
   data: () => ({
     nodeRenderers: {
       'embedded-asset-block': (node, key, c, next) => `${node} ${key}`,
@@ -117,7 +96,7 @@ export default {
   }),
   head() {
     return {
-      title: this.event.fields.title
+      title: this.event && this.event.fields.title
     };
   },
   methods: {
@@ -128,10 +107,14 @@ export default {
     }
   },
   computed: {
+    ...mapGetters('events', ['byId']),
+    event() {
+      return this.byId(this.$route.params.id)
+    },
     photo() {
       return this.event.fields.photo || (this.event.fields.place && this.event.fields.place.fields.photo)
     }
-  }
+  },
 }
 </script>
 

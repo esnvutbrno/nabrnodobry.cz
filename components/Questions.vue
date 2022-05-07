@@ -119,9 +119,6 @@ export default {
     const selectedCategory = this.category
     if (!selectedCategory)
       return this.$router.replace({name: 'faq-category', params: {category: 'general'}})
-
-    if (!this.categoriesSlugs.includes(selectedCategory))
-      throw Error({statusCode: 404, message: 'Unknown FAQ category.'})
   },
 }
 </script>

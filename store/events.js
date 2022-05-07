@@ -5,6 +5,7 @@ import Vue from "vue";
 
 export const state = () => ({
   events: null,
+  eventsFlat: null,
   // return
   // now: DateTime.fromObject({year: 2022, month: 5, day: 13, hour: 15, minute: 15}),
   now: DateTime.now(),
@@ -39,6 +40,9 @@ export const getters = {
       ),
       '0'
     );
+  },
+  byId: (state) => (id) => {
+    return _.find(state.eventsFlat, e => e.sys.id === id)
   }
 }
 
@@ -49,7 +53,7 @@ export class EventState {
 }
 
 export const mutations = {
-  setStatesForEvents(state) {
+  regroupEvents(state) {
     let foundCurrent = false;
     state.events.forEach((e, i) => {
       if (e.fields.when < state.now) {
@@ -93,29 +97,36 @@ export const mutations = {
         };
       }
     }).filter(v => v)
-    state.events.forEach(e => {
-      if (!e.fields.events) return;
-      const events = e.fields.events;
 
-      e.fields.till = events[events.length - 1].fields.till;
-      e.fields.state =
+    state.events.forEach(block => {
+      if (!block.fields.events) return;
+      const eventsInBlock = block.fields.events;
+
+      block.fields.till = eventsInBlock[eventsInBlock.length - 1].fields.till;
+      block.fields.state =
         _.some(
-          events,
+          eventsInBlock,
           e => [EventState.CURRENT, EventState.UPCOMING].includes(e.fields.state)
         ) ? EventState.UPCOMING : EventState.FINISHED;
 
       // reset places
-      const allPlaces = _.uniq(_.map(events, _.property('fields.place')).filter(Boolean))
+      const allPlaces = _.uniq(_.map(eventsInBlock, _.property('fields.place')).filter(Boolean))
+      // console.log('places for block', block.fields.block, ':', allPlaces.map(p => p.fields.title))
       if (allPlaces.length === 1) {
-        e.fields.place = allPlaces[0];
-        events.forEach(e => (e.fields.place = null))
+        // single one place, so it's valid fo all events on block
+        block.fields.place = allPlaces[0];
+        eventsInBlock.forEach(
+          e => Vue.set(e.fields, 'place', allPlaces[0])
+        )
+        // console.log(eventsInBlock)
       } else {
-        e.fields.place = null;
+        // multiple or completely unknown
+        block.fields.place = null;
       }
     })
   },
   setEvents(state, events) {
-    state.events = events.map((e, i) => {
+    state.eventsFlat = state.events = events.map((e, i) => {
       const when = DateTime.fromISO(e.fields.when);
 
       e.fields.when = when;
@@ -145,6 +156,6 @@ export const actions = {
     })).items;
 
     commit('setEvents', events)
-    commit('setStatesForEvents', events)
+    commit('regroupEvents', events)
   }
 }

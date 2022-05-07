@@ -1,18 +1,20 @@
 <template>
   <div>
-    <div
-      v-if="showCountdown"
-      class="
-        text-center text-2xl sm:text-4xl text-primary dark:text-white
-        font-bold my-10 sm:my-20 block
-      "
-    >
-      Brno gonna be dobrý in <br>
-      <Countdown
-        :end-time="countdownTo"
-        class=""
-      />
-    </div>
+    <client-only>
+      <div
+        v-if="showCountdown"
+        class="
+          text-center text-2xl sm:text-4xl text-primary dark:text-white
+          font-bold my-10 sm:my-20 block
+        "
+      >
+        Brno gonna be dobrý in <br>
+        <Countdown
+          :end-time="countdownTo"
+          class=""
+        />
+      </div>
+    </client-only>
 
     <nuxt-link
       v-if="currentEvent"

@@ -44,7 +44,7 @@
         <!--          "></span>-->
 
         <span
-          v-if="e.fields.place && e.fields.place.fields.title"
+          v-if="e.fields.place && e.fields.place.fields.title && showPlaces"
           :class="{'text-gray-500': e.fields.state === 'finished'}"
           class="self-end sm:self-auto flex flex-row gap-1 items-center mr-0 sm:mr-2  min-w-auto sm:min-w-[10rem] ml-4"
         >
@@ -79,6 +79,7 @@
         <EventList
           :events="e.fields.events"
           :nested="true"
+          :show-places="!e.fields.place"
         ></EventList>
       </div>
     </li>
@@ -92,6 +93,9 @@ export default {
     events: Array,
     nested: {
       default: false,
+    },
+    showPlaces: {
+      default: true,
     }
   }
 }
