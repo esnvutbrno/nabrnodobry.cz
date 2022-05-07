@@ -74,7 +74,7 @@ export default {
       return new DateTime(this.startTime)
     },
     showCountdown() {
-      return this.now < this.startTime
+      return DateTime.fromISO(this.now) < this.startTime
     },
   },
 }

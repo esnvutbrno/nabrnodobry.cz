@@ -14,21 +14,26 @@ export const state = () => ({
 
 export const getters = {
   currentEventIndex(state) {
+    const now = DateTime.fromISO(state.now)
     return _.findLastIndex(
       state.events,
-      (e, i) => e.fields.when <= state.now
+      (e, i) => e.fields.when <= now
     )
   },
-  currentEvent(s, g) {
-    const event = g.currentEventIndex >= 0 ? s.events[g.currentEventIndex] : undefined;
+  currentEvent(state, g) {
+    const event = g.currentEventIndex >= 0 ? state.events[g.currentEventIndex] : undefined;
+    const now = DateTime.fromISO(state.now)
+
     if (!event) return;
     if (!event.fields.end) return event;
-    if (event.fields.end > s.now) return event;
+    if (event.fields.end > now) return event;
   },
-  nextEvent(s, g) {
-    const next = g.currentEventIndex >= 0 ? s.events[g.currentEventIndex + 1] : null;
+  nextEvent(state, g) {
+    const next = g.currentEventIndex >= 0 ? state.events[g.currentEventIndex + 1] : null;
+    const now = DateTime.fromISO(state.now)
+
     if (next) return next;
-    if (s.now < s.startTime) return s.events[0];
+    if (now < state.startTime) return state.events[0];
   },
   byDays(s, g) {
     return _.sortBy(
@@ -54,12 +59,14 @@ export class EventState {
 
 export const mutations = {
   regroupEvents(state) {
+    const now = DateTime.fromISO(state.now)
+
     let foundCurrent = false;
     state.events.forEach((e, i) => {
-      if (e.fields.when < state.now) {
+      if (e.fields.when < now) {
         // so event time
         if (e.fields.end) {
-          if (e.fields.end > state.now) {
+          if (e.fields.end > now) {
             Vue.set(e.fields, 'state', EventState.CURRENT)
             foundCurrent = true
           } else {
