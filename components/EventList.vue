@@ -28,7 +28,7 @@
             'lg:text-lg': !nested
           }"
           class="
-            flex-grow sm:flex-grow-0
+            flex-grow sm:flex-grow-0 self-start sm:self-center
             text-primary font-bold dark:text-white
           "
         >
