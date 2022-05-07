@@ -7,8 +7,8 @@ export const state = () => ({
   events: null,
   eventsFlat: null,
   // return
-  // now: DateTime.fromObject({year: 2022, month: 5, day: 13, hour: 15, minute: 15}),
-  now: DateTime.now(),
+  // now: DateTime.fromObject({year: 2022, month: 5, day: 13, hour: 14, minute: 15}).toISO(),
+  now: DateTime.now().toISO(),
   startTime: null,
 })
 
