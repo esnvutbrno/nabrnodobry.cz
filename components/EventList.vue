@@ -46,7 +46,7 @@
         <span
           v-if="e.fields.place && e.fields.place.fields.title"
           :class="{'text-gray-500': e.fields.state === 'finished'}"
-          class="self-end flex flex-row gap-1 items-center mr-0 sm:mr-2"
+          class="self-end sm:self-auto flex flex-row gap-1 items-center mr-0 sm:mr-2  min-w-auto sm:min-w-[10rem] ml-4"
         >
             <img
               :class="{
@@ -61,7 +61,7 @@
 
         <time
           :class="{'text-gray-500': e.fields.state === 'finished'}"
-          class="self-end flex flex-row gap-1 items-center min-w-auto sm:min-w-[10rem]"
+          class="self-end sm:self-auto flex flex-row gap-1 items-center whitespace-nowrap min-w-auto sm:min-w-[10rem]"
         >
           <img
             :class="{
