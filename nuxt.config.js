@@ -4,6 +4,7 @@ import _ from 'lodash'
 
 export default {
   target: 'static',
+  fallback: true,
 
   head: {
     title: 'NA Brno dobrý 2022',
