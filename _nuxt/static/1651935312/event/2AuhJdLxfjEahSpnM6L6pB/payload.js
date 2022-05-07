@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/event/2AuhJdLxfjEahSpnM6L6pB", {data:[{}],fetch:{"data-v-40edf253:0":{assets:[]},"data-v-67a4fbf8:0":{time:new Date(1651935317459)}},mutations:[]});
