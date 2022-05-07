@@ -10,6 +10,8 @@ export const state = () => ({
   // now: DateTime.fromObject({year: 2022, month: 5, day: 13, hour: 14, minute: 15}).toISO(),
   now: DateTime.now().toISO(),
   startTime: null,
+
+  eventInDetailId: null,
 })
 
 export const getters = {
@@ -47,8 +49,8 @@ export const getters = {
       '0'
     );
   },
-  byId: (state) => (id) => {
-    return _.find(state.eventsFlat, e => e.sys.id === id)
+  eventInDetail: (state) => {
+    return _.find(state.eventsFlat, e => e.sys.id === state.eventInDetailId)
   }
 }
 
@@ -151,6 +153,9 @@ export const mutations = {
       return e;
     });
     state.startTime = state.events[0].fields.when.toISO();
+  },
+  setEventInDetailId(state, id) {
+    state.eventInDetailId = id
   }
 }
 

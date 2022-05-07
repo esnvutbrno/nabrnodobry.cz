@@ -107,16 +107,20 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('events', ['byId']),
+    ...mapGetters('events', ['eventInDetail']),
     event() {
-      return this.byId(this.$route.params.id)
+      return this.eventInDetail
     },
     photo() {
       return this.event.fields.photo || (this.event.fields.place && this.event.fields.place.fields.photo)
     }
   },
-  async fetch({error}) {
-    if (!this.event)
+  async fetch({store, route, error}) {
+    store.commit('events/setEventInDetailId', route.params.id)
+
+    const event = store.getters['events/eventInDetail']
+
+    if (!event)
       error({statusCode: 404, message: "Specified event not found."})
   }
 }
