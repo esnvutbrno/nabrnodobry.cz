@@ -31,9 +31,10 @@ export const getters = {
   nextEvent(state, g) {
     const next = g.currentEventIndex >= 0 ? state.events[g.currentEventIndex + 1] : null;
     const now = DateTime.fromISO(state.now)
+    const start = DateTime.fromISO(state.startTime)
 
     if (next) return next;
-    if (now < state.startTime) return state.events[0];
+    if (now < start) return state.events[0];
   },
   byDays(s, g) {
     return _.sortBy(
@@ -149,7 +150,7 @@ export const mutations = {
 
       return e;
     });
-    state.startTime = state.events[0].fields.when;
+    state.startTime = state.events[0].fields.when.toISO();
   }
 }
 

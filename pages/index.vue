@@ -25,7 +25,7 @@
       "
     >
       right now: {{ currentEvent.fields.title }}
-      <template v-if="currentEvent.fields.till">till {{ currentEvent.fields.till }}</template>
+      <span v-if="currentEvent.fields.till" class="whitespace-nowrap">till {{ currentEvent.fields.till }}</span>
     </nuxt-link>
     <nuxt-link
       v-if="nextEvent"
@@ -35,7 +35,7 @@
         font-bold my-10 sm:my-20 block hover:underline
       "
     >
-      next: {{ nextEvent.fields.title }} from {{ nextEvent.fields.from }}
+      next event: {{ nextEvent.fields.title }} from <span class="whitespace-nowrap">{{ nextEvent.fields.from }}</span>
     </nuxt-link>
 
     <Announcements/>
@@ -71,10 +71,10 @@ export default {
       'events',
     ]),
     countdownTo() {
-      return new DateTime(this.startTime)
+      return DateTime.fromISO(this.startTime)
     },
     showCountdown() {
-      return DateTime.fromISO(this.now) < this.startTime
+      return DateTime.fromISO(this.now) < this.countdownTo
     },
   },
 }
