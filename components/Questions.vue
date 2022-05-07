@@ -7,7 +7,7 @@
       ">
         <li v-for="g in categories"
             class="
-            i nline-block w-1/2 md:w-auto text-center group
+            inline-block w-1/2 md:w-auto text-center group
           "
         >
           <nuxt-link
@@ -132,6 +132,6 @@ export default {
 }
 
 nav .nuxt-link-active {
-  @apply after:border-secondary;
+  @apply after:bg-secondary;
 }
 </style>
