@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="max-w-xl mx-auto">
     <client-only>
       <div
         v-if="showCountdown"
         class="
-          text-center text-2xl sm:text-4xl text-primary dark:text-white
-          font-bold my-10 sm:my-20 block
+          text-center text-2xl text-primary dark:text-white
+          font-bold my-10 sm:my-20
         "
       >
         Brno gonna be dobrý in <br>
