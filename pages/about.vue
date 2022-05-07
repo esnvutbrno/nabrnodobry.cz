@@ -1,8 +1,12 @@
 <template>
-  <article class="max-w-2xl mx-auto">
+  <article class="
+    max-w-2xl mx-auto
+    prose-em:text-secondary prose-em:not-italic prose-em:font-medium prose-a:text-secondary
+  ">
     <h1 class="text-center text-3xl md:text-6xl text-primary my-4 font-bold dark:text-white">NA Brno dobrý 2022</h1>
     <p class="prose prose-xl dark:prose-invert mx-auto my-12 text-center">
-      Welcome to the web of NA Brno dobrý 2022! This spring we are coming back to Brno and we cannot wait to show you
+      Welcome to the web of <em>NA Brno dobrý 2022!</em> This spring we are coming back to Brno and we cannot wait to
+      show you
       what this Moravian jewel has to offer.
 
     </p>
@@ -23,10 +27,12 @@
       >
     </div>
     <p class="prose prose-lg dark:prose-invert mx-auto text-justify">
-      The Theme is Hody - a traditional celebration of certain patrons of the village. The whole village celebrates by
-      preparing traditional ceremonies, dancing and singing in national costumes, and finishing with a service in the
+      The theme is <em>Hody</em> - a traditional celebration of certain patrons of the village. The whole village
+      celebrates by
+      preparing traditional <strong>ceremonies, dancing and singing</strong> in national costumes, and finishing with a
+      service in the
       local church. Hody is a large cultural event in each village and smaller region in Moravia and each one of them
-      has slightly different traditions. And we would like to introduce this tradition to you as well!
+      has slightly different <em>traditions</em>. And we would like to introduce this tradition to you as well!
     </p>
     <div class="my-8 gap-x-2 flex flex-col sm:flex-row items-center justify-center">
       <img
@@ -47,11 +53,12 @@
     <h1 class="text-center text-2xl md:text-4xl text-primary my-8 font-bold dark:text-white">ESN Brno United</h1>
 
     <p class="prose prose-lg dark:prose-invert mx-auto text-justify">
-      This event is co-organised by ESN MUNI Brno, ESN VUT, and ESN MENDELU Brno. Together we form ESN Brno United and
+      This event is co-organised by ESN MUNI Brno, ESN VUT, and ESN MENDELU Brno. <em>Together we form ESN Brno
+      United</em> and
       we
       have a long tradition of organising events. Every semester we organise Tram Party, Boat Party, Quiz Nights, and
-      many other events. And this May, we would like to invite you to Brno to experience Morava from a different
-      perspective.
+      many other events. And this May, we would like to invite you to Brno to experience Morava from a <strong>different
+      perspective</strong>.
 
     </p>
     <img
