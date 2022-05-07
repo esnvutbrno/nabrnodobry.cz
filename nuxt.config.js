@@ -4,7 +4,6 @@ import _ from 'lodash'
 
 export default {
   target: 'static',
-  fallback: '404.html',
 
   head: {
     title: 'NA Brno dobrý 2022',
@@ -105,6 +104,7 @@ export default {
   },
 
   generate: {
+    fallback: true,
     async routes() {
 
       const client = createClient();
