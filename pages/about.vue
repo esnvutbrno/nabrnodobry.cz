@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="max-w-2xl mx-auto">
     <h1 class="text-center text-3xl md:text-6xl text-primary my-4 font-bold dark:text-white">NA Brno dobrý 2022</h1>
     <p class="prose prose-xl dark:prose-invert mx-auto my-12 text-center">
       Welcome to the web of NA Brno dobrý 2022! This spring we are coming back to Brno and we cannot wait to show you
