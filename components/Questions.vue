@@ -62,7 +62,9 @@
         </nuxt-link>
         <div
           v-show="question === q.sys.id"
-          class="p-4 bg-gray-50 dark:bg-gray-800 prose dark:prose-invert mx-auto prose-img:my-2 w-5/6"
+          class="p-4 bg-gray-50 dark:bg-gray-800
+            prose dark:prose-invert mx-auto prose-img:my-2
+            w-5/6"
         >
           <RichTextRenderer
             v-if="q.fields.answer"
