@@ -28,14 +28,13 @@
       class="
         flex flex-col sm:flex-row justify-center items-center
         my-2 sm:mx-2 md:mx-4 md:my-0
-        px-4
-        hover:bg-gray-50 dark:hover:bg-primary
+        px-4 group
       "
       :to="{name: 'index'}"
       :class="{'hidden md:block md:invisible': $route.path === '/'}"
     >
       <svg
-        class="w-10 sm:w-12 fill-primary dark:fill-white dark:hover:fill-secondary"
+        class="w-10 sm:w-12 fill-primary dark:fill-white group-hover:fill-secondary"
         viewBox="0 0 82.225755 72.054314"
       >
         <use :xlink:href="require('@/assets/svg/cb.svg') + '#main'"/>

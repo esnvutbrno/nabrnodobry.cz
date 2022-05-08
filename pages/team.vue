@@ -1,5 +1,8 @@
 <template>
-  <div class="space-y-4 lg:space-y-8">
+  <div
+    :class="{'working-hard': workingHard}"
+    class="space-y-4 lg:space-y-8"
+  >
     <ul class="flex flex-row flex-wrap justify-center">
       <li v-for="head in heads"
           class="
@@ -13,6 +16,7 @@
             w-full rounded-full
             transition-transform duration-300 ease-in-out hover:scale-110
           "
+          :style="{animationDuration: `${500 + 2000 * Math.random()}ms`}"
         />
         <h2 class="sm:text-lg text-primary dark:text-white text-center my-1">{{ head.fields.name }}</h2>
         <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ head.fields.position }}</h3>
@@ -60,6 +64,7 @@
               w-full rounded-full mx-4
               transition-transform duration-300 ease-in-out hover:scale-110
             "
+            :style="{animationDuration: `${500 + 3000 * Math.random()}ms`}"
           />
           <h2 class="text-primary dark:text-white text-center my-1">{{ member.fields.name }}</h2>
           <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ member.fields.position }}</h3>
@@ -88,6 +93,14 @@
         </li>
       </ul>
     </div>
+
+    <p class="text-right py-2">
+      <button
+        class="text-right text-gray-500 text-sm hover:underline"
+        @click="workingHard = !workingHard"
+      >psssst, wanna see how hard we're working on this NA?
+      </button>
+    </p>
   </div>
 </template>
 
@@ -114,6 +127,7 @@ export default {
     return {
       heads: heads.items,
       teams: _.groupBy(_.filter(members.items, 'fields.team'), 'fields.team'),
+      workingHard: false,
     }
   },
   head() {
@@ -125,5 +139,21 @@ export default {
 </script>
 
 <style scoped>
+.working-hard img {
+  animation: Rotate 200ms ease-in-out infinite alternate;
+}
 
+@keyframes Rotate {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(100%) rotate(360deg);
+  }
+
+  75% {
+    transform: translateX(-100%) rotate(-360deg);
+  }
+}
 </style>
