@@ -16,7 +16,11 @@
             w-full rounded-full
             transition-transform duration-300 ease-in-out hover:scale-110
           "
-          :style="{animationDuration: `${500 + 2000 * Math.random()}ms`}"
+          :style="{
+            animationDuration: `${500 + 2000 * Math.random()}ms`,
+            '--max-offset-left': `${-50 - 200 * Math.random()}%`,
+            '--max-offset-right': `${50 + 200 * Math.random()}%`,
+          }"
         />
         <h2 class="sm:text-lg text-primary dark:text-white text-center my-1">{{ head.fields.name }}</h2>
         <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ head.fields.position }}</h3>
@@ -64,7 +68,11 @@
               w-full rounded-full mx-4
               transition-transform duration-300 ease-in-out hover:scale-110
             "
-            :style="{animationDuration: `${500 + 3000 * Math.random()}ms`}"
+            :style="{
+              animationDuration: `${500 + 3000 * Math.random()}ms`,
+              '--max-offset-left': `${-50 - 150 * Math.random()}%`,
+              '--max-offset-right': `${50 + 150 * Math.random()}%`,
+            }"
           />
           <h2 class="text-primary dark:text-white text-center my-1">{{ member.fields.name }}</h2>
           <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ member.fields.position }}</h3>
@@ -149,11 +157,11 @@ export default {
   }
 
   25% {
-    transform: translateX(100%) rotate(360deg);
+    transform: translateX(var(--max-offset-left)) rotate(360deg);
   }
 
   75% {
-    transform: translateX(-100%) rotate(-360deg);
+    transform: translateX(var(--max-offset-right)) rotate(-360deg);
   }
 }
 </style>
