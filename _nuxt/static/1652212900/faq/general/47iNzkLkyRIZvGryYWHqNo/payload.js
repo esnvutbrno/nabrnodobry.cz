@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/faq/general/47iNzkLkyRIZvGryYWHqNo", {data:[{}],fetch:{"data-v-40edf253:0":{assets:[]},"data-v-67a4fbf8:0":{time:new Date(1652212905271)}},mutations:[["questions\u002FsetActiveCategorySlug","general"],["questions\u002FsetActiveQuestionId","47iNzkLkyRIZvGryYWHqNo"]]});
