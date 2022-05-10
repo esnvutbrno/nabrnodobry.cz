@@ -20,9 +20,9 @@
         >Q & A
         </nuxt-link>
       </li>
-      <!--      <li class="flex items-center justify-end">-->
-      <!--        <nuxt-link class="nuxt-link whitespace-nowrap" :to="{name: 'about'}">Links</nuxt-link>-->
-      <!--      </li>-->
+      <li>
+        <nuxt-link :to="{name: 'links'}" class="">Links</nuxt-link>
+      </li>
     </ul>
     <nuxt-link
       class="
