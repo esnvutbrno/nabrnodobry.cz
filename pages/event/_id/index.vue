@@ -19,6 +19,12 @@
 
     <div class="flex flex-col-reverse md:flex-row justify-between gap-x-4">
       <div class="w-auto md:w-2/3 prose prose-p:text-justify dark:prose-invert">
+        <YoutubeVideo
+          v-if="event && event.fields.youtube"
+          :id="event.fields.youtube"
+          :title="event.fields.title"
+        />
+
         <RichTextRenderer
           v-if="event.fields.description"
           :document="event.fields.description"
