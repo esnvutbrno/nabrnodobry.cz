@@ -109,7 +109,7 @@ export default {
         require('../assets/partners/esf.svg'),
 
         require('../assets/partners/svet-plodu.svg'),
-        require('../assets/partners/ponozkovice.svg'),
+        require('../assets/partners/ponozkator.png'),
         require('../assets/partners/mandlarna.jpg'),
         require('../assets/partners/pijumate.png'),
         require('../assets/partners/ciderka.svg'),
