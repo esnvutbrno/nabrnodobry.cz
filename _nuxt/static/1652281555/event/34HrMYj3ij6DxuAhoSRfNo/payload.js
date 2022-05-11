@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/event/34HrMYj3ij6DxuAhoSRfNo", {data:[{}],fetch:{"data-v-40edf253:0":{assets:[]},"data-v-67a4fbf8:0":{time:new Date(1652281562030)}},mutations:[["events\u002FsetEventInDetailId","34HrMYj3ij6DxuAhoSRfNo"]]});
