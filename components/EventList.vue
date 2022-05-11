@@ -43,6 +43,18 @@
         <!--            mx-4 hidden sm:block-->
         <!--          "></span>-->
 
+        <!-- :href="`https://www.youtube.com/watch?v=${e.fields.youtube}`"-->
+        <span
+          v-if="e.fields.youtube"
+          class="hover:black-to-secondary dark:black-to-white mr-2"
+        >
+          <img
+            alt="Youtube link"
+            class="w-4 w-4"
+            src="~/assets/svg/youtube.svg"
+          >
+        </span>
+
         <span
           v-if="e.fields.place && e.fields.place.fields.title && showPlaces"
           :class="{'text-gray-500': e.fields.state === 'finished'}"

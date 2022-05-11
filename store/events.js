@@ -133,6 +133,19 @@ export const mutations = {
         // multiple or completely unknown
         block.fields.place = null;
       }
+
+      const allVideos = _.uniq(_.map(eventsInBlock, _.property('fields.youtube')).filter(Boolean))
+      if (allVideos.length === 1) {
+        // single one place, so it's valid fo all events on block
+        block.fields.youtube = allVideos[0];
+        eventsInBlock.forEach(
+          e => Vue.set(e.fields, 'youtube', allVideos[0])
+        )
+        // console.log(eventsInBlock)
+      } else {
+        // multiple or completely unknown
+        block.fields.youtube = null;
+      }
     })
   },
   setEvents(state, events) {
