@@ -179,6 +179,8 @@ export const actions = {
     const events = (await client.getEntries({
       content_type: 'event',
       order: 'fields.when',
+      // 1 + event -> place -> parent place
+      include: 4,
     })).items;
 
     commit('setEvents', events)

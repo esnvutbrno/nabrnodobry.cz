@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article v-if="event">
     <button
       class="bg-primary text-white uppercase
       p-2 my-2 text-center rounded block w-full font-bold"
@@ -20,7 +20,7 @@
     <div class="flex flex-col-reverse md:flex-row justify-between gap-x-4">
       <div class="w-auto md:w-2/3 prose prose-p:text-justify dark:prose-invert">
         <YoutubeVideo
-          v-if="event && event.fields.youtube"
+          v-if="event.fields.youtube"
           :id="event.fields.youtube"
           :title="event.fields.title"
         />
@@ -50,7 +50,7 @@
           <span
             class="text-lg font-bold"
           >
-            <span v-if="event.fields.place.fields.parent" class="block">
+            <span v-if="event.fields.place && event.fields.place.fields.parent" class="block">
               {{ event.fields.place.fields.title }}
             </span>
             {{ place.fields.title }}
@@ -64,7 +64,6 @@
 <script>
 
 import RichTextRenderer from "contentful-rich-text-vue-renderer";
-import {mapGetters} from "vuex";
 
 
 export default {
@@ -101,7 +100,8 @@ export default {
           )
         }
       },
-    }
+    },
+    event: null
   }),
   head() {
     return {
@@ -116,28 +116,26 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('events', ['eventInDetail']),
-    event() {
-      return this.eventInDetail
-    },
     photo() {
-      return this.event.fields.photo ||
+      return (this.event && this.event.fields.photo) ||
         (this.place && this.place.fields.photo) ||
-        (this.event.fields.place && this.event.fields.place.fields.photo)
+        (this.event && this.event.fields.place && this.event.fields.place.fields.photo)
     },
     place() {
       const place = this.event.fields.place
+
+      if (!place) return;
       if (place.fields.parent) return place.fields.parent;
       return place;
     }
   },
-  async fetch({store, route, error}) {
-    store.commit('events/setEventInDetailId', route.params.id)
+  async fetch() {
+    await this.$store.commit('events/setEventInDetailId', this.$route.params.id)
 
-    const event = store.getters['events/eventInDetail']
+    this.event = this.$store.getters['events/eventInDetail'];
 
-    if (!event)
-      error({statusCode: 404, message: "Specified event not found."})
+    if (!this.event)
+      throw new Error({statusCode: 404, message: "Specified event not found."})
   }
 }
 </script>

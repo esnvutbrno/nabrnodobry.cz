@@ -18,7 +18,7 @@
         ref="map"
         class="h-auto-important"
       >
-<!--        <l-tile-layer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"></l-tile-layer>-->
+        <!--        <l-tile-layer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"></l-tile-layer>-->
 
 
         <!--                <l-tile-layer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>-->
@@ -28,34 +28,37 @@
         <l-tile-layer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"></l-tile-layer>
         <!--        <l-control-layers position="topright"></l-control-layers>-->
 
-        <l-marker
+        <template
           v-for="p in places"
-          v-if="p.fields.position"
-          :key="p.sys.id"
-          :lat-lng="[p.fields.position.lat, p.fields.position.lon]"
-          @click="placeDetail = p"
-          :options="{title: p.fields.title}"
         >
-          <!--                    <l-popup @click.native="_placeDetail = p">{{ p.fields.title }}</l-popup>-->
+          <l-marker
+            v-if="p.fields.position"
+            :key="p.sys.id"
+            :lat-lng="[p.fields.position.lat, p.fields.position.lon]"
+            :options="{title: p.fields.title}"
+            @click="placeDetail = p"
+          >
+            <!--                    <l-popup @click.native="_placeDetail = p">{{ p.fields.title }}</l-popup>-->
 
-          <l-icon
-            :iconSize="[48/1.5, 64/1.5]"
-            :iconAnchor="[24/1.5, 64/1.5]"
-            :icon-url="require('../assets/svg/marker.svg')"
-            class-name="black-to-primary dark:black-to-secondary"
-          />
-          <l-tooltip :options="{
-            permanent: true,
-            interactive: true,
-            opacity: .9,
-            direction: p.fields.tooltipDirection || 'auto'
-          }">{{ p.fields.title }}
-          </l-tooltip>
-        </l-marker>
-        <LGPX
-          :gpx-file="track"
-          :gpx-options="gpxOptions"
-        />
+            <l-icon
+              :icon-url="require('../assets/svg/marker.svg')"
+              :iconAnchor="[24/1.5, 64/1.5]"
+              :iconSize="[48/1.5, 64/1.5]"
+              class-name="black-to-primary dark:black-to-secondary"
+            />
+            <l-tooltip :options="{
+              permanent: true,
+              interactive: true,
+              opacity: .9,
+              direction: p.fields.tooltipDirection || 'auto'
+            }">{{ p.fields.title }}
+            </l-tooltip>
+          </l-marker>
+        </template>
+        <!--        <LGPX-->
+        <!--          :gpx-file="track"-->
+        <!--          :gpx-options="gpxOptions"-->
+        <!--        />-->
       </l-map>
     </client-only>
     <FancyLine
@@ -96,7 +99,7 @@ export default {
       // order: '-sys.createdAt',
     });
     return {
-      places: places.items,
+      places: places.items.filter(p => p.fields.position),
       track: require('raw-loader!~/assets/gpx/main-train-to-vinarska.gpx').default,
     }
   },
