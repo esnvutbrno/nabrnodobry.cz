@@ -42,15 +42,18 @@
           class="w-1/2 md:w-full mx-auto"
         >
         <nuxt-link
-          v-if="event.fields.place && event.fields.place.fields.title"
-          :to="{name: 'map', hash: '#' + event.fields.place.sys.id}"
+          v-if="place && place.fields.title"
+          :to="{name: 'map', hash: '#' + place.sys.id}"
           class="my-4 gap-2 flex flex-row items-center justify-center p-2 rounded border border-primary dark:border-white"
         >
           <img alt="This place" class="h-8 w-8 dark:black-to-white" src="../../../assets/svg/place.svg">
           <span
             class="text-lg font-bold"
           >
-            {{ event.fields.place.fields.title }}
+            <span v-if="event.fields.place.fields.parent" class="block">
+              {{ event.fields.place.fields.title }}
+            </span>
+            {{ place.fields.title }}
           </span>
         </nuxt-link>
       </div>
@@ -118,7 +121,14 @@ export default {
       return this.eventInDetail
     },
     photo() {
-      return this.event.fields.photo || (this.event.fields.place && this.event.fields.place.fields.photo)
+      return this.event.fields.photo ||
+        (this.place && this.place.fields.photo) ||
+        (this.event.fields.place && this.event.fields.place.fields.photo)
+    },
+    place() {
+      const place = this.event.fields.place
+      if (place.fields.parent) return place.fields.parent;
+      return place;
     }
   },
   async fetch({store, route, error}) {
