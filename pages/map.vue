@@ -30,6 +30,7 @@
 
         <l-marker
           v-for="p in places"
+          v-if="p.fields.position"
           :key="p.sys.id"
           :lat-lng="[p.fields.position.lat, p.fields.position.lon]"
           @click="placeDetail = p"
