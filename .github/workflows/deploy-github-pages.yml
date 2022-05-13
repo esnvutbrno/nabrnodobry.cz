@@ -8,6 +8,8 @@ on:
     types:
       # for dispatch from contentful via webhook
       - deploy
+  schedule:
+    - cron: '*/5 * * * *'
 
 concurrency:
   # to disable multiple parallel jobs during changes in contentful
