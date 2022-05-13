@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-xl mx-auto">
-    <client-only>
+  <client-only>
+    <div class="max-w-xl mx-auto">
       <div
         v-if="showCountdown"
         class="
@@ -16,7 +16,7 @@
       </div>
 
       <YoutubeVideo
-        v-if="currentEvent && event.fields.youtube"
+        v-if="currentEvent && currentEvent.fields.youtube"
         :id="currentEvent.fields.youtube"
         :title="currentEvent.fields.title"
       />
@@ -53,10 +53,11 @@
       <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam-->
       <!--      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.-->
 
-    <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam-->
-    <!--      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.-->
-    <!--    </article>-->
-  </div>
+      <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore minus soluta. Dolore explicabo illo magnam-->
+      <!--      molestiae, obcaecati qui? Assumenda commodi laudantium modi numquam quas repudiandae sint. Magni provident, quae.-->
+      <!--    </article>-->
+    </div>
+  </client-only>
 </template>
 
 <script>
