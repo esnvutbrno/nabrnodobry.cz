@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/faq/food/2hteG5QIgKKSAeAhKYBowN", {data:[{}],fetch:{"data-v-40edf253:0":{assets:[]},"data-v-67a4fbf8:0":{time:new Date(1652637454525)}},mutations:[["questions\u002FsetActiveCategorySlug","food"],["questions\u002FsetActiveQuestionId","2hteG5QIgKKSAeAhKYBowN"]]});
