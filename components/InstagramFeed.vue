@@ -39,7 +39,7 @@ export default {
     const assets = await client.getAssets({
       order: '-sys.createdAt'
     });
-    this.assets = assets.items.filter(i => i && i.fields.title && i.fields.title.startsWith('photo_'))    
+    this.assets = assets.items.filter(i => i && i.fields.title && i.fields.title.startsWith('photo '))    
   }
 }
 </script>
