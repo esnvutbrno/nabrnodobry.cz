@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/faq/transport/63uRQcahKGoeCYJcsKoXlo", {data:[{}],fetch:{"data-v-2920f0a4:0":{assets:[]},"data-v-67a4fbf8:0":{time:new Date(1652642960384)}},mutations:[["questions\u002FsetActiveCategorySlug","transport"],["questions\u002FsetActiveQuestionId","63uRQcahKGoeCYJcsKoXlo"]]});

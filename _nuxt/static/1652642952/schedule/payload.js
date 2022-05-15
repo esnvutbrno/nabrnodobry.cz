@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/schedule", {data:[{}],fetch:{"data-v-2920f0a4:0":{assets:[]},"data-v-67a4fbf8:0":{time:new Date(1652642959371)}},mutations:[]});
