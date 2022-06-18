@@ -1,0 +1,282 @@
+[
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "2aCz3v4BEJAMc8WA3gBcrg",
+      "type": "Entry",
+      "createdAt": "2022-05-10T20:18:59.812Z",
+      "updatedAt": "2022-05-10T20:20:04.499Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "link"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Survival Guide",
+      "url": "https://drive.google.com/file/d/1G3dvPNgRJrgrnP-tFyYEvFUW3zcb40zd/view?usp=sharing",
+      "variant": "dark",
+      "order": 0
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "36k08Mz8zrtTmsGhbp6U2W",
+      "type": "Entry",
+      "createdAt": "2022-05-10T19:57:07.457Z",
+      "updatedAt": "2022-05-10T20:19:39.745Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 4,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "link"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Agenda",
+      "url": "https://docs.google.com/spreadsheets/d/1mAIy5747C3uqchAplG4m6Q_j6fqn2f56xYcTZhlGzP0/edit",
+      "variant": "dark-accent",
+      "order": 5
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "7CpAmxzKZE2JTF3keEFMyd",
+      "type": "Entry",
+      "createdAt": "2022-05-10T20:17:55.052Z",
+      "updatedAt": "2022-05-10T20:18:06.123Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "link"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Attendee Declaration Form",
+      "url": "https://drive.google.com/file/d/1gXD9xxh2wZd2jOc5M_dMteEvJde3VJug/view",
+      "variant": "dark-accent",
+      "order": -10
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "5SCz1FATh9SRIWbkSJjfnI",
+      "type": "Entry",
+      "createdAt": "2022-05-10T20:16:25.801Z",
+      "updatedAt": "2022-05-10T20:16:25.801Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "link"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "National Board 2022/23 Election",
+      "url": "https://drive.google.com/drive/folders/15vqg76N61GkN5lD2E7QNsLFmZpbAX0aM",
+      "variant": "dark",
+      "order": 20
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "5bSeytbzuuyVDtInA3WZzY",
+      "type": "Entry",
+      "createdAt": "2022-05-10T20:14:56.695Z",
+      "updatedAt": "2022-05-10T20:15:06.255Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "link"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Statute Changes (Chairing Team Reinforcement)",
+      "url": "https://drive.google.com/drive/folders/1k9ktXvW1olDPhqZNQAcRidteJs-IuKs-?usp=sharing",
+      "variant": "dark",
+      "order": 15
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "57LPiiW7orF1MCniwIzdIv",
+      "type": "Entry",
+      "createdAt": "2022-05-10T20:00:31.590Z",
+      "updatedAt": "2022-05-10T20:00:31.590Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "link"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Events Policy Paper ESN CZ Proposal",
+      "url": "https://drive.google.com/drive/folders/1UD2-dghPJRjq4BCWUGvOz0F9oFtMvu1k",
+      "variant": "dark",
+      "order": 10
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "FEunaDaTfSGXUXpD4HEYS",
+      "type": "Entry",
+      "createdAt": "2022-05-10T17:48:31.080Z",
+      "updatedAt": "2022-05-10T17:49:07.250Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "link"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Preparation Package",
+      "url": "https://docs.google.com/document/d/1MXHA5lKBjXlA6SRG5YV87w_hXQyzSTYxzdATcyqG5sU/edit",
+      "variant": "light",
+      "order": 1
+    }
+  }
+]

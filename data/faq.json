@@ -1,0 +1,3235 @@
+[
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "47iNzkLkyRIZvGryYWHqNo",
+      "type": "Entry",
+      "createdAt": "2022-04-19T14:58:39.606Z",
+      "updatedAt": "2022-05-08T20:46:55.885Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 8,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "what should I bring?",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "What I should bring?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Most important are these things, so don't forget to take them with you 😉",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "unordered-list",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "negative result of rapid antigen or PCR test on Covid-19",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          },
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Slippers or any other shoes to wear inside",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Towel",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Sleepwear",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Section drinks",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Mascots ",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {}
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "(and don’t steal them from other people, not cool!)",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Promo materials (for the section market)",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Cups ",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {}
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "and cutlery ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Food ",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {}
+                      },
+                      {
+                        "nodeType": "text",
+                        "value": "for barbecue",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "National costume-inspired outfit for the tram part",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "General"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "1spuPg8ns9t1u7EsBiLxyT",
+      "type": "Entry",
+      "createdAt": "2022-04-22T08:51:05.832Z",
+      "updatedAt": "2022-05-07T12:25:12.462Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 7,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "menu",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "My lovely OC, how looks the ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "food menu",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " for NA Brno dobrý?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "heading-4",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Friday 13.5.",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-5",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Lunch",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "unordered-list",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🐷 Dutch Schnitzel (minced meat filled with gouda cheese), mashed potatoes and pickled            vegetables salad ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Gnocchi with spinach and parmesan cheese ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Baked eggplant filled with ratatouille vegetables, mashed potatoes ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-5",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Dinner",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "unordered-list",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🐔 Chicken breast steak stuffed with dried tomatoes, baked potatoes with rosemary, grilled corn on the cob, cheddar sauce",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🦈 Italian penne with sea salmon fillet and herb sauce",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Risotto with grilled Mediterranean vegetables and tofu, salad ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-4",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Saturday 14.5.",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-5",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Lunch",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "unordered-list",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🐔 Roasted chicken with butter and garlic, rice, peach compote",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Lasagne Caprese with fresh basil, bechamel sauce, and tomatoes ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Fried cauliflower, boiled potatoes with chives, tartar sauce ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-5",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Dinner",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "unordered-list",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🐷 Pork skewer with grilled vegetables and bacon, steak fries, homemade tartar sauce",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Spaghetti Aglio Olio e Peperoncino with parmesan cheese ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Greek salad with feta cheese, bread ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-4",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Sunday 15.5.",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "heading-5",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Lunch",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "unordered-list",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🐔 Chicken stuffed with ricotta, honey ham, and spinach, mashed potatoes, salad",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Italian mushroom risotto with truffle aroma and parmesan cheese ",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "list-item",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "🌱 Fried zucchini patties, mashed potatoes, and grilled cherry tomatoes",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Food"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "2hteG5QIgKKSAeAhKYBowN",
+      "type": "Entry",
+      "createdAt": "2022-05-03T20:12:19.601Z",
+      "updatedAt": "2022-05-07T12:22:35.885Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 5,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "alergens",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "How look the allergens on the menu? 🍇🍔",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Regarding coffee breaks, we know about all your limitations and allergies, so no worry, we'll prepare you ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "special plates",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " with all the healthy food just for you. Also, don't hesitate to reach out to us any time and ask.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "With breakfasts, lunches and dinners, we gonna provide you with a list of allergens for each food and the ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "pub is notified",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " about everything, so OC there gonna reach you and serve you the ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "appropriate food",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ".",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Food"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "6ntozjXOa9ffZEZzL9lLML",
+      "type": "Entry",
+      "createdAt": "2022-04-19T20:27:13.722Z",
+      "updatedAt": "2022-05-06T16:30:37.543Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 8,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "where and when?",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "When and where NA Brno dobrý gonna take place?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "NA Brno dobrý 2022 (NA May) gonna be ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "12.-15.5. 2022",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " in our lovely ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Brníčko",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ".\n\n\n\n",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "\n\n",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "General"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "2fCRrauZbOWKN97CPm1o1V",
+      "type": "Entry",
+      "createdAt": "2022-05-06T16:29:35.882Z",
+      "updatedAt": "2022-05-06T16:29:35.882Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "whats hody",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "What is ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Hody",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "A ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "traditional celebration",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " of certain patrons of the village. The whole village celebrates by preparing traditional ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "ceremonies",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", dancing and singing in national costumes, and finishing with a service in the local church. Hody is a ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "large cultural event",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " in each village and smaller region in Moravia and each one of them has slightly different traditions. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "category": "Social Programme"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "7gscFpOBQLkksp5ojsxeSJ",
+      "type": "Entry",
+      "createdAt": "2022-05-06T16:19:57.854Z",
+      "updatedAt": "2022-05-06T16:19:57.854Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "section drinks to bbq",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "To ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "BBQ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", can we bring ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "section drinks",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Yes!",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " They can be served at BBQ on Thursday afternoon and evening.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Social Programme"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "5eORHTjgK968UCCu7kn1rn",
+      "type": "Entry",
+      "createdAt": "2022-05-06T16:19:02.492Z",
+      "updatedAt": "2022-05-06T16:19:02.492Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "own food to bbq?",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Should I bring ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "my own food",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " to the BBQ?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Yes, we will host you with ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "bread and sauces",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ". ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Wine and beer",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " will be ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "available",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " for reasonable prices, so bring some cash with you. Non-alcoholic drinks will be available ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "for free",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ". And bring a NickNack cup!",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Social Programme"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "5KPum7VjLQM1lI8WRZwZoj",
+      "type": "Entry",
+      "createdAt": "2022-05-06T16:17:27.164Z",
+      "updatedAt": "2022-05-06T16:17:27.164Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "when to arrive",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "When can I come",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " to NA?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "We will be ready for you at ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "16:00 with the BBQ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "!",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "category": "General"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "1VJkxAmDIoOs7u0Jzm9IL7",
+      "type": "Entry",
+      "createdAt": "2022-05-06T16:16:25.935Z",
+      "updatedAt": "2022-05-06T16:16:48.842Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "wake up for warm up",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Do I have to ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "wake up",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " for morning warm-ups?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "No, but if you do, you will feel refreshed the whole day and your body will ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "feel better",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " than only if you would sit the whole day. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "category": "General"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "63uRQcahKGoeCYJcsKoXlo",
+      "type": "Entry",
+      "createdAt": "2022-04-19T20:27:42.697Z",
+      "updatedAt": "2022-05-06T16:14:56.117Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 6,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "ticket for public transport",
+      "question": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Where I can buy ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "ticket",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " for public transport?",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "The easiest way is to use your ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "credit/debit card right on the tram/bus",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " and tap it on the validator. All the ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "details",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " are stated on the ",
+                "nodeType": "text"
+              },
+              {
+                "data": {
+                  "uri": "https://www.pipniajed.cz/index.html"
+                },
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "official website",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "hyperlink"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ".",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "At most of the stops, you can also buy a paper ticket in the ticket machine, or you can send an SMS:",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "phone number: ",
+                "nodeType": "text"
+              },
+              {
+                "data": {
+                  "uri": "tel:90206"
+                },
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "90206",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "hyperlink"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [
+                          {
+                            "type": "code"
+                          }
+                        ],
+                        "value": "BRNO20",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": " ... 20 Kč, ",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "value": "20 minutes",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "list-item"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [
+                          {
+                            "type": "code"
+                          }
+                        ],
+                        "value": "BRNO",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": " ... 29 Kč, ",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "value": "75 minutes",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "list-item"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [
+                          {
+                            "type": "code"
+                          }
+                        ],
+                        "value": "BRNOD",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": " ... 99 Kč, ",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {},
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "value": "24 hours",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "list-item"
+              }
+            ],
+            "nodeType": "unordered-list"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "\n\n",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "category": "Transport"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "6NGyrtUh2YX3L3tcYHGgJb",
+      "type": "Entry",
+      "createdAt": "2022-04-19T20:36:30.942Z",
+      "updatedAt": "2022-05-06T16:12:03.569Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 8,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "main train to accomodation",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "How I can get from ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Main Train Station to accommodation",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "? ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Go by tram (šalina), right in front of the Main Train Station is the tram stop. The easiest is to take on tram no.1 (in ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "direction Pisárky",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", track no. 1) and go to stop ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Lipová",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ". From there, it's 300 m to accommodation.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "You can also ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "walk",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "! It's very healthy and you can do some sightseeing connected with that.  ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "hyperlink",
+                "data": {
+                  "uri": "https://emojipedia.org/woman-running/"
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "🏃‍♀️",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "For better imagination, you can use the ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "hyperlink",
+                "data": {
+                  "uri": "/map"
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "map",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "text",
+                "value": " on our website 🗺️",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Transport"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "3cwXQXjzp3gMzAh3xW2Mlp",
+      "type": "Entry",
+      "createdAt": "2022-04-19T15:07:53.656Z",
+      "updatedAt": "2022-05-06T16:09:51.476Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 7,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "accomodation",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Where the ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "participants ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "will be ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "accommodated",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "For everyone registered, there is accommodation at the ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Vinařská dormitories",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ".",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "General"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "2ehgu1Ml4usMijQJqDNwpm",
+      "type": "Entry",
+      "createdAt": "2022-04-19T20:37:27.210Z",
+      "updatedAt": "2022-05-06T16:09:05.973Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 5,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "super awesome",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Whoooa?! that's gonna be super-awesome, right?\n\n",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "ABSOLUTELY!!! You're 100% right ",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "🏄\n",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "General"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "1Ro0gwDPEdWbYCSgY09Zrq",
+      "type": "Entry",
+      "createdAt": "2022-04-19T15:06:28.805Z",
+      "updatedAt": "2022-05-06T16:08:44.610Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 8,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "actual info",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Are there any social groups where I can find ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "information",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Of course, there are.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "📣 Announcements channel: ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "hyperlink",
+                "data": {
+                  "uri": "https://t.me/+VurP3Yy3bMk4NzU8"
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "https://t.me/+VurP3Yy3bMk4NzU8",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "👥 Chat group: ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "hyperlink",
+                "data": {
+                  "uri": "https://t.me/+TkPycXOVSdJkMzRk"
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "https://t.me/+TkPycXOVSdJkMzRk",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "🟦 FB group: ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "hyperlink",
+                "data": {
+                  "uri": "https://www.facebook.com/groups/770942037627948"
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "https://www.facebook.com/groups/770942037627948",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "General"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "2bxepb1cXvSVd77e6GgxYU",
+      "type": "Entry",
+      "createdAt": "2022-04-19T19:37:23.393Z",
+      "updatedAt": "2022-05-06T16:05:32.145Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 4,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "dont like cofee",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "What's a coffee break? ☕ I ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "don't like coffee",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " but I really love food, will it be okay for me?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "No worries, we understand and it's gonna be absolutely fine for you. There will be much more than just coffee, like other drinks and also food and refreshments.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Food"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "6JFhWI4x5C5RvZUDHYSGz4",
+      "type": "Entry",
+      "createdAt": "2022-04-19T20:40:12.351Z",
+      "updatedAt": "2022-05-06T16:04:30.462Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 3,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "TP alco",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "🚊 At ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Tram Party",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", c",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "ould we buy alcohol there or should we bring it?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "Please ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "do not bring your own",
+                "marks": [
+                  {
+                    "type": "underline"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " alcohol, a variety of balanced drinks will be provided at the bar, and payment will be possible ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "only in cash",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ".",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Social Programme"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "lCnE4IXEaVXXk5HBh19e9",
+      "type": "Entry",
+      "createdAt": "2022-04-19T20:39:07.096Z",
+      "updatedAt": "2022-05-06T16:03:11.165Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 3,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "TP costume",
+      "question": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "🚊 At ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Tram Party",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", what should I wear if I do not have a ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "folk costume",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "?",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "We encourage you to wear fun ribbons, some flowers or anything ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "colorful",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "!",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "category": "Social Programme"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "6II9RndN7HDagczmCQR2EQ",
+      "type": "Entry",
+      "createdAt": "2022-04-19T20:26:46.895Z",
+      "updatedAt": "2022-05-06T16:02:06.718Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 3,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "dont like music",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "What if I do not like ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "concerts",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " or the played type of ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "music",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "The venue is divided into two parts, one is for the concert and the second one is a ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "chill zone",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", where you can sit and talk. ",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Social Programme"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "zhy9qk1dr5mw"
+        }
+      },
+      "id": "4PAoUepKaInGoyWvGfz0RX",
+      "type": "Entry",
+      "createdAt": "2022-04-19T15:01:56.513Z",
+      "updatedAt": "2022-05-06T16:01:26.695Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 3,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "faq"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "drinks on SM",
+      "question": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Can we bring ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "section drinks",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " to the section market?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "answer": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "No, please bring your section drinks ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "only to the BBQ",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " on Thursday. ",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "category": "Social Programme"
+    }
+  }
+]
