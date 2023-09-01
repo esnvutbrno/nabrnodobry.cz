@@ -44,5 +44,8 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/tailwindcss": "^5.0.2",
     "postcss": "^8.4.12"
+  },
+  "engines": {
+    "node": "16"
   }
 }
