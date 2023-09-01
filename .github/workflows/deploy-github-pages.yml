@@ -17,8 +17,10 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  NUXT_ROUTER_BASE_URL: '/'
-  FULL_BASE_URL: 'https://na.brnodobry.cz/'
+  # NUXT_ROUTER_BASE_URL: '/'
+  NUXT_ROUTER_BASE_URL: '/na.brnodobry.cz/'
+  # FULL_BASE_URL: 'https://na.brnodobry.cz/'
+  FULL_BASE_URL: 'https://esnvutbrno.github.io/na.brnodobry.cz/'
   CTF_SPACE_ID: ${{ secrets.CTF_SPACE_ID }}
   CTF_CDA_ACCESS_TOKEN: ${{ secrets.CTF_CDA_ACCESS_TOKEN }}
 
