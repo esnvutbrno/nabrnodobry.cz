@@ -18,3 +18,8 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+
+
+## Credits
+
+ESN VUT Brno, 2022
